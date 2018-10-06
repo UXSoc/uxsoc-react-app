@@ -3,7 +3,7 @@ import Navigation from './../../stateless/Navigation/Navigation';
 import landingImage from './../../../resources/img/home-landing.svg';
 import blue1 from './../../../resources/img/home-blue1.svg';
 import blue2 from './../../../resources/img/home-blue-2.svg';
-import HomeCards from './../../stateless/HomeCards/HomeCards';
+import HomeCard from '../../stateless/HomeCard/HomeCard';
 import './style.css';
 
 class Home extends Component {
@@ -24,12 +24,12 @@ class Home extends Component {
               <img src={blue2} alt='blue2' className='blue2'/>
           </div>
           <div className="HomeCards-container">
-            <HomeCards
+            <HomeCard
               cardLabel="Community"
               headerLabel="Geared for Growth"
               btnLabel="Experience the Mafia"
               caption="Engage yourself with the community. Discover what you can do and how you can grow with us."/>
-            <HomeCards
+            <HomeCard
               cardLabel="Consultancy"
               headerLabel="Crafted for Work"
               btnLabel="Explore our projects"

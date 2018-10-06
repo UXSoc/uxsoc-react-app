@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import cardImage from './../../../resources/img/community-consultancy.svg';
 import './style.css';
 
-class HomeCards extends Component {
+class HomeCard extends Component {
   render() {
     const { cardLabel, headerLabel, caption, btnLabel } = this.props;
     return(
@@ -17,4 +17,4 @@ class HomeCards extends Component {
   }
 }
 
-export default HomeCards;
+export default HomeCard;
