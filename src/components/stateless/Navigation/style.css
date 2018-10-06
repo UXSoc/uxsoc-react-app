@@ -29,6 +29,7 @@
   margin-left: 15px;
   margin-right: 15px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .navbar-item {
