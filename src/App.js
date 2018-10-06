@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from './components/stateless/Navigation/Navigation';
+import CommunityConsultancy from './components/pages/Home';
 import './App.css';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div>
         <Navigation/>
+        <CommunityConsultancy/>
       </div>
     );
   }
