@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Navigation from './components/stateless/Navigation/Navigation';
+import Home from './components/pages/Home/Home';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Navigation/>
+      <div className='uxsoc-website'>
+        <Home/>
       </div>
     );
   }
