@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import Navigation from './components/stateless/Navigation/Navigation';
-import CommunityConsultancy from './components/pages/Home';
+import Home from './components/pages/Home/Home';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Navigation/>
-        <CommunityConsultancy/>
+        <Home/>
       </div>
     );
   }

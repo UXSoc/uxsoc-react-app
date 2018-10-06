@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import cardImage from '../../resources/img/community-consultancy.svg';
+import cardImage from './../../../resources/img/community-consultancy.svg';
 import './style.css';
 
 class HomeCards extends Component {

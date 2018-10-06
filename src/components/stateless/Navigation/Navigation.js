@@ -32,7 +32,6 @@ const Navigation = () => {
               <div className='navbar-link'>Contact Us</div>
             </div>
           </div>
-
         </div>
       </nav>
   );
