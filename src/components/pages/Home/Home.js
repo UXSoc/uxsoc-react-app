@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from './../../stateless/Navigation/Navigation';
 import HomeLandingSection from './../../stateless/HomeLandingSection/HomeLandingSection';
+import CommunityConsultancy from './../../stateless/HomeCards/HomeCards.js';
 
 class Home extends Component {
   render() {
@@ -8,6 +9,7 @@ class Home extends Component {
       <div>
         <Navigation/>
         <HomeLandingSection/>
+        <CommunityConsultancy/>
       </div>
     );
   }
