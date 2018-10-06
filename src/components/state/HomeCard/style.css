@@ -1,0 +1,35 @@
+.HomeCard {
+  height: 750px;
+  width: 500px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.HomeCard:first-of-type {
+  margin-left: 175px;
+}
+
+.HomeCard:last-of-type {
+  margin-right: 180px;
+}
+
+.HomeCard img {
+  width: 500px;
+}
+
+.HomeCard h2 {
+  margin-top: -7px;
+}
+
+.card-caption {
+  color: #3B3E42;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  width: 345px;
+  display: block;
+  margin: auto;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}

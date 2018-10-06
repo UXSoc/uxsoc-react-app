@@ -4,14 +4,14 @@ import './style.css';
 
 class HomeCard extends Component {
   render() {
-    const { cardLabel, headerLabel, caption, btnLabel } = this.props;
+    const { sectionLabel, headerLabel, caption, btnLabel } = this.props;
     return(
-      <div className="HomeCards">
+      <div className="HomeCard">
         <img src={cardImage} alt="people"></img>
-        <p className="card-label">{cardLabel}</p>
+        <p className="section-label">{sectionLabel}</p>
         <h2>{headerLabel}</h2>
         <p className="card-caption">{caption}</p>
-        <button>{btnLabel}</button>
+        <button className="blue-btn-big">{btnLabel}</button>
       </div>
     )
   }
