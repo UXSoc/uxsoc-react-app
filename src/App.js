@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom'
+
 import Home from './components/pages/Home/Home';
+import About from './components/pages/About/About';
 import Community from './components/pages/Community/Community';
 import Work from './components/pages/Work/Work';
 import Contact from './components/pages/Contact/Contact';
@@ -8,11 +11,14 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className='uxsoc-website'>
-        <Home/>
-        <Community/>
-        <Work/>
-        <Contact/>
+      <div className="uxsoc-website">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route path="/community" component={Community} />
+          <Route path="/work" component={Work} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
       </div>
     );
   }

@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import Navigation from './../../stateless/Navigation/Navigation'
 import './style.css';
 
-class Work extends Component {
+class About extends Component {
   render() {
     return(
       <div>
         <Navigation/>
-        <span>Work Page</span>
+        <span>About Page</span>
       </div>
     );
   }
 }
 
-export default Work;
+export default About;
