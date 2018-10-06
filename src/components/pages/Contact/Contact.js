@@ -7,6 +7,7 @@ class Contact extends Component {
     return(
       <div>
         <Navigation/>
+        <span>Contact Page</span>
       </div>
     );
   }
