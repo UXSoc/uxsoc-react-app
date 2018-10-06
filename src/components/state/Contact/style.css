@@ -1,0 +1,46 @@
+.Contact {
+  text-align: center;
+}
+
+.Contact h2 {
+  width: 600px;
+  display: block;
+  margin: auto;
+  margin-top: 48px;
+}
+
+form {
+  width: 40rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 5fr;
+  grid-row-gap: 3rem;
+  margin: 5rem auto;
+}
+
+input {
+  height: 70px;
+  padding-left: 32px;
+}
+
+textarea {
+  padding: 32px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+input, textarea {
+  border-radius: 8px;
+  border: 1.5px solid #B3BCC4;
+  outline: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #B3BCC4;
+}
+
+.blue-btn-big {
+  width: 260px;
+}

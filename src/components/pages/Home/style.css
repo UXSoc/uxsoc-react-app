@@ -34,11 +34,15 @@
   background-color: #008ed4;
   font-size: 16px;
   font-weight: 600;
+  text-transform: uppercase;
   color: white;
   width: 247px;
   height: 70px;
   grid-column: 1/1;
   grid-row: 7/7;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .home-landing-image {
@@ -78,8 +82,9 @@
   right: 0px;
 }
 
-.HomeCards-container {
-  position: absolute;
+.HomeCard-container {
+  position: relative;
+  z-index: 1;
   height: 960px;
   width: 100%;
   background: #EEF1F6;
@@ -88,4 +93,13 @@
   grid-column-gap: 20px;
   align-items: center;
   justify-content: center;
+}
+
+.Contact-container {
+  height: auto;
+  width: 100%;
+  background: #FFFFFF;
+  padding-top: 6rem;
+  display: inline-grid;
+  grid-template-columns: 1fr;
 }
