@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,500');
 
-.HomeCards-container {
-  height: 960px;
-  width: 100vw;
-  background: #EEF1F6;
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-  align-items: center;
-  justify-items: center;
-}
 
 .HomeCards {
   height: 750px;
