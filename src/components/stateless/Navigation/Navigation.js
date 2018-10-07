@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import logo from './../../../resources/logo/uxsoc-logo.svg';
 import './style.css';
@@ -33,7 +34,7 @@ const Navigation = () => {
 
             {/* Contact Us */}
             <div className='navbar-item navbar-contact'>
-              <Link className='navbar-link' to='/contact'>Contact Us</Link>
+              <AnchorLink className='navbar-link' href='#contact-us'>Contact Us</AnchorLink>
             </div>
           </div>
         </div>
