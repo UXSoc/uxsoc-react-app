@@ -4,7 +4,7 @@ import landingImage from './../../../resources/img/home-landing.svg';
 import blue1 from './../../../resources/img/home-blue1.svg';
 import blue2 from './../../../resources/img/home-blue-2.svg';
 import HomeCard from '../../state/HomeCard/HomeCard';
-import Contact from '../../state/Contact/ContactForm';
+import ContactForm from '../../state/ContactForm/ContactForm';
 import './style.css';
 
 class Home extends Component {
@@ -37,7 +37,7 @@ class Home extends Component {
               caption="We help businesses explore improve their products and services through intentional design, and we never fail to deliver."/>
           </div>
           <div className="Contact-container">
-            <Contact
+            <ContactForm
               sectionLabel="Contact Us"
               headerLabel="We'd love to hear from you. Drop us a line below!"
               btnLabel="Send Message"/>
