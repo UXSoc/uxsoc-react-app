@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 import Navigation from './../../stateless/Navigation/Navigation';
 import landingImage from './../../../resources/img/home-landing.svg';
 import blue1 from './../../../resources/img/home-blue1.svg';
@@ -15,10 +17,10 @@ class Home extends Component {
           <div className='home-landing-container'>
             <h3 className='north-star-title'>Our North Star</h3>
             <h1 className='main-title-leader'>We make <br/> design leaders</h1>
-            <button className='journey-button'>Start Your Journey</button>
+            <AnchorLink className='journey-button' href="#blue-home">Start Your Journey</AnchorLink>
             <img className='home-landing-image' src={landingImage} alt='landing'/>
           </div>
-          <div className='home-blue-section'>
+          <div id="blue-home" className='home-blue-section'>
             <p className='home-blue-text'>User Experience Society aims to guide the design
               leaders of tomorrow, creating products and <br/> services that will make the world a better place</p>
             <img src={blue1} alt='blue1' className='blue1'/>
@@ -36,7 +38,7 @@ class Home extends Component {
               btnLabel="Explore our projects"
               caption="We help businesses explore improve their products and services through intentional design, and we never fail to deliver."/>
           </div>
-          <div className="Contact-container">
+          <div id="contact-us" className="Contact-container">
             <ContactForm
               sectionLabel="Contact Us"
               headerLabel="We'd love to hear from you. Drop us a line below!"

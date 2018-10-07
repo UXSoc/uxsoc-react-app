@@ -35,6 +35,8 @@
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
   color: white;
   width: 247px;
   height: 70px;
@@ -43,6 +45,8 @@
   border: none;
   outline: none;
   cursor: pointer;
+
+  line-height: 70px;
 }
 
 .home-landing-image {
@@ -99,7 +103,6 @@
   height: auto;
   width: 100%;
   background: #FFFFFF;
-  /* padding-top: 4.5rem; */
   display: inline-grid;
   grid-template-columns: 1fr;
 }
