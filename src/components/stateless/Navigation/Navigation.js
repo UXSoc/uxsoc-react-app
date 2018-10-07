@@ -33,7 +33,7 @@ const Navigation = () => {
 
             {/* Contact Us */}
             <div className='navbar-item navbar-contact'>
-              <Link className='navbar-link' to='/contact'>Contact</Link>
+              <Link className='navbar-link' to='/contact'>Contact Us</Link>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import landingImage from './../../../resources/img/home-landing.svg';
 import blue1 from './../../../resources/img/home-blue1.svg';
 import blue2 from './../../../resources/img/home-blue-2.svg';
 import HomeCard from '../../state/HomeCard/HomeCard';
-import Contact from '../../state/Contact/Contact';
+import Contact from '../../state/Contact/ContactForm';
 import './style.css';
 
 class Home extends Component {
