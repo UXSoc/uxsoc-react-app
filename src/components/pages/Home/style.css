@@ -99,7 +99,7 @@
   height: auto;
   width: 100%;
   background: #FFFFFF;
-  padding-top: 4.5rem;
+  /* padding-top: 4.5rem; */
   display: inline-grid;
   grid-template-columns: 1fr;
 }

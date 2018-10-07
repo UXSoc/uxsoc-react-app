@@ -20,6 +20,11 @@
 
 .HomeCard h2 {
   margin-top: -7px;
+  margin-bottom: 1.25rem;
+}
+
+.HomeCard p {
+  margin-top: 0.5rem;
 }
 
 .card-caption {
@@ -30,6 +35,5 @@
   width: 345px;
   display: block;
   margin: auto;
-  margin-top: -10px;
-  margin-bottom: 30px;
+  margin-bottom: 2.5rem;
 }
