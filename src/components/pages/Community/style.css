@@ -1,0 +1,34 @@
+.section-label {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.community-landing-container h2 {
+  width: 30rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+.community-landing-image {
+  width: 90%;
+  display: block;
+  margin: auto;
+  margin-top: -3rem;
+}
+
+.round-btn {
+  width: 3.375rem;
+  height: 3.375rem;
+  border-radius: 2.5rem;
+  background: #008ED4;
+  display: block;
+  margin: auto;
+  margin-bottom: 4rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.round-btn img {
+  margin-top: 0.5rem;
+}
