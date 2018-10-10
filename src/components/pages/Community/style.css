@@ -44,57 +44,6 @@
   background: #FFFFFF;
 }
 
-.event-label {
-  color: #B3BCC4;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: left;
-  margin-top: 3rem;
-  margin-left: 2.5rem;
-}
-
-.event-name {
-  font-size: 2.25rem;
-  text-align: left;
-  margin-left: 2.4rem;
-}
-
-.event-details {
-  color: #20252B;
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  line-height: 1.5rem;
-  list-style: none;
-  margin-left: -0.8rem;
-  margin-top: -1rem;
-  display: grid;
-  grid-template-columns: 1fr 9fr;
-}
-
-.event-details img {
-  margin-top: 0.35rem;
-  display: block;
-  margin: auto;
-}
-
-.about-header {
-  font-family: "Montserrat", sans-serif;
-  margin-left: 2.5rem;
-  margin-bottom: -0.3rem;
-}
-
-.about-desc {
-  width: 22.5rem;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  line-height: 21px;
-  margin-left: 2.5rem;
-  margin-bottom: 1.7rem;
-}
-
 .register-btn {
   cursor: pointer;
   margin-top: -0.7rem;
@@ -111,18 +60,12 @@
   cursor: pointer;
 }
 
-
 .register-icon {
   width: 14px;
   height: 11px;
   position: absolute;
   right: 43.6rem;
   margin-top: 0.25rem;
-}
-
-.event-img {
-  width: 100%;
-  height: 100%;
 }
 
 .round-btn {
