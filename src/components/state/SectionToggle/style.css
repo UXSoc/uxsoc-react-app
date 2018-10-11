@@ -1,0 +1,27 @@
+.SectionToggle {
+  width: 296px;
+  display: block;
+  margin: 1rem auto 4rem auto;
+}
+
+.section-toggle {
+  width: 148px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.selected {
+  color: #20252b;
+  border-bottom: 1px solid #20252b;
+}
+
+.unselected {
+  color: #B3BCC4;
+  border-bottom: 1px solid #B3BCC4;
+}
