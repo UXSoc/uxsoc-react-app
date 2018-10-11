@@ -2,16 +2,15 @@ import React, { Component } from 'react';
 import Navigation from './../../stateless/Navigation/Navigation';
 import SectionToggle from './../../state/SectionToggle/SectionToggle';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from './../../stateless/Events/EventDetails';
+import RedirectButton from './../../state/RedirectButton/RedirectButton';
 
 import landingImage from './../../../resources/img/community-landing.svg';
 import chevronDown from './../../../resources/img/chevron-down.svg';
-import registerArrow from './../../../resources/img/register-arrow.svg';
 
 import './style.css';
 
 class Community extends Component {
   render() {
-    const { registerLink } = this.props;
     return(
       <div>
         <Navigation/>
@@ -43,11 +42,9 @@ class Community extends Component {
               <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
               <AboutHeader aboutHeader="About the speaker"/>
               <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-
-              <div className="register-btn">
-                <a className="register" href={registerLink}>Register Now</a>
-                <img className="register-icon" src={registerArrow} alt="arrow"/>
-              </div>
+              <RedirectButton
+                buttonText="Register Now"
+                redirectLink="/"/>
             </div>
             <EventImage/>
           </div>

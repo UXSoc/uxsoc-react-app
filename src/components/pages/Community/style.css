@@ -44,30 +44,6 @@
   background: #FFFFFF;
 }
 
-.register-btn {
-  cursor: pointer;
-  margin-top: -0.7rem;
-}
-
-.register-btn a {
-  color: #008ED4;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  float: right;
-  margin-right: 4rem;
-  cursor: pointer;
-}
-
-.register-icon {
-  width: 14px;
-  height: 11px;
-  position: absolute;
-  right: 43.6rem;
-  margin-top: 0.25rem;
-}
-
 .round-btn {
   width: 3.375rem;
   height: 3.375rem;
