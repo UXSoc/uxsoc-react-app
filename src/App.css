@@ -11,7 +11,11 @@ h2 {
   font-size: 40px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
+  color: #20252B;
   text-align: center;
+  line-height: 55px;
+  display: block;
+  margin: -1rem auto 1.5rem auto;
 }
 
 .section-label {
