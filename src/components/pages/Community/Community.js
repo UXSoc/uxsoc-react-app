@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navigation from './../../stateless/Navigation/Navigation';
 import { SectionToggleEvents, SectionToggleResources } from './../../state/SectionToggle/SectionToggle';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from './../../stateless/Events/EventDetails';
-import { ResourceLabel, ResourceName, AuthorPic, AuthorName, ResourceDesc, ResourceImage } from '../../stateless/Resources/ResourceCard';
+import { ResourceLabel, ResourceName, AuthorPic, AuthorName, ResourceDesc, ResourceImage, PastResources } from '../../stateless/Resources/ResourceCard';
 import RedirectButton from './../../state/RedirectButton/RedirectButton';
 
 import landingImage from './../../../resources/img/community-landing.svg';
@@ -59,19 +59,20 @@ class Community extends Component {
             toggleLabel1="Books"
             toggleLabel2="Articles"
             toggleLabel3="Podcasts"/>
-          <div className="resource-card">
-            <div className="resource-info">
-              <ResourceLabel resourceLabel="Book"/>
-              <ResourceName resourceName="The State of UX in Asia"/>
-              <AuthorPic/>
-              <AuthorName authorName="Ben Kim"/>
-              <ResourceDesc resourceDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."/>
-              <RedirectButton
-                buttonText="Start Reading"
-                redirectLink="/"/>
-            </div>
+          <div className="resource-content-container">
+            <div className="resource-card">
+                <ResourceLabel resourceLabel="Book"/>
+                <ResourceName resourceName="The State of UX in Asia"/>
+                <AuthorPic/>
+                <AuthorName authorName="Ben Kim"/>
+                <ResourceDesc resourceDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."/>
+                <RedirectButton
+                  buttonText="Start Reading"
+                  redirectLink="/"/>
+              </div>
+            <ResourceImage/>
+            <PastResources/>
           </div>
-          <ResourceImage/>
         </div>
       </div>
     );

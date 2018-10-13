@@ -51,12 +51,24 @@
   margin-top: 2.5rem;
 }
 
-.RedirectButton img {
-  position: absolute;
-  right: 15rem;
+.ResourceImage {
+  grid-column: 4/9;
+  grid-row: 1/12;
 }
 
-.ResourceImage {
-  margin-left: 10rem;
-  margin-top: -35.5rem;
+.PastResources {
+  grid-column: 7/12;
+  grid-row: 10/12;
+  margin-top: 2.5rem;
+}
+
+.PastResources a {
+  color: #008ED4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
 }

@@ -57,13 +57,20 @@
 
 /* resources */
 .community-resources-container {
-  height: 1284px;
+  height: 1275px;
   background: #EEF1F6;
   padding-top: 0.5rem;
+  position: relative;
 }
 
 .community-resources-container h2 {
   width: 40rem;
+}
+
+.resource-content-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .resource-card {
@@ -71,10 +78,6 @@
   width: 528px;
   height: 408px;
   background: #FFFFFF;
-  display: block;
-  margin: auto;
-  margin-top: 12rem;
-  margin-left: 38rem;
-  padding: 20px;
-  position: relative;
+  grid-column: 9/9;
+  grid-row: 3/8;
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import RedirectButton from '../../state/RedirectButton/RedirectButton';
 import bookCover from './../../../resources/img/book-cover.svg';
 import './style.css';
 
@@ -65,4 +64,14 @@ class ResourceImage extends Component {
     )
   }
 }
-export { ResourceLabel, ResourceName, AuthorPic, AuthorName, ResourceDesc, ResourceImage };
+
+class PastResources extends Component {
+  render() {
+    return(
+      <div className="PastResources">
+        <a href="/">Browse through past resources</a>
+      </div>
+    )
+  }
+}
+export { ResourceLabel, ResourceName, AuthorPic, AuthorName, ResourceDesc, ResourceImage, PastResources };
