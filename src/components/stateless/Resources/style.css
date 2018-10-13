@@ -1,0 +1,74 @@
+.ResourceLabel {
+  color: #B3BCC4;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+}
+
+.ResourceName {
+  font-size: 2.25rem;
+  text-align: left;
+  margin-left: -3.75rem;
+  margin-top: 2rem;
+}
+
+.AuthorPic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #C4C4C4;
+  margin-left: 2.6rem;
+  margin-top: -1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.AuthorName {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 28px;
+  margin-left: 2.7rem;
+  margin-bottom: 1.7rem;
+  margin-top: -3.5rem;
+}
+
+.ResourceDesc {
+  width: 26rem;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 28px;
+  margin-left: 1.4rem;
+  margin-bottom: 1.7rem;
+}
+
+.RedirectButton {
+  margin-top: 2.5rem;
+}
+
+.ResourceImage {
+  grid-column: 4/9;
+  grid-row: 1/12;
+}
+
+.PastResources {
+  grid-column: 7/12;
+  grid-row: 10/12;
+  margin-top: 2.5rem;
+}
+
+.PastResources a {
+  color: #008ED4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
