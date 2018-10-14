@@ -5,6 +5,7 @@ import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage
 import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources } from '../../stateless/Resources/ResourceCard';
 import { AuthorPic, AuthorName } from './../../stateless/Author/Author';
 import { MemberStoriesImage, MemberStoriesLabel, MemberStoriesTitle } from './../../stateless/MemberStories/MemberStories';
+import ContactForm from './../../state/ContactForm/ContactForm';
 import RedirectButton from './../../state/RedirectButton/RedirectButton';
 
 import landingImage from './../../../resources/img/community-landing.svg';
@@ -94,6 +95,9 @@ class Community extends Component {
             <ResourceImage/>
             <PastResources/>
           </div>
+        </div>
+        <div id="contact-us" className="Contact-container">
+          <ContactForm/>
         </div>
       </div>
     );
