@@ -55,12 +55,12 @@ class Community extends Component {
           </div>
         </div>
 
-        <div className="member-stories-container">
+        <div className="ms-container">
           <p className="section-label">Member Stories</p>
           <h2>Read up on a fellow member's UX journey</h2>
-          <div className="member-stories-content-container">
+          <div className="ms-content-container">
             <MemberStoriesImage/>
-            <div className="member-stories-card">
+            <div className="ms-card">
               <MemberStoriesLabel
                 memberStoriesLabel="Featured"/>
               <MemberStoriesTitle

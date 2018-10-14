@@ -56,23 +56,23 @@
 }
 
 /* member stories */
-.member-stories-container {
+.ms-container {
   height: 1108px;
   background: #FFFFFF;
 }
 
-.member-stories-container h2 {
+.ms-container h2 {
   width: 38rem;
 }
 
-.member-stories-content-container {
+.ms-content-container {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(8, 1fr);
 }
 
-.member-stories-card {
+.ms-card {
   z-index: 1;
   width: 568px;
   height: 448px;
@@ -83,7 +83,7 @@
   grid-row: 2/8;
 }
 
-.member-stories-card .AuthorName {
+.ms-card .AuthorName {
   margin-bottom: 5rem;
 }
 
