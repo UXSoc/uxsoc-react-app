@@ -1,0 +1,25 @@
+.MemberStoriesImage {
+  grid-column: 2/9;
+  grid-row: 1/8;
+}
+
+.MemberStoriesLabel {
+  color: #B3BCC4;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 4.5rem;
+  margin-left: 2.5rem;
+}
+
+.MemberStoriesTitle {
+  font-size: 2rem;
+  text-align: left;
+  line-height: 45px;
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}

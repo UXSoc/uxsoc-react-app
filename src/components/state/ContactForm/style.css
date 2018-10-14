@@ -1,18 +1,20 @@
+.contact-container {
+  background: #FFFFFF;
+}
+
 .Contact {
-  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 .Contact h2 {
   width: 600px;
-  display: block;
-  margin: auto;
   margin-top: 48px;
 }
 
 form {
   width: 31.25rem;
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 4fr;
   grid-row-gap: 2.5rem;
   margin: 3.5rem auto;

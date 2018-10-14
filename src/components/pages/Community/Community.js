@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import Navigation from './../../stateless/Navigation/Navigation';
 import { SectionToggleEvents, SectionToggleResources } from './../../state/SectionToggle/SectionToggle';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from './../../stateless/Events/EventDetails';
-import { ResourceLabel, ResourceName, AuthorPic, AuthorName, ResourceDesc, ResourceImage, PastResources } from '../../stateless/Resources/ResourceCard';
+import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources } from '../../stateless/Resources/ResourceCard';
+import { AuthorPic, AuthorName } from './../../stateless/Author/Author';
+import { MemberStoriesImage, MemberStoriesLabel, MemberStoriesTitle } from './../../stateless/MemberStories/MemberStories';
+import ContactForm from './../../state/ContactForm/ContactForm';
 import RedirectButton from './../../state/RedirectButton/RedirectButton';
 
 import landingImage from './../../../resources/img/community-landing.svg';
@@ -15,16 +18,16 @@ class Community extends Component {
     return(
       <div>
         <Navigation/>
-        <div className="community-landing-container">
+        <div className="landing-container">
           <p className="section-label">UX Society Community</p>
           <h2>Learn and grow with an amazing community</h2>
-          <img className="community-landing-image" src={landingImage} alt="landing"/>
+          <img className="landing-image" src={landingImage} alt="landing"/>
           <button className="round-btn">
             <img src={chevronDown} alt="down"/>
           </button>
         </div>
 
-        <div className="community-events-container">
+        <div className="events-container">
           <p className="section-label">Events</p>
           <h2>What's happening</h2>
           <SectionToggleEvents
@@ -52,7 +55,26 @@ class Community extends Component {
           </div>
         </div>
 
-        <div className="community-resources-container">
+        <div className="member-stories-container">
+          <p className="section-label">Member Stories</p>
+          <h2>Read up on a fellow member's UX journey</h2>
+          <div className="member-stories-content-container">
+            <MemberStoriesImage/>
+            <div className="member-stories-card">
+              <MemberStoriesLabel
+                memberStoriesLabel="Featured"/>
+              <MemberStoriesTitle
+                memberStoriesTitle="How I fell in love with UXSoc's advocacy"/>
+              <AuthorPic/>
+              <AuthorName authorName="Jiggy Villanueva, Executive Vice President"/>
+              <RedirectButton
+                buttonText="Read Jiggy's Story"
+                redirectLink="/"/>
+            </div>
+          </div>
+        </div>
+
+        <div className="resources-container">
           <p className="section-label">Resources</p>
           <h2>Here are the resources we've curated for you this week</h2>
           <SectionToggleResources
@@ -62,7 +84,7 @@ class Community extends Component {
           <div className="resource-content-container">
             <div className="resource-card">
                 <ResourceLabel resourceLabel="Book"/>
-                <ResourceName resourceName="The State of UX in Asia"/>
+                <ResourceTitle resourceTitle="The State of UX in Asia"/>
                 <AuthorPic/>
                 <AuthorName authorName="Ben Kim"/>
                 <ResourceDesc resourceDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."/>
@@ -73,6 +95,9 @@ class Community extends Component {
             <ResourceImage/>
             <PastResources/>
           </div>
+        </div>
+        <div id="contact-us" className="contact-container">
+          <ContactForm/>
         </div>
       </div>
     );

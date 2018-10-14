@@ -99,11 +99,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.Contact-container {
-  height: auto;
-  width: 100%;
-  background: #FFFFFF;
-  display: inline-grid;
-  grid-template-columns: 1fr;
-}

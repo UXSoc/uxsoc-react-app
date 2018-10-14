@@ -38,7 +38,7 @@ class Home extends Component {
               btnLabel="Explore our projects"
               caption="We help businesses explore improve their products and services through intentional design, and we never fail to deliver."/>
           </div>
-          <div id="contact-us" className="Contact-container">
+          <div id="contact-us" className="contact-container">
             <ContactForm/>
           </div>
       </div>

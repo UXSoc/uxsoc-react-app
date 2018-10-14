@@ -6,40 +6,16 @@ class ResourceLabel extends Component {
   render() {
     const { resourceLabel } = this.props;
     return(
-      <div className="ResourceLabel">
-        <p>{resourceLabel}</p>
-      </div>
+      <p className="ResourceLabel">{resourceLabel}</p>
     );
   }
 }
 
-class ResourceName extends Component {
+class ResourceTitle extends Component {
   render() {
-    const { resourceName } = this.props;
+    const { resourceTitle } = this.props;
     return(
-      <div className="ResourceName">
-        <h2>{resourceName}</h2>
-      </div>
-    )
-  }
-}
-
-class AuthorPic extends Component {
-  render() {
-    const { authorPic } = this.props;
-    return(
-      <div className="AuthorPic">{authorPic}</div>
-    )
-  }
-}
-
-class AuthorName extends Component {
-  render() {
-    const { authorName } = this.props;
-    return(
-      <div className="AuthorName">
-        <p className="AuthorName">{authorName}</p>
-      </div>
+      <h2 className="ResourceTitle">{resourceTitle}</h2>
     )
   }
 }
@@ -48,9 +24,7 @@ class ResourceDesc extends Component {
   render() {
     const { resourceDesc } = this.props;
     return(
-      <div className="ResourceDesc">
-        <p className="ResourceDesc">{resourceDesc}</p>
-      </div>
+      <p className="ResourceDesc">{resourceDesc}</p>
     )
   }
 }
@@ -74,4 +48,4 @@ class PastResources extends Component {
     )
   }
 }
-export { ResourceLabel, ResourceName, AuthorPic, AuthorName, ResourceDesc, ResourceImage, PastResources };
+export { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources };
