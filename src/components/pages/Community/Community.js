@@ -96,7 +96,7 @@ class Community extends Component {
             <PastResources/>
           </div>
         </div>
-        <div id="contact-us" className="Contact-container">
+        <div id="contact-us" className="contact-container">
           <ContactForm/>
         </div>
       </div>
