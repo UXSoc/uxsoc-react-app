@@ -1,0 +1,60 @@
+h1{
+    font-family: Rubik;
+    font-size: 50px;
+    font-style: unset;
+    line-height: 59px;
+    font-weight: 450;
+  
+    
+}
+h4{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 32%;
+    color: #B3BCC4;
+}
+
+.headers{
+    margin-left: 13vw;
+    margin-top: 78px;
+}
+
+.workwithux{
+    text-align: left;
+}
+.mainheader{
+    margin-top: 30px;
+    margin-bottom: 36px;
+    font-size: 300%;
+    text-align: left;
+
+}
+
+.mainImage{
+    position: absolute;;
+    right: 0px;
+    height: 568px;
+    width: 704px;
+}
+.ContactUs{
+    
+    background-color: rgb(23, 148, 206);
+    color: white;
+    border-radius: 8px;
+    height: 70px;
+    width: 273px;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 78%;
+    right: 0px;
+    position: relative;
+
+
+    
+}
+
+.buttonDiv{
+    text-align: left;    
+    margin: none;
+    position:realtive;
+}

@@ -1,0 +1,23 @@
+.mainWork{
+    height: 1240px;
+    margin-left: 180px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.caseStudies{
+    position: relative;
+    top: -30px;
+}
+
+.meetingDiv{
+    margin-top: 33px;
+    position: relative;
+}
+
+.laptopDiv{
+    position: relative;
+    left: 533px;
+    top: -900px;
+}
+
