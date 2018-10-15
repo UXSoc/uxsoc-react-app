@@ -5,7 +5,6 @@ import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
 import Community from './components/pages/Community/Community';
 import Work from './components/pages/Work/Work';
-import Contact from './components/pages/Contact/Contact';
 import './App.css';
 
 class App extends Component {
@@ -17,7 +16,6 @@ class App extends Component {
           <Route exact path="/about" component={About} />
           <Route path="/community" component={Community} />
           <Route path="/work" component={Work} />
-          <Route path="/contact" component={Contact} />
         </Switch>
       </div>
     );
