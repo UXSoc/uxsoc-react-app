@@ -44,9 +44,9 @@ class Community extends Component {
                 speaker="Avery Si"/>
 
               <AboutHeader aboutHeader="About the event"/>
-              <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+              <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
               <AboutHeader aboutHeader="About the speaker"/>
-              <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+              <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
               <RedirectButton
                 buttonText="Register Now"
                 redirectLink="/"/>
@@ -87,7 +87,7 @@ class Community extends Component {
                 <ResourceTitle resourceTitle="The State of UX in Asia"/>
                 <AuthorPic/>
                 <AuthorName authorName="Ben Kim"/>
-                <ResourceDesc resourceDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."/>
+                <ResourceDesc resourceDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur."/>
                 <RedirectButton
                   buttonText="Start Reading"
                   redirectLink="/"/>
