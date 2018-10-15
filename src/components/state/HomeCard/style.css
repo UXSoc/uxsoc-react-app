@@ -19,8 +19,8 @@
 }
 
 .HomeCard h2 {
-  margin-top: -7px;
-  margin-bottom: 1.25rem;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
 }
 
 .HomeCard p {
@@ -29,11 +29,15 @@
 
 .card-caption {
   color: #3B3E42;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-  width: 345px;
+  font-family: "Proxima-Nova", sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+  width: 350px;
   display: block;
   margin: auto;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.card-caption:last-of-type {
+  width: 380px;
 }

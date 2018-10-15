@@ -1,7 +1,7 @@
 .EventDetails {
   color: #20252B;
   font-size: 12px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Proxima-Nova", sans-serif;
   font-weight: 500;
   line-height: 1.5rem;
   list-style: none;
@@ -20,7 +20,7 @@
 .EventLabel {
   color: #B3BCC4;
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Proxima-Nova", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -36,14 +36,14 @@
 }
 
 .AboutHeader {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Proxima-Nova", sans-serif;
   margin-left: 2.5rem;
   margin-bottom: -0.7rem;
 }
 
 .AboutDesc {
   width: 22.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Proxima-Nova", sans-serif;
   font-size: 12px;
   line-height: 21px;
   margin-left: 2.5rem;
