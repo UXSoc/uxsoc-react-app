@@ -11,7 +11,6 @@ div{
 .services{
     text-align: center;
     position: relative;
-<<<<<<< HEAD
     height:300px;
     margin-top: 400px;
 }
@@ -20,40 +19,6 @@ div{
 
 
 
-=======
-    height:900px;
-    margin-top: 400px;
-}
-
-.firstRow{
-    position:relative;
-    left: -300px;
-    top: 100px;
-
-}
-
-.webDesign{
-    position: relative;
-    width: 36;
-    left: 250px;
-    font-size: 160%;
-    top: -210px;
-}
-
-.p1{
-    top: -200px;
-    left: 740px;
-    position: relative;
-    height: 108px;
-    width: 448px; 
-    text-align: justify;
-    line-height: 1.7;
-}
-
-.row1{
-    margin-top: -50px;
-}
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
 .prodRev{
     position: relative;
     font-size: 160%;
@@ -69,18 +34,13 @@ div{
 }
 
 .img2{
-<<<<<<< HEAD
     left: 930px;
-=======
-    left: 800px;
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
     position: relative; 
     top: -300px;
 }
 
 .row2{
     position: relative;
-<<<<<<< HEAD
     left: 330px;
     margin-top: -100px;
 }
@@ -104,38 +64,23 @@ div{
     position:relative;
     left: 160px;
 
-=======
-    left: 200px;
-    margin-top: -120px;
-
-}
-
-
-.row3{
-    position: relative;
-    top: -260px;
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
 }
 .img3{
     position: relative;
     left: 160px;
 }
 
-<<<<<<< HEAD
 
 .webDesign{
     position: relative;
     font-size: 160%;
     
 }
-=======
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
 .designWorkshops{
     position: relative;
     font-size: 160%;
 }
 
-<<<<<<< HEAD
 
 
 .p1{
@@ -144,8 +89,6 @@ div{
     text-align: justify;
     position: relative;
 }
-=======
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
 .p3{
     height: 108px;
     width: 477px;
@@ -153,7 +96,6 @@ div{
     position: relative;
 }
 
-<<<<<<< HEAD
 .row1text{
     top: -290px;
     left: 740px;
@@ -162,8 +104,6 @@ div{
     width: 448px; 
 
 }
-=======
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
 .row3text{
     top: -290px;
     left: 740px;
@@ -171,7 +111,3 @@ div{
     height: 108px;
     width: 448px; 
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5

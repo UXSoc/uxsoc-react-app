@@ -5,11 +5,7 @@
     text-align: center;
     margin-right: 200px;
     height: 1028px;
-<<<<<<< HEAD
     top: 560px;
-=======
-    top: 520px;
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
     left: 50px;
 }
 
@@ -25,20 +21,6 @@
     width: 891px;
     height: 498px;
 }
-<<<<<<< HEAD
-
-=======
-.methodMadnessHeader{
-    width: 836px;
-    height: 63px;
-}
-
-.processMiniHeader{
-    text-align:center;
-    margin-left: -150px;
-
-}
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
 .arrowLeft{
     position:relative;
     top: -230px;
