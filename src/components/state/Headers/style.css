@@ -14,6 +14,9 @@ h4{
     color: #B3BCC4;
 }
 
+.workWithUXDiv{
+    height: 300px;
+}
 .headers{
     margin-left: 13vw;
     margin-top: 78px;
@@ -36,7 +39,7 @@ h4{
     height: 568px;
     width: 704px;
 }
-.ContactUs{
+.journey-button{
     
     background-color: rgb(23, 148, 206);
     color: white;
@@ -53,6 +56,13 @@ h4{
     
 }
 
+.methodMadnessHeader{
+    text-align: center;
+}
+
+.journey-button:hover{
+    cursor: pointer;
+}
 .buttonDiv{
     text-align: left;    
     margin: none;

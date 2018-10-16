@@ -3,12 +3,20 @@ import './style.css'
 import productivity2 from '../../../resources/img/work-imgs/productivity-1.svg'
 import arrowRight from '../../../resources/img/work-imgs/arrowRight.svg'
 import arrowLeft from '../../../resources/img/work-imgs/arrowLeft.svg'
+
+
 class Process extends Component {
     state = {  }
     render() { 
         return ( 
+            
         <div className = "process">
+
+
+
             <div className="headers">
+           
+           
                 <h4 className="processMiniHeader">PROCESS</h4>
                 <h1 className = "methodMadnessHeader">The method to our madness</h1>
                 <img src={productivity2} className="processImage"></img>

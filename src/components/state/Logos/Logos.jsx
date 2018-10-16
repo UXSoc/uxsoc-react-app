@@ -6,30 +6,39 @@ import lions from '../../../resources/img/work-imgs/LIONS-Logo.svg'
 import uxph from '../../../resources/img/work-imgs/uxph.svg'
 
 
-const Logos = () => {
-return (
-    <div className = "mainLogos">
+class Logos extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {  }
+    }
+    render() 
+    
+    { 
+       
+        return ( 
+            <div className = "mainLogos">
                 <div className = "indivLogos">
                     <div className="indivLogo shield">       
-                     <img src={shield}></img>
+                     <img src={this.props.logo1}></img>
                     </div>
                     <div className="indivLogo tugon">
-                    <img src={tugon}></img>
+                    <img src={this.props.logo2}></img>
 
                     </div>
                     <div className="indivLogo lions">
-                    <img src={lions}></img>
+                    <img src={this.props.logo3}></img>
 
                     </div>
                     <div className="indivLogo uxph">
-                    <img src={uxph}></img>
+                    <img src={this.props.logo4}></img>
 
                     </div>
 
-
+ 
                 </div>
             </div>
-)
+         );
+    }
 }
  
 export default Logos;

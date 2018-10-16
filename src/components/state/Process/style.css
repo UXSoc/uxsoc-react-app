@@ -5,7 +5,7 @@
     text-align: center;
     margin-right: 200px;
     height: 1028px;
-    top: 520px;
+    top: 560px;
     left: 50px;
 }
 
@@ -21,16 +21,7 @@
     width: 891px;
     height: 498px;
 }
-.methodMadnessHeader{
-    width: 836px;
-    height: 63px;
-}
 
-.processMiniHeader{
-    text-align:center;
-    margin-left: -150px;
-
-}
 .arrowLeft{
     position:relative;
     top: -230px;

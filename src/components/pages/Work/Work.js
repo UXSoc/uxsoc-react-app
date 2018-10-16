@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
 import Navigation from './../../stateless/Navigation/Navigation'
 import './style.css';
-import Header from '../../state/Headers/header'
+import Header from '../../state/Headers/Header'
 import Process from '../../state/Process/process'
-import Services from '../../stateless/Services/services'
+import Services from '../../stateless/Services/Services'
 import Workcomp from '../../state/Work/Work'
-import Logos from '../../stateless/Logos/Logos'
+import Logos from '../../state/Logos/Logos'
 import ContactForm from '../../state/ContactForm/ContactForm'
 import HomeCard from '../../state/HomeCard/HomeCard'
+
+import shield from '../../../resources/img/work-imgs/logo.svg'
+import tugon from '../../../resources/img/work-imgs/tugon-logo.svg'
+import lions from '../../../resources/img/work-imgs/LIONS-Logo.svg'
+import uxph from '../../../resources/img/work-imgs/uxph.svg'
 
 
 class Work extends Component {
   render() {
+    
     return(
       <div className = "main">
         <Navigation/>
@@ -35,7 +41,7 @@ class Work extends Component {
         </div>
 
         <div>
-          <Logos />
+          <Logos logo1={shield} logo2={tugon} logo3={lions} logo4={uxph}/>
         </div>
 
         <div>

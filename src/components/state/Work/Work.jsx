@@ -1,33 +1,34 @@
 import React, { Component } from 'react';
 import './style.css'
-import tedx from '../../../resources/img/work-imgs/tedx.png'
-import meeting from '../../../resources/img/work-imgs/meeting.png'
-import laptop from '../../../resources/img/work-imgs/laptop.png'
+import Laptop from './Cards/Laptop'
+import Meeting from './Cards/Meeting'
+import TedX from './Cards/TedX'
 
-class work extends Component {
-    state = {  }
+class Work extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {  }
+    }
     render() { 
         return ( 
-            <div className = "mainWork">
-                <div className = "workHeaders">
-                    <h4 className = "workHead">WORK</h4>
-                    <h1 className = "caseStudies">Case Studies</h1>
-                </div>
-                <div className="tedxDiv">
-                    <img src = {tedx}></img>
-                </div>
-                <div className="meetingDiv">
-                    <img src = {meeting}></img>
-                </div>
-                <div className="laptopDiv">
-                    <img src = {laptop}>
-                    
-                    </img>
-                </div>
+        <div className = "mainWork">
+        <div className = "workHeaders">
+            <h4 className = "workHead">WORK</h4>
+            <h1 className = "caseStudies">Case Studies</h1>
+        </div>
+        <div className="tedxDiv">
+            <TedX text="TedxADMU" link=""/>
+        </div>
+        <div className="meetingDiv">
+            <Meeting text="TALAB" link=""/>
+        </div>
+        <div className="laptopDiv">
+            <Laptop text="Office of Student Activities" link=""/>
+            
+        </div>
 
-            </div>
-         );
+    </div> );
     }
 }
  
-export default work;
+export default Work;

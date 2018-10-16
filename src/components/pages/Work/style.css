@@ -1,8 +1,14 @@
 h1{
     font-size: 300%;
+
 }
 
 h4 {
     color: rgb(204, 203, 203);
     letter-spacing: 7px;
+
+}
+
+body{
+    font-family: Montserrat;
 }
