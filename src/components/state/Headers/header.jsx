@@ -15,12 +15,7 @@ class Header extends Component {
                     
                     <img src = {mainImage} className = "mainImage"></img>
                 </div>
-                <div>
-
-                </div>
-                <div>
-                    
-                </div>
+               
             </div>
          );
     }
