@@ -1,0 +1,19 @@
+.AuthorPic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #C4C4C4;
+  margin-left: 2.6rem;
+  margin-top: -1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.AuthorName {
+  color: #000000;
+  font-family: "Proxima-Nova", sans-serif;
+  font-size: 1rem;
+  line-height: 28px;
+  margin-left: 6rem;
+  margin-bottom: 1.7rem;
+  margin-top: -3.5rem;
+}

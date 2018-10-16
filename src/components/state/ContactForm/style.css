@@ -1,21 +1,23 @@
+.contact-container {
+  background: #FFFFFF;
+}
+
 .Contact {
-  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 .Contact h2 {
   width: 600px;
-  display: block;
-  margin: auto;
   margin-top: 48px;
 }
 
 form {
-  width: 40rem;
+  width: 31.25rem;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 5fr;
-  grid-row-gap: 3rem;
-  margin: 5rem auto;
+  grid-template-rows: 1fr 1fr 4fr;
+  grid-row-gap: 2.5rem;
+  margin: 3.5rem auto;
 }
 
 input {
@@ -25,7 +27,7 @@ input {
 
 textarea {
   padding: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   resize: none;
 }
 

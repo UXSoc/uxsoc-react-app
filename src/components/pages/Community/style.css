@@ -3,13 +3,11 @@
   margin-bottom: 2rem;
 }
 
-.community-landing-container h2 {
+.landing-container h2 {
   width: 30rem;
-  display: block;
-  margin: 1rem auto;
 }
 
-.community-landing-image {
+.landing-image {
   width: 90%;
   display: block;
   margin: auto;
@@ -31,4 +29,88 @@
 
 .round-btn img {
   margin-top: 0.5rem;
+}
+
+/* events */
+.events-container {
+  height: 900px;
+  background: #EEF1F6;
+  padding-top: 1rem;
+}
+
+.events-container .section-label {
+  margin-top: 5.25rem;
+}
+
+.event-card {
+  width: 52rem;
+  display: grid;
+  grid-template-columns: 27.5rem 25rem;
+  grid-template-rows: 32rem;
+  margin: auto;
+}
+
+.event-info {
+  height: 100%;
+  background: #FFFFFF;
+}
+
+/* member stories */
+.ms-container {
+  height: 1108px;
+  background: #FFFFFF;
+}
+
+.ms-container h2 {
+  width: 38rem;
+}
+
+.ms-content-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.ms-card {
+  z-index: 1;
+  width: 568px;
+  height: 448px;
+  background: #FFFFFF;
+  box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
+  margin-top: 2rem;
+  grid-column: 6/10;
+  grid-row: 2/8;
+}
+
+.ms-card .AuthorName {
+  margin-bottom: 5rem;
+}
+
+/* resources */
+.resources-container {
+  height: 1275px;
+  background: #EEF1F6;
+  padding-top: 0.5rem;
+  position: relative;
+}
+
+.resources-container h2 {
+  width: 40rem;
+}
+
+.resource-content-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.resource-card {
+  z-index: 1;
+  width: 528px;
+  height: 408px;
+  background: #FFFFFF;
+  box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
+  grid-column: 9/9;
+  grid-row: 3/8;
 }
