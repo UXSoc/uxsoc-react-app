@@ -1,0 +1,42 @@
+.mainLogos{
+    height: 293px;
+    background-color: #EEF1F6;
+}
+
+.indivLogos{
+
+    padding-left: 12px;
+    padding-top: 95px;
+    padding-right: 45px;
+}
+
+.indivLogo{
+    margin-left: 158px;
+    height: 115px;
+    width: 87px;
+    float: left;
+}
+
+.shield{
+    margin-left: 210px;
+}
+
+.uxph{
+    margin-top:40px;
+    width: 175px;
+    height: 44px;
+}
+
+.lions{
+    margin-top: 15px;
+    height: 84.95px;
+    width: 174px;
+
+}
+
+.tugon{
+    margin-top: 10px;
+    width: 104px;
+    height: 104px;
+
+}

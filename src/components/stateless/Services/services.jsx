@@ -8,11 +8,18 @@ return (
                 <div className= "services">
                     <h4>SERVICES</h4>
                     <h2>What we can do for you</h2>
+<<<<<<< HEAD
                     </div>
                     <div className="threeRows">
                     <div className = "row1">
                         <img src = {productivityGirl} className = "img1"></img>
                         <div className = "row1text">
+=======
+
+                    <div className = "row1">
+                        <img src = {productivityGirl} className = "firstRow"></img>
+                        <div className = "firstRowText">
+>>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
                         <h3 className = "webDesign">Web Design and Development</h3>
                         <div className = "p1">We help you create effective products on the web, 
                         from aesthetics, flow to usability. We believe that we can 
@@ -20,7 +27,11 @@ return (
                         through human-centered design. </div>
                         </div>
                     </div>
+<<<<<<< HEAD
                 
+=======
+                </div>
+>>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
 
                 <div>
                     <div className = "row2">
@@ -49,7 +60,10 @@ return (
                     </div>
 
                 </div>
+<<<<<<< HEAD
                 </div>
+=======
+>>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
 
 
             </div>
