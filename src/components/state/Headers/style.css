@@ -14,12 +14,9 @@ h4{
     color: #B3BCC4;
 }
 
-<<<<<<< HEAD
 .workWithUXDiv{
     height: 300px;
 }
-=======
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
 .headers{
     margin-left: 13vw;
     margin-top: 78px;
@@ -42,11 +39,7 @@ h4{
     height: 568px;
     width: 704px;
 }
-<<<<<<< HEAD
 .journey-button{
-=======
-.ContactUs{
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
     
     background-color: rgb(23, 148, 206);
     color: white;
@@ -63,7 +56,6 @@ h4{
     
 }
 
-<<<<<<< HEAD
 .methodMadnessHeader{
     text-align: center;
 }
@@ -71,8 +63,6 @@ h4{
 .journey-button:hover{
     cursor: pointer;
 }
-=======
->>>>>>> 74033146011d2cd606b63b102fd8294cbdca44b5
 .buttonDiv{
     text-align: left;    
     margin: none;
