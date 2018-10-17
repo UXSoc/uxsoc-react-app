@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Navigation from './../../stateless/Navigation/Navigation'
 import './style.css';
-import Header from '../../state/Headers/Header'
-import Process from '../../state/Process/process'
+import WorkWithUs from '../../state/Headers/WorkWithUs'
+import Process from '../../state/Process/Process'
 import Services from '../../stateless/Services/Services'
 import Workcomp from '../../state/Work/Work'
 import Logos from '../../state/Logos/Logos'
@@ -23,7 +23,7 @@ class Work extends Component {
         <Navigation/>
         <div className="main-under-navbar">
           <div>
-            <Header />
+            <WorkWithUs />
           
           </div>
         </div>
