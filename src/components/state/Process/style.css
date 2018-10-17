@@ -1,0 +1,49 @@
+
+
+.process{
+    position: relative;
+    text-align: center;
+    margin-right: 200px;
+    height: 1028px;
+    top: 560px;
+    left: 50px;
+}
+
+.arrowRight{
+    position:relative;
+    top: -230px;
+    left: 28px;
+    height:46px;
+    width: 23px;
+}
+
+.processImage{
+    width: 891px;
+    height: 498px;
+}
+.arrowLeft{
+    position:relative;
+    top: -230px;
+    left: -980px;
+    height:46px;
+    width: 23px;
+}
+
+
+.discovery{
+    text-align: left;
+    position:relative;
+    margin-top:54px;
+    font-size: 36px
+}
+
+.text{
+    width: 556px;
+    height: 136px;
+    position: relative;
+    left: 368px;
+    right: 216px;
+    top: -80px;
+    text-align: justify;
+    line-height: 1.5;
+}
