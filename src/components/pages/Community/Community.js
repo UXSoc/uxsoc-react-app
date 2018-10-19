@@ -55,6 +55,7 @@ class Community extends Component {
 
   render() {
     const { whatsHappening } = this.state
+    const lastEl = whatsHappening.length  - 1
     return (
       <div>
         <Navigation />
@@ -75,32 +76,32 @@ class Community extends Component {
             <div className="event-info">
               <EventLabel
                 eventLabel={
-                  (whatsHappening[0] && whatsHappening[0].Category) ||
+                  (whatsHappening[lastEl] && whatsHappening[lastEl].Category) ||
                   "Information Architecture"
                 }
               />
               <EventName
                 eventName={
-                  (whatsHappening[0] && whatsHappening[0].Name) ||
+                  (whatsHappening[lastEl] && whatsHappening[lastEl].Name) ||
                   "UX&Chill Ep 08"
                 }
               />
 
               <EventDetails
-                date={(whatsHappening[0] && whatsHappening[0].DateTimeString) ||"24 September 2018, 5:00 to 7:30 PM"}
+                date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) ||"24 September 2018, 5:00 to 7:30 PM"}
                 location={
-                  (whatsHappening[0] && whatsHappening[0].Location) ||
+                  (whatsHappening[lastEl] && whatsHappening[lastEl].Location) ||
                   "Faura Hall, Ateneo de Manila University"
                 }
                 speaker={
-                  (whatsHappening[0] && whatsHappening[0].Speaker) || "Avery Si"
+                  (whatsHappening[lastEl] && whatsHappening[lastEl].Speaker) || "Avery Si"
                 }
               />
 
               <AboutHeader aboutHeader="About the event" />
-              <AboutDesc aboutDesc={(whatsHappening[0] && whatsHappening[0].AboutEvent) || "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."} />
+              <AboutDesc aboutDesc={(whatsHappening[lastEl] && whatsHappening[lastEl].AboutEvent) || "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."} />
               <AboutHeader aboutHeader="About the speaker" />
-              <AboutDesc aboutDesc={(whatsHappening[0] && whatsHappening[0].AboutSpeaker) ||"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."} />
+              <AboutDesc aboutDesc={(whatsHappening[lastEl] && whatsHappening[lastEl].AboutSpeaker) ||"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."} />
               <RedirectButton buttonText="Register Now" redirectLink="/" />
             </div>
             <EventImage />
