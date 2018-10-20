@@ -1,0 +1,103 @@
+.memberStoryMainPage{
+}
+.authorAndPosition{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 48px;
+}
+.ellipse{
+    position:relative;
+    left: -22px;
+    top: 13px;
+}
+.memberStoryHeader{
+    position: relative;
+    text-align: center;
+    margin-top: 150px;
+
+}
+.memberStoryHeader{
+    font-family: Montserrat;
+}
+
+.storyTitle{
+    font-family: Rubik;
+    line-height: 60px;
+    font-size: 50.97px;
+    color: #20252B;
+}
+
+.memberStoryIndivPar{
+    margin-top: 90px;
+
+}
+
+.memberStoryText{
+    position:relative;
+    margin-top: 71px;
+    width: 900px;
+    margin-left: 301px;
+    text-align: left;
+}
+
+.memberStoryParagraphBox{
+  height: 290px;
+  line-height: 32px
+    
+}
+
+
+.memberStoryContentHeaders{
+    text-align:left;
+}
+
+.MSbottomImage{
+    margin-left: 301px;
+    margin-top: 84px;
+}
+
+
+.MSbuttons{
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    margin-top: 64px;
+
+}
+
+.MSbackButtonDiv{
+    position: relative;
+    
+    font-style: initial;
+    margin-left: 213px;
+
+
+}
+.backButtonh4{
+    letter-spacing:1px;
+    line-height: 32px;
+    font-size: 18px;
+    width: 53px;
+}
+
+.backButtonh4:hover{
+    cursor: pointer;
+}
+
+.MSOtherStoriesButtonDiv{
+    margin-left: 893px;
+    top: -56px;
+    position: relative;
+}
+
+.otherStoriesButton{
+    letter-spacing:1px;
+    color: #008ED4;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 600
+    
+}
+.otherStoriesButton:hover{
+    cursor: pointer;
+}
