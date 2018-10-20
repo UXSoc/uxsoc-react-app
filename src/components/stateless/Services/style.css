@@ -1,0 +1,113 @@
+div{
+    line-height: 1.5;
+}
+
+.mainServicesComp{
+    height: 1716px;
+    position: relative;
+    margin-top: 500px;
+}
+
+.services{
+    text-align: center;
+    position: relative;
+    height:300px;
+    margin-top: 400px;
+}
+
+
+
+
+
+.prodRev{
+    position: relative;
+    font-size: 160%;
+
+}
+
+
+.p2{
+    height: 108px;
+    width: 477px;
+    text-align: justify;
+    position: relative;
+}
+
+.img2{
+    left: 930px;
+    position: relative; 
+    top: -300px;
+}
+
+.row2{
+    position: relative;
+    left: 330px;
+    margin-top: -100px;
+}
+
+
+
+.row1{
+    position: relative;
+    top: -99px;
+    left: 130px;
+}
+.row3{
+    position: relative;
+    left: 130px;
+
+    top: -290px;
+}
+
+
+.img1{
+    position:relative;
+    left: 160px;
+
+}
+.img3{
+    position: relative;
+    left: 160px;
+}
+
+
+.webDesign{
+    position: relative;
+    font-size: 160%;
+    
+}
+.designWorkshops{
+    position: relative;
+    font-size: 160%;
+}
+
+
+
+.p1{
+    height: 108px;
+    width: 477px;
+    text-align: justify;
+    position: relative;
+}
+.p3{
+    height: 108px;
+    width: 477px;
+    text-align: justify;
+    position: relative;
+}
+
+.row1text{
+    top: -290px;
+    left: 740px;
+    position: relative;
+    height: 108px;
+    width: 448px; 
+
+}
+.row3text{
+    top: -290px;
+    left: 740px;
+    position: relative;
+    height: 108px;
+    width: 448px; 
+}

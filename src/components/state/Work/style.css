@@ -1,0 +1,80 @@
+.mainWork{
+    height: 1240px;
+    margin-left: 180px;
+    position: relative;
+}
+
+.caseStudies{
+    position: relative;
+    top: -30px;
+}
+
+.meetingDiv{
+    margin-top: -100px;
+    position: relative;
+}
+
+.laptopDiv{
+    position: relative;
+    left: 533px;
+    top: -900px;
+}.tedXLaptoptext{
+    font-family:Rubik;
+    padding-top: 29px;
+    padding-left: 32px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    height: 36px;
+    text-align: left;
+}
+
+.tedXdiv{
+    height: 10px;
+}
+
+.tedXLaptoptextBG{
+    position: relative;
+    height: 90px;
+    width: 490px;
+    background: rgba(244, 244, 244, 0.7);
+    top: -116px;
+}
+
+.meetingTextBG{
+    position: relative;
+    height: 90px;
+    width: 490px;
+    background: rgba(92, 89, 89, 0.7);
+    top: -116px;
+    fill: solid;
+}
+
+.meetingText{
+    font-family:Rubik;
+    padding-top: 29px;
+    padding-left: 32px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    height: 36px;
+    text-align: left;
+    color: #FFFFFF
+
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    
+}
+
+
+.aMeeting:visited{
+    font-family: Rubik;
+    color: #ffffff;
+}
