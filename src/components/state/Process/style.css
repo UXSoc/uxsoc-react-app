@@ -37,7 +37,7 @@
     font-size: 36px
 }
 
-.text{
+.text {
     width: 556px;
     height: 136px;
     position: relative;
@@ -46,4 +46,5 @@
     top: -80px;
     text-align: justify;
     line-height: 1.5;
+    font-family: "Proxima-Nova", sans-serif;
 }

@@ -18,8 +18,10 @@
     position: relative;
     left: 533px;
     top: -900px;
-}.tedXLaptoptext{
-    font-family:Rubik;
+}
+
+.tedXLaptoptext{
+    font-family:"Rubik";
     padding-top: 29px;
     padding-left: 32px;
     font-size: 30px;
@@ -51,7 +53,7 @@
 }
 
 .meetingText{
-    font-family:Rubik;
+    font-family:"Rubik";
     padding-top: 29px;
     padding-left: 32px;
     font-size: 30px;
@@ -60,21 +62,22 @@
     height: 36px;
     text-align: left;
     color: #FFFFFF
-
 }
 
-
-a{
+a {
     text-decoration: none;
 }
 
 a:visited{
     color: black;
-    
 }
 
 
 .aMeeting:visited{
-    font-family: Rubik;
+    font-family: "Rubik";
     color: #ffffff;
+}
+
+.workHead {
+    font-family: "Proxima-Nova", sans-serif;
 }

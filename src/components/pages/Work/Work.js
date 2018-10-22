@@ -17,17 +17,14 @@ import uxph from '../../../resources/img/work-imgs/uxph.svg'
 
 class Work extends Component {
   render() {
-    
     return(
       <div className = "main">
         <Navigation/>
         <div className="main-under-navbar">
           <div>
             <WorkWithUs />
-          
           </div>
         </div>
-        
         <div>
         <Process />
         </div>

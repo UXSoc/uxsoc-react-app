@@ -9,7 +9,7 @@ class RedirectButton extends Component {
     return(
       <div className="RedirectButton">
         <img src={redirectArrow} alt="arrow"/>
-        <a href={redirectLink}>{buttonText}</a>
+        <a style={{color: "#008ed4"}}href={redirectLink}>{buttonText}</a>
       </div>
     )
   }
