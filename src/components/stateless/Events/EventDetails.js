@@ -35,9 +35,7 @@ class EventName extends Component {
   render() {
     const { eventName } = this.props;
     return(
-      <div className="EventName">
-        <h2>{eventName}</h2>
-      </div>
+      <h2 className="EventName">{eventName}</h2>
     )
   }
 }
@@ -46,9 +44,7 @@ class AboutHeader extends Component {
   render() {
     const { aboutHeader } = this.props;
     return(
-      <div className="AboutHeader">
-        <h4>{aboutHeader}</h4>
-      </div>
+      <h4 className="AboutHeader">{aboutHeader}</h4>
     )
   }
 }

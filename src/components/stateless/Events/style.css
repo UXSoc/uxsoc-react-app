@@ -32,13 +32,15 @@
 .EventName {
   font-size: 2.25rem;
   text-align: left;
-  margin-left: -4.5rem;
+  margin-left: 2.5rem;
 }
 
 .AboutHeader {
   font-family: "Proxima-Nova", sans-serif;
   margin-left: 2.5rem;
-  margin-bottom: -0.7rem;
+  margin-bottom: -0.25rem;
+  color: black;
+  letter-spacing: 0;
 }
 
 .AboutDesc {

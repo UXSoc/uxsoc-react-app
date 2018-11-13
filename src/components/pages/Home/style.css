@@ -30,26 +30,6 @@
   grid-row: 4/4;
 }
 
-.journey-button {
-  border-radius: 8px;
-  background-color: #008ed4;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  width: 247px;
-  height: 70px;
-  grid-column: 1/1;
-  grid-row: 7/7;
-  border: none;
-  outline: none;
-  cursor: pointer;
-
-  line-height: 70px;
-}
-
 .home-landing-image {
   grid-column: 2/2;
   grid-row: 2/7;

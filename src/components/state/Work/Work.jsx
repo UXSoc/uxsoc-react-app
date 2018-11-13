@@ -24,7 +24,6 @@ class Work extends Component {
         </div>
         <div className="laptopDiv">
             <Laptop text="Office of Student Activities" link=""/>
-            
         </div>
 
     </div> );
