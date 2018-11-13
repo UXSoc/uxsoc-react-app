@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Home from './components/pages/Home/Home';
+import DesignLibraryArticles from './components/pages/DesignLibrary/Articles/Articles'
+import DesignLibraryPodcasts from './components/pages/DesignLibrary/Podcasts/Podcasts'
 import About from './components/pages/About/About';
 import Community from './components/pages/Community/Community';
 import Work from './components/pages/Work/Work';
