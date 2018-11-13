@@ -1,37 +1,19 @@
-import React, { Component } from "react"
-import Navigation from "./../../stateless/Navigation/Navigation"
-import {
-  SectionToggleEvents,
-  SectionToggleResources
-} from "./../../state/SectionToggle/SectionToggle"
-import {
-  EventDetails,
-  EventLabel,
-  EventName,
-  AboutHeader,
-  AboutDesc,
-  EventImage
-} from "./../../stateless/Events/EventDetails"
-import {
-  ResourceLabel,
-  ResourceTitle,
-  ResourceDesc,
-  ResourceImage,
-  PastResources
-} from "../../stateless/Resources/ResourceCard"
-import { AuthorPic, AuthorName } from "./../../stateless/Author/Author"
-import {
-  MemberStoriesImage,
-  MemberStoriesLabel,
-  MemberStoriesTitle
-} from "./../../stateless/MemberStories/MemberStories"
-import ContactForm from "./../../state/ContactForm/ContactForm"
-import RedirectButton from "./../../state/RedirectButton/RedirectButton"
-
-import landingImage from "./../../../resources/img/community-landing.svg"
-import chevronDown from "./../../../resources/img/chevron-down.svg"
-
-import "./style.css"
+import React, { Component } from 'react';
+import Navigation from './../../stateless/Navigation/Navigation';
+import { SectionToggleEvents, SectionToggleResources } from './../../state/SectionToggle/SectionToggle';
+import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from './../../stateless/Events/EventDetails';
+import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources } from '../../stateless/Resources/ResourceCard';
+import { AuthorPic, AuthorName } from './../../stateless/Author/Author';
+import { MemberStoriesImage, MemberStoriesLabel, MemberStoriesTitle } from './../../stateless/MemberStories/MemberStories';
+import ContactForm from './../../state/ContactForm/ContactForm';
+import RedirectButton from './../../state/RedirectButton/RedirectButton';
+import landingImage from './../../../resources/img/community-landing.svg';
+import chevronDown from './../../../resources/img/chevron-down.svg';
+import { Route, Switch } from 'react-router-dom'
+import MemberStory from '../MemberStory/MemberStory'
+import './style.css';
+import { Link } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 
 class Community extends Component {
   state = {
@@ -98,11 +80,16 @@ class Community extends Component {
                 }
               />
 
-              <AboutHeader aboutHeader="About the event" />
-              <AboutDesc aboutDesc={(whatsHappening[lastEl] && whatsHappening[lastEl].AboutEvent) || "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."} />
-              <AboutHeader aboutHeader="About the speaker" />
-              <AboutDesc aboutDesc={(whatsHappening[lastEl] && whatsHappening[lastEl].AboutSpeaker) ||"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."} />
-              <RedirectButton buttonText="Register Now" redirectLink="/" />
+
+              <AboutHeader aboutHeader="About the event"/>
+              <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
+              <AboutHeader aboutHeader="About the speaker"/>
+              <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
+              
+              <RedirectButton
+                buttonText="Register Now"
+                redirectLink="/"/>
+
             </div>
             <EventImage />
           </div>
@@ -114,14 +101,21 @@ class Community extends Component {
           <div className="ms-content-container">
             <MemberStoriesImage />
             <div className="ms-card">
-              <MemberStoriesLabel memberStoriesLabel="Featured" />
-              <MemberStoriesTitle memberStoriesTitle="How I fell in love with UXSoc's advocacy" />
-              <AuthorPic />
-              <AuthorName authorName="Jiggy Villanueva, Executive Vice President" />
+
+              <MemberStoriesLabel
+                memberStoriesLabel="Featured"/>
+              <MemberStoriesTitle
+                memberStoriesTitle="How I fell in love with UXSoc's advocacy"/>
+              <AuthorPic/>
+              <AuthorName authorName="Jiggy Villanueva, Executive Vice President"/>
+              
+              
+           
+            
               <RedirectButton
                 buttonText="Read Jiggy's Story"
-                redirectLink="/"
-              />
+                redirectLink=""/>
+
             </div>
           </div>
         </div>
@@ -150,9 +144,10 @@ class Community extends Component {
         <div id="contact-us" className="contact-container">
           <ContactForm />
         </div>
-      </div>
-    )
+      </div>       
+    );
+
   }
 }
 
-export default Community
+export default Community;
