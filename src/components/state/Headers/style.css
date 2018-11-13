@@ -1,11 +1,9 @@
 h1{
-    font-family: Rubik;
+    font-family: "Rubik";
     font-size: 50px;
     font-style: unset;
     line-height: 59px;
     font-weight: 450;
-  
-    
 }
 h4{
     font-size: 16px;
@@ -24,13 +22,14 @@ h4{
 
 .workwithux{
     text-align: left;
+    font-family: "Proxima-Nova", sans-serif;
 }
+
 .mainheader{
     margin-top: 30px;
     margin-bottom: 36px;
     font-size: 300%;
     text-align: left;
-
 }
 
 .mainImage{
@@ -38,22 +37,6 @@ h4{
     right: 0px;
     height: 568px;
     width: 704px;
-}
-.journey-button{
-    
-    background-color: rgb(23, 148, 206);
-    color: white;
-    border-radius: 8px;
-    height: 70px;
-    width: 273px;
-    font-family: Nunito;
-    font-weight: bold;
-    font-size: 78%;
-    right: 0px;
-    position: relative;
-
-
-    
 }
 
 .methodMadnessHeader{
@@ -64,7 +47,7 @@ h4{
     cursor: pointer;
 }
 .buttonDiv{
-    text-align: left;    
+    text-align: left;
     margin: none;
     position:realtive;
 }

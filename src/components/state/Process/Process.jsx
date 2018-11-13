@@ -17,7 +17,7 @@ class Process extends Component {
             <div className="headers">
            
            
-                <h4 className="processMiniHeader">PROCESS</h4>
+                <h4 className="section-label">PROCESS</h4>
                 <h1 className = "methodMadnessHeader">The method to our madness</h1>
                 <img src={productivity2} className="processImage"></img>
                 <img src={arrowRight} className = "arrowRight"></img>

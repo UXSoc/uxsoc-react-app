@@ -8,34 +8,34 @@ div{
     margin-top: 500px;
 }
 
-.services{
+.services {
     text-align: center;
     position: relative;
     height:300px;
     margin-top: 400px;
 }
 
-
-
-
-
 .prodRev{
     position: relative;
     font-size: 160%;
-
 }
 
+h3 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
 
-.p2{
+.services-paragraph {
     height: 108px;
     width: 477px;
     text-align: justify;
     position: relative;
+    font-family: "Proxima-Nova", sans-serif;
 }
 
 .img2{
     left: 930px;
-    position: relative; 
+    position: relative;
     top: -300px;
 }
 
@@ -45,55 +45,36 @@ div{
     margin-top: -100px;
 }
 
-
-
 .row1{
     position: relative;
     top: -99px;
     left: 130px;
 }
+
 .row3{
     position: relative;
     left: 130px;
-
     top: -290px;
 }
-
 
 .img1{
     position:relative;
     left: 160px;
-
 }
+
 .img3{
     position: relative;
     left: 160px;
 }
 
-
 .webDesign{
     position: relative;
     font-size: 160%;
-    
 }
+
 .designWorkshops{
     position: relative;
     font-size: 160%;
-}
-
-
-
-.p1{
-    height: 108px;
-    width: 477px;
-    text-align: justify;
-    position: relative;
-}
-.p3{
-    height: 108px;
-    width: 477px;
-    text-align: justify;
-    position: relative;
 }
 
 .row1text{
@@ -101,13 +82,14 @@ div{
     left: 740px;
     position: relative;
     height: 108px;
-    width: 448px; 
+    width: 448px;
 
 }
+
 .row3text{
     top: -290px;
     left: 740px;
     position: relative;
     height: 108px;
-    width: 448px; 
+    width: 448px;
 }

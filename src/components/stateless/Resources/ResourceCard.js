@@ -43,7 +43,7 @@ class PastResources extends Component {
   render() {
     return(
       <div className="PastResources">
-        <a href="/">Browse through past resources</a>
+        <a style={{color: "#008ed4"}}href="/">Browse through past resources</a>
       </div>
     )
   }

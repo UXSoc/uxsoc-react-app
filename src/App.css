@@ -44,3 +44,23 @@ h2 {
   display: block;
   margin: auto;
 }
+
+.journey-button {
+  border-radius: 8px;
+  background-color: #008ed4;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Proxima-Nova", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 247px;
+  height: 70px;
+  grid-column: 1/1;
+  grid-row: 7/7;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  line-height: 70px;
+}

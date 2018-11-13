@@ -17,7 +17,7 @@ class Home extends Component {
           <div className='home-landing-container'>
             <h3 className='north-star-title'>Our North Star</h3>
             <h1 className='main-title-leader'>We make <br/> design leaders</h1>
-            <AnchorLink className='journey-button' href="#blue-home">Start Your Journey</AnchorLink>
+            <AnchorLink className='journey-button' style={{color: "white"}}href="#blue-home">Start Your Journey</AnchorLink>
             <img className='home-landing-image' src={landingImage} alt='landing'/>
           </div>
           <div id="blue-home" className='home-blue-section'>

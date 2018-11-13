@@ -39,7 +39,6 @@
 .PastResources {
   grid-column: 7/12;
   grid-row: 10/12;
-  margin-top: 2.5rem;
 }
 
 .PastResources a {
