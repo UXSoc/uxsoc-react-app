@@ -1,0 +1,41 @@
+.sections{
+    position: relative;
+    text-align: center;
+    margin-top: 68px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.booksSection{
+    margin-left: -300px;
+    color: #B3BCC4
+
+}
+.articlesSection{
+    margin-top: -97px;
+}
+
+.podcastsSection{
+    margin-top: -98px;
+    margin-left: 300px;
+    color: #B3BCC4
+
+
+}
+
+.line1{
+    position: relative;
+    top:-20px;
+    left: 3px;
+}
+.line2{
+    position: relative;
+    top:-22px;
+
+}
+.line3{
+    position: relative;
+    top:-23px;
+    left: -3px;
+
+}

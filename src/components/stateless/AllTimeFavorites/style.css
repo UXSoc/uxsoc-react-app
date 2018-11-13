@@ -1,0 +1,33 @@
+.allTimeFavoritesSection{
+    margin-left: 113px;
+    margin-top: 60px;
+}
+.ATFHeader{
+    font-size: 36px;
+    line-height: 64px;
+}
+.itemHeaderContainer{
+    height: 93px;
+    width: 317px;
+}
+.itemHeader{
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.itemTextContainer{
+    height: 68px;
+    width: 317px;
+    margin-top: -11px;
+}
+.itemText{
+    color: #828282;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.wholeItemContainer{
+    height: 450px;
+
+}
