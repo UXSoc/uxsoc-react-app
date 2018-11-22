@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navigation from './../../stateless/Navigation/Navigation';
 import MainMemberStory from '../../state/MemberStoryComp/MainMemberStory'
 import './style.css'
 
@@ -7,15 +8,15 @@ class MemberStory extends Component {
         super(props);
         this.state = {  }
     }
-    render() { 
-        return ( 
+    render() {
+        return (
             <div>
-                 <MainMemberStory />
-                 
-            </div> 
+                <Navigation/>
+                <MainMemberStory />
+            </div>
          );
     }
 }
- 
- 
+
+
 export default MemberStory;
