@@ -43,6 +43,7 @@ h2 {
   border: none;
   display: block;
   margin: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .journey-button {
@@ -63,4 +64,25 @@ h2 {
   outline: none;
   cursor: pointer;
   line-height: 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 320px) {
+  .journey-button {
+    width: 248px;
+    grid-column: 1/1;
+    grid-row: 5/7;
+    margin-left: -0.35rem;
+  }
+
+  .blue-btn-big {
+    width: 196px;
+    height: 46px;
+    font-size: 13px;
+    font-family: "Proxima-Nova", sans-serif;
+    line-height: 2px;
+    padding: 25px 20px;
+    background: #008ED4;
+    margin-top: -1.5rem;
+  }
 }

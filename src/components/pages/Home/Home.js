@@ -3,6 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import Navigation from './../../stateless/Navigation/Navigation';
 import landingImage from './../../../resources/img/home-landing.svg';
+import mobileLanding from './../../../resources/img/home-landing-mobile.svg';
 import blue1 from './../../../resources/img/home-blue1.svg';
 import blue2 from './../../../resources/img/home-blue-2.svg';
 import HomeCard from '../../state/HomeCard/HomeCard';
@@ -19,10 +20,11 @@ class Home extends Component {
             <h1 className='main-title-leader'>We make <br/> design leaders</h1>
             <AnchorLink className='journey-button' style={{color: "white"}}href="#blue-home">Start Your Journey</AnchorLink>
             <img className='home-landing-image' src={landingImage} alt='landing'/>
+            <img className='mobile-landing-image' src={mobileLanding} alt='mobile landing'/>
           </div>
           <div id="blue-home" className='home-blue-section'>
-            <p className='home-blue-text'>User Experience Society aims to guide the design
-              leaders of tomorrow, creating products and <br/> services that will make the world a better place</p>
+            <p className='home-blue-text'><strong>User Experience Society</strong> aims to guide the design
+              leaders of tomorrow, creating products and <br/> services that will make the world <em>a better place</em></p>
             <img src={blue1} alt='blue1' className='blue1'/>
             <img src={blue2} alt='blue2' className='blue2'/>
           </div>
@@ -36,7 +38,7 @@ class Home extends Component {
               sectionLabel="Consultancy"
               headerLabel="Crafted for Work"
               btnLabel="Explore our projects"
-              caption="We help businesses explore improve their products and services through intentional design, and we never fail to deliver."/>
+              caption="We help businesses improve their products and services through intentional design, and we never fail to deliver."/>
           </div>
           <div id="contact-us" className="contact-container">
             <ContactForm/>

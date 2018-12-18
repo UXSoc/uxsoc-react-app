@@ -46,3 +46,38 @@ input::placeholder, textarea::placeholder {
 .blue-btn-big {
   width: 260px;
 }
+
+@media screen and (max-width: 320px) {
+  .Contact h2 {
+    width: 270px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: -1rem;
+  }
+
+  .Contact p {
+    margin-top: 2rem;
+  }
+
+  form {
+    width: 278px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-row-gap: 0.75rem;
+    margin: 1.5rem auto;
+  }
+
+  input {
+    height: 34px;
+    padding-left: 15px;
+  }
+
+  textarea {
+    padding: 15px;
+    margin-bottom: 3rem;
+  }
+
+  input::placeholder, textarea::placeholder {
+    font-size: 14px;
+  }
+}

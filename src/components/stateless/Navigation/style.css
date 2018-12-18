@@ -43,10 +43,56 @@
   grid-column: 1/1;
 }
 
+.navbar-menu {
+  display: none;
+}
+
+.menu-icon {
+  fill: #ABABAB;
+  cursor: pointer;
+}
+
 .navbar-about {
   margin-left: 0px !important
 }
 
 .navbar-contact {
   margin-left: 0px !important
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-menu {
+    display: block;
+    margin-top: 8px;
+    margin-right: -9.5rem;
+    width: 3rem;
+  }
+
+  .menu-icon {
+    fill: #ABABAB;
+    cursor: pointer;
+  }
+
+  .navbar-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .navbar {
+    margin-top: 0px;
+    margin-left: -20px;
+    width: 100%;
+    margin-bottom: -25px;
+  }
+
+  .navbar-logo {
+    width: 112px;
+    height: 45px;
+  }
+
+  .navbar-link {
+    display: none;
+  }
 }

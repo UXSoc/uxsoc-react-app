@@ -41,3 +41,41 @@
 .card-caption:last-of-type {
   width: 380px;
 }
+
+@media screen and (max-width: 320px) {
+  .HomeCard {
+    width: 248px;
+    height: 330px;
+  }
+
+  .HomeCard:first-of-type {
+    margin-left: 1px;
+  }
+
+  .HomeCard:last-of-type {
+    margin-right: 1px;
+  }
+
+  .HomeCard img {
+    width: 205px;
+    height: 158px;
+    margin-top: 1rem;
+  }
+
+  .HomeCard h2 {
+    font-size: 24px;
+    margin-top: -2.75rem;
+  }
+
+  .HomeCard p:first-of-type {
+    font-size: 13px;
+    margin-top: -0.5rem;
+  }
+
+  .HomeCard p:last-of-type {
+    width: 240px;
+    font-size: 13px;
+    line-height: 24px;
+    margin-top: -1.6rem;
+  }
+}

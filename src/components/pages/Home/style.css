@@ -3,7 +3,7 @@
   margin-right: 13vw;
   display: grid;
   grid-template-rows: 56px 16px 25px 153px 59px 70px 231px;
-  grid-template-columns: 544px 795px
+  grid-template-columns: 544px 795px;
 }
 
 .north-star-title {
@@ -33,6 +33,10 @@
 .home-landing-image {
   grid-column: 2/2;
   grid-row: 2/7;
+}
+
+.mobile-landing-image {
+  display: none;
 }
 
 .home-blue-section {
@@ -78,4 +82,85 @@
   grid-column-gap: 20px;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 320px) {
+  .north-star-title {
+    margin-top: -0.5rem;
+  }
+
+  .main-title-leader {
+    width: 258px;
+    height: 82px;
+    font-size: 34px;
+    line-height: normal;
+    margin-top: -1rem;
+  }
+
+  .home-landing-image {
+    display: none;
+  }
+
+  .mobile-landing-image {
+    width: 320px;
+    height: 305px;
+    display: block;
+    grid-column: 1/1;
+    grid-row: 4/7;
+    margin-top: 6rem;
+    margin-left: -2.6rem;
+  }
+
+  .journey-button {
+    z-index: 99;
+    border: 2px solid red;
+    margin-top: 35rem;
+  }
+
+  .home-blue-section {
+    margin-top: -11.5rem;
+    height: 295px;
+    width: 100%;
+    background-color: #008ed4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blue1 {
+    display: none;
+  }
+
+  .blue2 {
+    z-index: 98;
+    width: 204px;
+    height: 257px;
+    position: absolute;
+    top: 680px;
+  }
+
+  .home-blue-text {
+    width: 260px;
+    height: 206px;
+    font-family: "Proxima-Nova", sans-serif;
+    font-size: 18px;
+    line-height: 33px;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .HomeCard-container {
+    position: relative;
+    z-index: 1;
+    height: 830px;
+    background: #EEF1F6;
+    display: inline-grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 435px 300px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+  }
+
 }
