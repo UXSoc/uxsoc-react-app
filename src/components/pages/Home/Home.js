@@ -7,7 +7,7 @@ import mobileLanding from './../../../resources/img/home-landing-mobile.svg';
 import blue1 from './../../../resources/img/home-blue1.svg';
 import blue2 from './../../../resources/img/home-blue-2.svg';
 import HomeCard from '../../state/HomeCard/HomeCard';
-import ContactForm from '../../state/ContactForm/ContactForm';
+// import ContactForm from '../../state/ContactForm/ContactForm';
 import './style.css';
 
 class Home extends Component {
@@ -40,9 +40,9 @@ class Home extends Component {
               btnLabel="Explore our projects"
               caption="We help businesses improve their products and services through intentional design, and we never fail to deliver."/>
           </div>
-          <div id="contact-us" className="contact-container">
+          {/* <div id="contact-us" className="contact-container">
             <ContactForm/>
-          </div>
+          </div> */}
       </div>
     );
   }

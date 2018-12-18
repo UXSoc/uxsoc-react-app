@@ -60,11 +60,21 @@
   margin-left: 0px !important
 }
 
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .navbar-menu {
     display: block;
     margin-top: 8px;
-    margin-right: -9.5rem;
+    margin-right: -50vw;
     width: 3rem;
   }
 
@@ -78,11 +88,44 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
+  .navbar-menu {
+    display: block;
+    margin-top: 8px;
+    margin-right: -55vw;
+    width: 3rem;
+  }
 
+  .menu-icon {
+    fill: #ABABAB;
+    cursor: pointer;
+  }
+
+  .navbar-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbar-menu {
+    display: block;
+    margin-top: 8px;
+    margin-right: -44vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar-menu {
+    display: block;
+    margin-top: 8px;
+    margin-right: -36.5vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
   .navbar {
     margin-top: 0px;
-    margin-left: -20px;
+    margin-left: 0.75rem;
     width: 100%;
     margin-bottom: -25px;
   }
@@ -94,5 +137,9 @@
 
   .navbar-link {
     display: none;
+  }
+
+  .navbar-menu {
+    margin-right: -5.5rem;
   }
 }
