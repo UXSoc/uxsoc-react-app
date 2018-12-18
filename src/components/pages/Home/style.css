@@ -17,6 +17,7 @@
   color: #b3bcc4;
   grid-column: 1/1;
   grid-row: 2/2;
+  margin-top: 2.5rem;
 }
 
 .main-title-leader {
@@ -91,7 +92,7 @@
 
   .main-title-leader {
     font-size: 60px;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-left: -3.5rem;
   }
 
@@ -131,7 +132,7 @@
 @media screen and (max-width: 600px) {
   .main-title-leader {
     font-size: 45px;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     margin-left: -2.5rem;
   }
 
@@ -193,7 +194,7 @@
 
 @media screen and (max-width: 375px) {
   .north-star-title {
-    margin-top: -0.5rem;
+    margin-top: 2rem;
     margin-left: -0.5rem;
   }
 
@@ -202,7 +203,7 @@
     height: 82px;
     font-size: 34px;
     line-height: normal;
-    margin-top: -1rem;
+    margin-top: 2rem;
   }
 
   .main-title-leader, .north-star-title, .journey-button {
@@ -210,11 +211,17 @@
   }
 
   .journey-button {
-    margin-top: -10rem;
+    margin-top: -6rem;
   }
 
   .home-blue-section {
     height: 500px;
+  }
+
+  .blue2 {
+    position: absolute;
+    top: 340px;
+    right: 0px;
   }
 
   .home-blue-text {
@@ -226,7 +233,7 @@
 
 @media screen and (max-width: 320px) {
   .north-star-title {
-    margin-top: -0.5rem;
+    margin-top: 1.5rem;
     margin-left: -0.5rem;
   }
 
@@ -235,7 +242,7 @@
     height: 82px;
     font-size: 34px;
     line-height: normal;
-    margin-top: -1rem;
+    margin-top: 1rem;
     margin-left: -0.5rem;
   }
 
@@ -249,12 +256,12 @@
     display: block;
     grid-column: 1/1;
     grid-row: 4/7;
-    margin-top: 6rem;
+    margin-top: 7rem;
     margin-left: -2.6rem;
   }
 
   .journey-button {
-    z-index: 99;
+    z-index: 5;
     margin-top: 35rem;
   }
 
@@ -273,7 +280,7 @@
   }
 
   .blue2 {
-    z-index: 98;
+    z-index: 2;
     width: 204px;
     height: 257px;
     position: absolute;

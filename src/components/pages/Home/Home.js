@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import Navigation from './../../stateless/Navigation/Navigation';
+import Navigation from '../../state/Navigation/Navigation';
 import landingImage from './../../../resources/img/home-landing.svg';
 import mobileLanding from './../../../resources/img/home-landing-mobile.svg';
 import blue1 from './../../../resources/img/home-blue1.svg';

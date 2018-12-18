@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Navigation from './../../../stateless/Navigation/Navigation';
+import Navigation from '../../../state/Navigation/Navigation';
 import Header from '../../../stateless/DesignLibraryHeader/DesignLibraryHeader'
 import SectionSelect from '../../../state/DesignLibrarySectionSelect/DesignLibrarySectionSelect'
 import MostPopular from '../../../stateless/MostPopular/MostPopular'

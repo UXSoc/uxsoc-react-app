@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navigation from './../../stateless/Navigation/Navigation'
+import Navigation from '../../state/Navigation/Navigation';
 import './style.css';
 import WorkWithUs from '../../state/Headers/WorkWithUs'
 import Process from '../../state/Process/Process'
