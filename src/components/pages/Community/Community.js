@@ -120,10 +120,30 @@ class Community extends Component {
           <img src={opportunitiesImage} alt="opportunities"/>
 
           <div className="opportunities-content-container">
-            <OpportunityCard/>
-            <OpportunityCard/>
-            <OpportunityCard/>
-            <OpportunityCard/>
+            <OpportunityCard
+              position="Visual Designer"
+              location="Bonifacio Global City, Taguig, Philippines"
+              type="Full-time"
+              experience="2 yrs experience"
+              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
+            <OpportunityCard
+              position="Visual Designer"
+              location="Bonifacio Global City, Taguig, Philippines"
+              type="Full-time"
+              experience="2 yrs experience"
+              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
+            <OpportunityCard
+              position="Visual Designer"
+              location="Bonifacio Global City, Taguig, Philippines"
+              type="Full-time"
+              experience="2 yrs experience"
+              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
+            <OpportunityCard
+              position="Visual Designer"
+              location="Bonifacio Global City, Taguig, Philippines"
+              type="Full-time"
+              experience="2 yrs experience"
+              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
           </div>
         </div>
 
