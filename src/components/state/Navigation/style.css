@@ -7,19 +7,32 @@
   position: fixed;
   background: white;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 13vw;
   margin-right: 13vw;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar-mr {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .navbar-link, .dropdown-link {
@@ -28,7 +41,8 @@
   width: 100%;
   font-family: "Proxima-Nova",sans-serif;
   font-weight: 500;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   text-align: center;
   margin-left: 15px;
   margin-right: 15px;
@@ -38,6 +52,8 @@
 
 .navbar-item {
   height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -72,7 +88,8 @@
   position: fixed;
   top: 6rem;
   /* opacity: 0.9; */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .NavDropdown li {
@@ -87,11 +104,18 @@
 
 @media screen and (max-width: 768px) {
   .navbar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: 5vw;
     margin-right: 5vw;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

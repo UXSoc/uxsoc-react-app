@@ -25,15 +25,15 @@ class Work extends Component {
             <WorkWithUs />
           </div>
         </div>
-        <div>
+        <div id="process">
         <Process />
         </div>
 
-        <div>
+        <div id="services">
           <Services />
         </div>
 
-        <div>
+        <div id="work">
         <Workcomp />
         </div>
 
@@ -48,8 +48,8 @@ class Work extends Component {
         <div>
         </div>
       </div>
-      
-      
+
+
     );
   }
 }

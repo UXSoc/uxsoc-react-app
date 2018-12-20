@@ -7,8 +7,8 @@ import mobileLanding from './../../../resources/img/home-landing-mobile.svg';
 import blue1 from './../../../resources/img/home-blue1.svg';
 import blue2 from './../../../resources/img/home-blue-2.svg';
 import HomeCard from '../../state/HomeCard/HomeCard';
-// import ContactForm from '../../state/ContactForm/ContactForm';
-
+import ContactForm from '../../state/ContactForm/ContactForm';
+import Footer from './../../state/Footer/Footer';
 import Community from './../Community/Community';
 import Work from './../Work/Work';
 
@@ -43,13 +43,16 @@ class Home extends Component {
               sectionLabel="Consultancy"
               headerLabel="Crafted for Work"
               btnLabel="Explore our projects"
-              caption="We help businesses improve their products and services through intentional design, and we never fail to deliver."/>
+              caption="We help businesses improve their products and services through intentional design, and we never fail to deliver."
               link="/work"
               caption="We help businesses explore improve their products and services through intentional design, and we never fail to deliver."/>
           </div>
-          {/* <div id="contact-us" className="contact-container">
+          <div id="contact-us" className="contact-container">
             <ContactForm/>
-          </div> */}
+          </div>
+          <div>
+            <Footer/>
+          </div>
       </div>
     );
   }
