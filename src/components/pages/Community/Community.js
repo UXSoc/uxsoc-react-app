@@ -51,7 +51,7 @@ class Community extends Component {
           </button>
         </div>
 
-        <div className="events-container">
+        <div className="events-container" id="events">
           <p className="section-label">Events</p>
           <h2>What's happening</h2>
           <SectionToggleEvents toggleLabel1="Upcoming" toggleLabel2="Past" />
@@ -95,7 +95,7 @@ class Community extends Component {
           </div>
         </div>
 
-        <div className="ms-container">
+        <div className="ms-container" id="member-stories">
           <p className="section-label">Member Stories</p>
           <h2>Read up on a fellow member's UX journey</h2>
           <div className="ms-content-container">
@@ -116,7 +116,7 @@ class Community extends Component {
           </div>
         </div>
 
-        <div className="opportunities-container">
+        <div className="opportunities-container" id="opportunities">
 					<p className="section-label">Opportunities</p>
           <h2>Discover your passion through our curated list of job openings</h2>
           <img src={opportunitiesImage} alt="opportunities"/>
@@ -149,7 +149,7 @@ class Community extends Component {
           </div>
         </div>
 
-        <div className="resources-container">
+        <div className="resources-container" id="resources">
           <p className="section-label">Resources</p>
           <h2>Here are the resources we've curated for you this week</h2>
           <SectionToggleResources

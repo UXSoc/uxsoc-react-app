@@ -1,0 +1,99 @@
+footer {
+  padding: 10em 10em 2.5em 10em !important;
+}
+
+.footer-container {
+  padding-bottom: 60px;
+}
+
+.footer-container, .footer-explore-container  {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-follow h4, .footer-explore h4 {
+  font-family: Proxima Nova;
+  line-height: normal;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #20252B;
+  margin: 0;
+}
+
+
+
+.footer-logo {
+  border-right: 2px solid #EFEEEE;
+  width: 18%;
+}
+
+.footer-explore {
+  width: 50%;
+}
+
+.footer-community p, .footer-work p, .footer-explore-container p {
+  font-family: Proxima Nova;
+  line-height: normal;
+  font-size: 16px;
+  text-align: center;
+  color: #20252B;
+  cursor: pointer;
+}
+
+.footer-community ul, .footer-work ul, .footer-community li, .footer-work li {
+  list-style: none;
+  font-family: Proxima Nova;
+  line-height: 16px;
+  font-size: 12px;
+  padding: 0;
+  color: #9BA6B1 !important;
+  margin-bottom: 10px !important;
+}
+
+.footer-work li:hover, .footer-community li:hover, .footer-community p:hover, .footer-work p:hover, .footer-explore-container p:hover {
+  text-decoration: underline;
+
+}
+
+.footer-community li, .footer-work li {
+  cursor: pointer;
+}
+
+.footer-follow {
+  border-left: 2px solid #EFEEEE;
+  padding-left: 60px;
+  width: 15%;
+}
+
+
+
+.footer-icons {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+}
+
+.footer-credits p {
+  text-align: center;
+  margin: 0;
+  font-family: Proxima Nova;
+  line-height: 19px;
+  font-size: 14px;
+  color: #BDBDBD;
+}

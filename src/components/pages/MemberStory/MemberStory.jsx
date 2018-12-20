@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navigation from './../../stateless/Navigation/Navigation';
+import Navigation from './../../state/Navigation/Navigation';
 import MainMemberStory from '../../state/MemberStoryComp/MainMemberStory'
 import './style.css'
 
@@ -11,6 +11,7 @@ class MemberStory extends Component {
     render() {
         return (
             <div>
+                <Navigation/>
                 <MainMemberStory />
             </div>
         );
