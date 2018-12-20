@@ -47,7 +47,85 @@ input::placeholder, textarea::placeholder {
   width: 260px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
+  .Contact h2 {
+    width: 450px;
+    font-size: 32px;
+    line-height: 45px;
+    margin-top: -1rem;
+  }
+
+  form {
+    width: 26rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-row-gap: 2.5rem;
+    margin: 3rem auto;
+  }
+
+  input {
+    height: 60px;
+    padding-left: 28px;
+  }
+
+  textarea {
+    padding: 28px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Contact h2 {
+    width: 430px;
+    font-size: 28px;
+    line-height: 45px;
+    margin-top: -1rem;
+  }
+
+  form {
+    width: 22rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-row-gap: 2.5rem;
+    margin: 2.5rem auto;
+  }
+
+  input {
+    height: 50px;
+    padding-left: 25px;
+  }
+
+  textarea {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Contact h2 {
+    width: 430px;
+    font-size: 28px;
+    line-height: 45px;
+    margin-top: -1rem;
+  }
+
+  form {
+    width: 22rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-row-gap: 2.5rem;
+    margin: 2.5rem auto;
+  }
+
+  input {
+    height: 50px;
+    padding-left: 25px;
+  }
+
+  textarea {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
   .Contact h2 {
     width: 270px;
     font-size: 20px;
