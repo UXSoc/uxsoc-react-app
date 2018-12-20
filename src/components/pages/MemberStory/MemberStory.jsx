@@ -11,10 +11,12 @@ class MemberStory extends Component {
     render() {
         return (
             <div>
+                <Navigation/>
                 <MainMemberStory />
             </div>
-        );
+         );
     }
 }
+
 
 export default MemberStory;
