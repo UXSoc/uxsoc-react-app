@@ -1,5 +1,5 @@
 footer {
-  padding: 10em 10em 2.5em 10em !important;
+  padding: 10em 10em 2.5em 10em;
 }
 
 .footer-container {
@@ -24,6 +24,8 @@ footer {
   line-height: normal;
   font-size: 16px;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
   color: #20252B;
   margin: 0;
 }
@@ -92,4 +94,89 @@ footer {
   line-height: 19px;
   font-size: 14px;
   color: #BDBDBD;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 10em 3em 2.5em 3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 10em 3em 2.5em 2em;
+  }
+
+  .footer-logo {
+    padding-right: 1.5rem;
+  }
+
+  .footer-logo img {
+    width: 140px;
+    height: 70px;
+  }
+
+  .footer-follow {
+    padding-left: 1rem;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 3em 2em 1.75em 2em;
+  }
+
+  .footer-logo {
+    border: none;
+  }
+
+  .footer-explore {
+    display: none;
+  }
+
+  .footer-follow {
+    border: none;
+    padding-left: 0px;
+    width: 40%;
+    margin-top: -0.5rem;
+  }
+
+  .footer-follow h4 {
+    display: none;
+  }
+
+  .footer-credits {
+    margin-top: -3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  footer {
+    padding: 3em 1em 1.75em 1em;
+  }
+
+  .footer-follow {
+    margin-top: -0.25rem;
+  }
+
+  .footer-credits {
+    margin-top: -3rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-logo img {
+    width: 82px;
+    height: 33px;
+  }
+
+  .footer-follow {
+    margin-top: -1rem;
+  }
+
+  .footer-icons img {
+    width: 17px;
+    height: 17px;
+  }
 }
