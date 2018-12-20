@@ -11,24 +11,22 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .footer-follow h4, .footer-explore h4 {
-  font-family: Proxima Nova;
+  font-family: "Proxima-Nova", sans-serif;
   line-height: normal;
   font-size: 16px;
   letter-spacing: 0.05em;
   color: #20252B;
   margin: 0;
 }
-
-
 
 .footer-logo {
   border-right: 2px solid #EFEEEE;
@@ -40,7 +38,7 @@ footer {
 }
 
 .footer-community p, .footer-work p, .footer-explore-container p {
-  font-family: Proxima Nova;
+  font-family: "Proxima-Nova", sans-serif;
   line-height: normal;
   font-size: 16px;
   text-align: center;
@@ -50,12 +48,12 @@ footer {
 
 .footer-community ul, .footer-work ul, .footer-community li, .footer-work li {
   list-style: none;
-  font-family: Proxima Nova;
+  font-family: "Proxima-Nova", sans-serif;
   line-height: 16px;
   font-size: 12px;
   padding: 0;
-  color: #9BA6B1 !important;
-  margin-bottom: 10px !important;
+  color: #9BA6B1;
+  margin-bottom: 10px;
 }
 
 .footer-work li:hover, .footer-community li:hover, .footer-community p:hover, .footer-work p:hover, .footer-explore-container p:hover {
@@ -73,8 +71,6 @@ footer {
   width: 15%;
 }
 
-
-
 .footer-icons {
   margin-top: 24px;
   display: -webkit-box;
@@ -82,17 +78,17 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer-credits p {
   text-align: center;
   margin: 0;
-  font-family: Proxima Nova;
+  font-family: "Proxima-Nova", sans-serif;
   line-height: 19px;
   font-size: 14px;
   color: #BDBDBD;
