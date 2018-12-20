@@ -14,8 +14,9 @@ class MemberStory extends Component {
                 <Navigation/>
                 <MainMemberStory />
             </div>
-        );
+         );
     }
 }
+
 
 export default MemberStory;
