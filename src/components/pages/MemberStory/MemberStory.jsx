@@ -7,15 +7,13 @@ class MemberStory extends Component {
         super(props);
         this.state = {  }
     }
-    render() { 
-        return ( 
+    render() {
+        return (
             <div>
-                 <MainMemberStory />
-                 
-            </div> 
-         );
+                <MainMemberStory />
+            </div>
+        );
     }
 }
- 
- 
+
 export default MemberStory;
