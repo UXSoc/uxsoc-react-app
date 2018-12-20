@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Navigation from '../Navigation/Navigation'
+import Navigation from '../../state/Navigation/Navigation';
 import header from '../../../resources/img/designlibrary-imgs/header.svg'
 import './style.css'
 

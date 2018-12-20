@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Navigation from './../../stateless/Navigation/Navigation';
+import Navigation from '../../state/Navigation/Navigation';
 import { SectionToggleEvents, SectionToggleResources } from './../../state/SectionToggle/SectionToggle';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from './../../stateless/Events/EventDetails';
 import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources } from '../../stateless/Resources/ResourceCard';
 import { AuthorPic, AuthorName } from './../../stateless/Author/Author';
 import { MemberStoriesImage, MemberStoriesLabel, MemberStoriesTitle } from './../../stateless/MemberStories/MemberStories';
+import OpportunityCard from '../../stateless/Opportunities/OpportunityCard';
 import ContactForm from './../../state/ContactForm/ContactForm';
 import RedirectButton from './../../state/RedirectButton/RedirectButton';
 import landingImage from './../../../resources/img/community-landing.svg';
+import opportunitiesImage from './../../../resources/img/community-opportunities.svg';
 import chevronDown from './../../../resources/img/chevron-down.svg';
 import { Route, Switch } from 'react-router-dom'
 import MemberStory from '../MemberStory/MemberStory'
@@ -79,7 +81,6 @@ class Community extends Component {
                 }
               />
 
-
               <AboutHeader aboutHeader="About the event"/>
               <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
               <AboutHeader aboutHeader="About the speaker"/>
@@ -100,7 +101,6 @@ class Community extends Component {
           <div className="ms-content-container">
             <MemberStoriesImage />
             <div className="ms-card">
-
               <MemberStoriesLabel
                 memberStoriesLabel="Featured"/>
               <MemberStoriesTitle
@@ -108,14 +108,44 @@ class Community extends Component {
               <AuthorPic/>
               <AuthorName authorName="Jiggy Villanueva, Executive Vice President"/>
 
-
-
-
               <RedirectButton
                 buttonText="Read Jiggy's Story"
                 redirectLink="/member-story"/>
 
             </div>
+          </div>
+        </div>
+
+        <div className="opportunities-container">
+					<p className="section-label">Opportunities</p>
+          <h2>Discover your passion through our curated list of job openings</h2>
+          <img src={opportunitiesImage} alt="opportunities"/>
+
+          <div className="opportunities-content-container">
+            <OpportunityCard
+              position="Visual Designer"
+              location="Bonifacio Global City, Taguig, Philippines"
+              type="Full-time"
+              experience="2 yrs experience"
+              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
+            <OpportunityCard
+              position="Visual Designer"
+              location="Bonifacio Global City, Taguig, Philippines"
+              type="Full-time"
+              experience="2 yrs experience"
+              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
+            <OpportunityCard
+              position="Visual Designer"
+              location="Bonifacio Global City, Taguig, Philippines"
+              type="Full-time"
+              experience="2 yrs experience"
+              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
+            <OpportunityCard
+              position="Visual Designer"
+              location="Bonifacio Global City, Taguig, Philippines"
+              type="Full-time"
+              experience="2 yrs experience"
+              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
           </div>
         </div>
 

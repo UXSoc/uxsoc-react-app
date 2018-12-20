@@ -3,7 +3,7 @@
   margin-right: 13vw;
   display: grid;
   grid-template-rows: 56px 16px 25px 153px 59px 70px 231px;
-  grid-template-columns: 544px 795px
+  grid-template-columns: 544px 795px;
 }
 
 .north-star-title {
@@ -17,6 +17,7 @@
   color: #b3bcc4;
   grid-column: 1/1;
   grid-row: 2/2;
+  margin-top: 2.5rem;
 }
 
 .main-title-leader {
@@ -33,6 +34,10 @@
 .home-landing-image {
   grid-column: 2/2;
   grid-row: 2/7;
+}
+
+.mobile-landing-image {
+  display: none;
 }
 
 .home-blue-section {
@@ -78,4 +83,232 @@
   grid-column-gap: 20px;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .north-star-title {
+    margin-left: -3.5rem;
+  }
+
+  .main-title-leader {
+    font-size: 60px;
+    margin-top: 3rem;
+    margin-left: -3.5rem;
+  }
+
+  .journey-button {
+    margin-left: -3.5rem;
+  }
+
+  .home-blue-text {
+    font-size: 34px;
+    margin-top: -1rem;
+  }
+
+  .blue1 {
+    display: none;
+  }
+
+  .blue2 {
+    position: absolute;
+    top: 400px;
+    right: 0px;
+  }
+
+  .HomeCard-container {
+    position: relative;
+    z-index: 1;
+    height: 800px;
+    width: 100%;
+    background: #EEF1F6;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-title-leader {
+    font-size: 45px;
+    margin-top: 2.5rem;
+    margin-left: -2.5rem;
+  }
+
+  .north-star-title {
+    margin-left: -2.5rem;
+  }
+
+  .journey-button {
+    margin-top: -5rem;
+    margin-left: -2.5rem;
+  }
+
+  .home-blue-text {
+    width: 450px;
+    font-size: 28px;
+    margin-top: -5rem;
+  }
+
+  .HomeCard-container {
+    position: relative;
+    z-index: 1;
+    height: auto;
+    background: #EEF1F6;
+    display: inline-grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 675px 675px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main-title-leader, .north-star-title, .journey-button {
+    margin-left: -2rem;
+  }
+
+  .blue2 {
+    position: absolute;
+    top: 350px;
+    right: 0px;
+  }
+
+  .home-blue-text {
+    width: 370px;
+    font-size: 24px;
+    margin-top: -5rem;
+  }
+
+  .HomeCard-container {
+    height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 650px 650px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .north-star-title {
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+  }
+
+  .main-title-leader {
+    width: 258px;
+    height: 82px;
+    font-size: 34px;
+    line-height: normal;
+    margin-top: 2rem;
+  }
+
+  .main-title-leader, .north-star-title, .journey-button {
+    margin-left: -1.5rem;
+  }
+
+  .journey-button {
+    margin-top: -6rem;
+  }
+
+  .home-blue-section {
+    height: 500px;
+  }
+
+  .blue2 {
+    position: absolute;
+    top: 340px;
+    right: 0px;
+  }
+
+  .home-blue-text {
+    width: 350px;
+    font-size: 20px;
+    margin-top: -3rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .north-star-title {
+    margin-top: 1.5rem;
+    margin-left: -0.5rem;
+  }
+
+  .main-title-leader {
+    width: 258px;
+    height: 82px;
+    font-size: 34px;
+    line-height: normal;
+    margin-top: 1rem;
+    margin-left: -0.5rem;
+  }
+
+  .home-landing-image {
+    display: none;
+  }
+
+  .mobile-landing-image {
+    width: 320px;
+    height: 305px;
+    display: block;
+    grid-column: 1/1;
+    grid-row: 4/7;
+    margin-top: 7rem;
+    margin-left: -2.6rem;
+  }
+
+  .journey-button {
+    z-index: 5;
+    margin-top: 35rem;
+  }
+
+  .home-blue-section {
+    margin-top: -11.5rem;
+    height: 295px;
+    width: 100%;
+    background-color: #008ed4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blue1 {
+    display: none;
+  }
+
+  .blue2 {
+    z-index: 2;
+    width: 204px;
+    height: 257px;
+    position: absolute;
+    top: 680px;
+  }
+
+  .home-blue-text {
+    width: 260px;
+    height: 206px;
+    font-family: "Proxima-Nova", sans-serif;
+    font-size: 18px;
+    line-height: 33px;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .HomeCard-container {
+    position: relative;
+    z-index: 1;
+    height: 830px;
+    background: #EEF1F6;
+    display: inline-grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 435px 300px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+  }
 }

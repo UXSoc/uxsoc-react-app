@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Navigation from './../../stateless/Navigation/Navigation'
+import Navigation from '../../state/Navigation/Navigation';
+import MemberStory from '../MemberStory/MemberStory';
 
 import './style.css';
 

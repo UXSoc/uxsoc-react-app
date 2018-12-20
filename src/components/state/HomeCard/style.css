@@ -41,3 +41,88 @@
 .card-caption:last-of-type {
   width: 380px;
 }
+
+@media screen and (max-width: 768px) {
+  .HomeCard {
+    height: 600px;
+    width: 350px;
+  }
+
+  .HomeCard img {
+    width: 100%;
+    height: auto;
+  }
+
+  .HomeCard h2 {
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+    font-size: 32px;
+  }
+
+  .HomeCard p:last-of-type {
+    width: 300px;
+    font-size: 16px;
+    line-height: 29px;
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .HomeCard {
+    height: 640px;
+    width: 400px;
+  }
+
+  .HomeCard:first-of-type {
+    margin-left: 0px;
+  }
+
+  .HomeCard:last-of-type {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .HomeCard {
+    height: 590px;
+    width: 345px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .HomeCard {
+    width: 275px;
+    height: 330px;
+  }
+
+  .HomeCard:first-of-type {
+    margin-left: 1px;
+  }
+
+  .HomeCard:last-of-type {
+    margin-right: 1px;
+  }
+
+  .HomeCard img {
+    width: 205px;
+    height: 158px;
+    margin-top: 1rem;
+  }
+
+  .HomeCard h2 {
+    font-size: 24px;
+    margin-top: -2.75rem;
+  }
+
+  .HomeCard p:first-of-type {
+    font-size: 13px;
+    margin-top: -0.5rem;
+  }
+
+  .HomeCard p:last-of-type {
+    width: 240px;
+    font-size: 13px;
+    line-height: 24px;
+    margin-top: -1.6rem;
+  }
+}
