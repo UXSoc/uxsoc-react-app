@@ -14,7 +14,6 @@ import chevronDown from './../../../resources/img/chevron-down.svg';
 import { Route, Switch } from 'react-router-dom'
 import MemberStory from '../MemberStory/MemberStory'
 import './style.css';
-import { Link } from 'react-router-dom';
 import { BrowserRouter } from "react-router-dom";
 
 class Community extends Component {
@@ -86,6 +85,7 @@ class Community extends Component {
               <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
               <AboutHeader aboutHeader="About the speaker"/>
               <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
+
               <RedirectButton
                 buttonText="Register Now"
                 redirectLink="/"/>
@@ -107,9 +107,11 @@ class Community extends Component {
                 memberStoriesTitle="How I fell in love with UXSoc's advocacy"/>
               <AuthorPic/>
               <AuthorName authorName="Jiggy Villanueva, Executive Vice President"/>
+
               <RedirectButton
                 buttonText="Read Jiggy's Story"
-                redirectLink=""/>
+                redirectLink="/member-story"/>
+
             </div>
           </div>
         </div>

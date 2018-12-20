@@ -9,7 +9,6 @@ class About extends Component {
     return(
       <div>
         <Navigation/>
-        <MemberStory />
       </div>
     );
   }

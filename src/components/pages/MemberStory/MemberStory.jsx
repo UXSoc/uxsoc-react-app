@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navigation from './../../stateless/Navigation/Navigation';
 import MainMemberStory from '../../state/MemberStoryComp/MainMemberStory'
 import './style.css'
 

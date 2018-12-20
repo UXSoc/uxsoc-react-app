@@ -8,6 +8,10 @@ import blue1 from './../../../resources/img/home-blue1.svg';
 import blue2 from './../../../resources/img/home-blue-2.svg';
 import HomeCard from '../../state/HomeCard/HomeCard';
 // import ContactForm from '../../state/ContactForm/ContactForm';
+
+import Community from './../Community/Community';
+import Work from './../Work/Work';
+
 import './style.css';
 
 class Home extends Component {
@@ -33,12 +37,15 @@ class Home extends Component {
               sectionLabel="Community"
               headerLabel="Geared for Growth"
               btnLabel="Experience the Mafia"
+              link="/community"
               caption="Engage yourself with the community. Discover what you can do and how you can grow with us."/>
             <HomeCard
               sectionLabel="Consultancy"
               headerLabel="Crafted for Work"
               btnLabel="Explore our projects"
               caption="We help businesses improve their products and services through intentional design, and we never fail to deliver."/>
+              link="/work"
+              caption="We help businesses explore improve their products and services through intentional design, and we never fail to deliver."/>
           </div>
           {/* <div id="contact-us" className="contact-container">
             <ContactForm/>
