@@ -90,7 +90,7 @@ class Footer extends Component {
 
         <div className="footer-credits">
           <p>Passionately made by User Experience Society</p>
-          <p>2018. All Rights Reserved</p>
+          <p>Copyright &copy; 2018. All Rights Reserved</p>
         </div>
 
 
