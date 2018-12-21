@@ -8,8 +8,10 @@ class RedirectButton extends Component {
     const { redirectLink, buttonText } = this.props;
     return(
       <div className="RedirectButton">
-        <img src={redirectArrow} alt="arrow"/>
-        <a style={{color: "#008ed4"}} href={redirectLink}>{buttonText}</a>
+        <a style={{color: "#008ed4"}} href={redirectLink}>
+          {buttonText}
+          <img src={redirectArrow} alt="arrow"/>
+        </a>
       </div>
     )
   }

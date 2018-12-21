@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import RedirectButton from './../../state/RedirectButton/RedirectButton';
 import locationIcon from './../../../resources/img/location.svg';
 import companyLogo from '../../../resources/img/company-logo.svg';
 import './style.css';
@@ -18,6 +19,9 @@ class OpportunityCard extends Component {
         <div className="opportunity-type">{type}</div>
         <div className="opportunity-experience">{experience}</div>
         <p className="opportunity-desc">{description}</p>
+        <RedirectButton
+          buttonText="Apply Now"
+          redirectLink="/"/>
       </div>
     )
   }
