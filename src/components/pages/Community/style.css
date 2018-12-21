@@ -109,6 +109,13 @@
   margin-top: 1rem;
 }
 
+.company-name {
+  font-family: "Proxima-Nova", sans-serif;
+  font-size: 16px;
+  margin-left: 5.5rem;
+  margin-top: -1.7rem;
+}
+
 .opportunity-position {
   font-size: 28px;
   font-family: "Rubik", sans-serif;
@@ -117,7 +124,7 @@
   text-align: left;
   line-height: 33px;
   margin-left: 50px;
-  margin-top: 105px;
+  margin-top: 1.5rem;
 }
 
 .opportunity-location {
