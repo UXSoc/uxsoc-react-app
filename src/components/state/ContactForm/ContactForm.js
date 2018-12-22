@@ -10,7 +10,7 @@ class ContactForm extends Component {
         <form name="contact" method="POST" data-netifly="true">
           <input type="text" name="name" placeholder="Name"></input>
           <input type="email" name="email" placeholder="Email Address"></input>
-          <textarea placeholder="Your Message"></textarea>
+          <textarea name="message" placeholder="Your Message"></textarea>
           <button className="blue-btn-big" type="submit">Send Message</button>
         </form>
       </div>
