@@ -15,6 +15,7 @@
 }
 
 .about-uxsociety h2 {
+  margin-left: 45px;
   font-family: Rubik, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -28,6 +29,7 @@
 .about-uxsociety p {
   margin: 0;
   padding: 0;
+  margin-left: 45px;
   font-family: Proxima Nova, sans-serif;
   line-height: 30px;
   font-size: 20px;
