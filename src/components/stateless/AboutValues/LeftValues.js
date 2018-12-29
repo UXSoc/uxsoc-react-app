@@ -6,6 +6,10 @@ const LeftValues = props => {
   const ValueSection = styled.div`
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
   `
 
   const Values = styled.div`
@@ -19,14 +23,23 @@ const LeftValues = props => {
     line-height: normal;
     font-size: 24px;
     color: #101010;
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
   `
 
   const ValueDetails = styled.p`
-    width: 80%;
+    width: 75%;
     font-family: Proxima Nova;
     line-height: 30px;
     font-size: 18px;
     color: #101010;
+
+    @media (max-width: 767px) {
+      text-align: center;
+      margin: auto;
+    }
   `
 
   return(

@@ -7,6 +7,13 @@ const AboutBox = (props) => {
     margin: 0 20px;
     width: 430px;
     padding: 16px;
+
+    @media (max-width: 550px) {
+      width: 80%;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
   `
   const VisionMission = styled.h4`
     font-family: Proxima Nova, sans-serif;
@@ -22,6 +29,10 @@ const AboutBox = (props) => {
   line-height: 30px;
   font-size: 20px;
   color: #101010;
+
+  @media (max-width: 550px) {
+    text-align: center;
+  }
   `
 
   return(

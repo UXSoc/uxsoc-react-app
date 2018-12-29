@@ -11,7 +11,59 @@
 }
 
 .about-ux img {
-  margin-left: 77px;
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 1280px) {
+  .about-ux img {
+    margin-left: -30px;
+  }
+
+  .about-uxsociety {
+    margin: auto 0;
+    padding-right: 180px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-ux img {
+    margin-left: -90px;
+  }
+
+  .about-uxsociety {
+    margin: auto 0;
+    padding-right: 120px;
+  }
+
+  .about-CoreValues {
+    padding: 72px 30px !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about-ux {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .about-ux img {
+    margin: auto 30px;
+  }
+
+  .about-uxsociety {
+    margin: auto 0;
+    padding: 30px;
+  }
+
+  .about-uxsociety h2, .about-uxsociety p {
+    margin: 8px 0 !important;
+  }
 }
 
 .about-uxsociety h2 {
@@ -50,8 +102,22 @@
           margin-top: 72px;
 }
 
+
 .about-CoreValues {
   padding: 72px 180px;
+}
+
+@media screen and (max-width: 550px) {
+  .about-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .about-uxsociety h2, .about-uxsociety p {
+    text-align: center;
+  }
 }
 
 .about-CoreValues h1 {

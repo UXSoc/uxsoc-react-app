@@ -17,6 +17,8 @@ class About extends Component {
       position: relative;
       text-align: center;
       margin-top: 150px;
+      margin-left: 30px;
+      margin-right: 30px;
       font-family: Montserrat, sans-serif;
     `
     const SectionTitle = styled.h1`
@@ -25,9 +27,9 @@ class About extends Component {
       line-height: 60px;
       font-size: 50.97px;
       color: #20252B;
+      margin: auto 60px;
     `
-
-
+    
     return(
       <div>
         <Navigation/>

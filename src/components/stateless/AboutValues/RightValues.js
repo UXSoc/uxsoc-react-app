@@ -6,6 +6,10 @@ const RightValues = props => {
   const ValueSection = styled.div`
     display: flex;
     flex-direction: row-reverse;
+
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
   `
 
   const Values = styled.div`
@@ -20,15 +24,35 @@ const RightValues = props => {
     line-height: normal;
     font-size: 24px;
     color: #101010;
+
+    @media (max-width: 1024px) {
+      margin-left: 90px;
+    }
+
+    @media (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
   `
 
   const ValueDetails = styled.p`
-    width: 80%;
+    width: 75%;
     margin-left: 120px;
     font-family: Proxima Nova;
     line-height: 30px;
     font-size: 18px;
     color: #101010;
+
+    @media (max-width: 1024px) {
+      margin-left: 90px;
+    }
+
+    @media (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
   `
 
   return(
