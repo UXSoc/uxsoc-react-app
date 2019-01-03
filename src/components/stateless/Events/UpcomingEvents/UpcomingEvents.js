@@ -64,8 +64,8 @@ class UpcomingEvents extends Component {
             <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
 
             <RedirectButton
-                buttonText="Register Now"
-                redirectLink="/"/>
+              buttonText="Register Now"
+              redirectLink="/"/>
           </div>
           <EventImage/>
         </div>
