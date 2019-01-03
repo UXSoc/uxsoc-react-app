@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Navigation from '../../state/Navigation/Navigation';
 import { SectionToggleEvents, SectionToggleResources } from './../../state/SectionToggle/SectionToggle';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from './../../stateless/Events/EventDetails';
-// import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources } from '../../stateless/Resources/ResourceCard';
-// import { PastResources } from '../../stateless/Resources/ResourceCard';
 import { AuthorPic, AuthorName } from './../../stateless/Author/Author';
 import MemberStory from '../MemberStory/MemberStory'
 import { MemberStoriesImage, MemberStoriesLabel, MemberStoriesTitle } from './../../stateless/MemberStories/MemberStories';
