@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import Navigation from '../../state/Navigation/Navigation';
-import { SectionToggleEvents, SectionToggleResources } from './../../state/SectionToggle/SectionToggle';
+import SectionToggleEvents from './../../state/SectionToggle/SectionToggle';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from './../../stateless/Events/EventDetails';
 import { AuthorPic, AuthorName } from './../../stateless/Author/Author';
 import MemberStory from '../MemberStory/MemberStory'
 import { MemberStoriesImage, MemberStoriesLabel, MemberStoriesTitle } from './../../stateless/MemberStories/MemberStories';
 import OpportunityCard from '../../stateless/Opportunities/OpportunityCard';
+
 import Books from '../../stateless/Resources/Books/Books';
+import Articles from '../../stateless/Resources/Articles/Articles';
+import Podcasts from '../../stateless/Resources/Podcasts/Podcasts';
+
 import ContactForm from './../../state/ContactForm/ContactForm';
 import RedirectButton from './../../state/RedirectButton/RedirectButton';
 
@@ -156,23 +160,80 @@ class Community extends Component {
           </div>
         </div>
 
-        <div className="resources-container" id="resources">
-          <p className="section-label">Resources</p>
-          <h2>Here are the resources we've curated for you this week</h2>
-          <SectionToggleResources
-            toggleLabel1="Books"
-            toggleLabel2="Articles"
-            toggleLabel3="Podcasts"
-          />
+        <Resources/>
 
-          <Books/>
-        </div>
         <div id="contact-us" className="contact-container">
           <ContactForm />
         </div>
       </div>
     );
 
+  }
+}
+
+class Resources extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedResource: "Books",
+      isSelected: true
+    }
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    this.setState({ selectedResource: e.target.value});
+    // e.target.classList.add("selected");
+  }
+
+  render() {
+    if (this.state.selectedResource === "Books") {
+      return(
+        <div className="Resources">
+          <div className="resources-container" id="resources">
+            <p className="section-label">Resources</p>
+            <h2>Here are the resources we've curated for you this week</h2>
+            <div className="SectionToggleResources">
+              <button className="section-toggle selected" value="Books" onClick={this.handleClick}>Books</button>
+              <button className="section-toggle" value="Articles" onClick={this.handleClick}>Articles</button>
+              <button className="section-toggle" value="Podcasts" onClick={this.handleClick}>Podcasts</button>
+            </div>
+            <Books/>
+          </div>
+        </div>
+    )
+    } else if (this.state.selectedResource === "Articles") {
+      return(
+        <div className="Resources">
+          <div className="resources-container" id="resources">
+            <p className="section-label">Resources</p>
+            <h2>Here are the resources we've curated for you this week</h2>
+            <div className="SectionToggleResources">
+              <button className="section-toggle" value="Books" onClick={this.handleClick}>Books</button>
+              <button className="section-toggle selected" value="Articles" onClick={this.handleClick}>Articles</button>
+              <button className="section-toggle" value="Podcasts" onClick={this.handleClick}>Podcasts</button>
+            </div>
+            <Articles/>
+          </div>
+        </div>
+      )
+    } else if (this.state.selectedResource === "Podcasts") {
+      return(
+        <div className="Resources">
+          <div className="resources-container" id="resources">
+            <p className="section-label">Resources</p>
+            <h2>Here are the resources we've curated for you this week</h2>
+            <div className="SectionToggleResources">
+              <button className="section-toggle" value="Books" onClick={this.handleClick}>Books</button>
+              <button className="section-toggle" value="Articles" onClick={this.handleClick}>Articles</button>
+              <button className="section-toggle selected" value="Podcasts" onClick={this.handleClick}>Podcasts</button>
+            </div>
+            <Podcasts/>
+          </div>
+        </div>
+      )
+    }
   }
 }
 
