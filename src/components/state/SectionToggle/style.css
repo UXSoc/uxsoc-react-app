@@ -17,6 +17,8 @@
   font-weight: 600;
   background: transparent;
   border: none;
+  color: #B3BCC4;
+  border-bottom: 1px solid #B3BCC4;
   outline: none;
   padding: 0.5rem;
   cursor: pointer;
@@ -25,9 +27,4 @@
 .selected {
   color: #20252b;
   border-bottom: 1px solid #20252b;
-}
-
-.unselected {
-  color: #B3BCC4;
-  border-bottom: 1px solid #B3BCC4;
 }

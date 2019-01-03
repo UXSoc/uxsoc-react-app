@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
 import Navigation from '../../state/Navigation/Navigation';
-import { SectionToggleEvents, SectionToggleResources } from './../../state/SectionToggle/SectionToggle';
+import SectionToggleEvents from './../../state/SectionToggle/SectionToggle';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from './../../stateless/Events/EventDetails';
-import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources } from '../../stateless/Resources/ResourceCard';
 import { AuthorPic, AuthorName } from './../../stateless/Author/Author';
+import MemberStory from '../MemberStory/MemberStory'
 import { MemberStoriesImage, MemberStoriesLabel, MemberStoriesTitle } from './../../stateless/MemberStories/MemberStories';
 import OpportunityCard from '../../stateless/Opportunities/OpportunityCard';
+
+import Books from '../../stateless/Resources/Books/Books';
+import Articles from '../../stateless/Resources/Articles/Articles';
+import Podcasts from '../../stateless/Resources/Podcasts/Podcasts';
+
 import ContactForm from './../../state/ContactForm/ContactForm';
 import RedirectButton from './../../state/RedirectButton/RedirectButton';
+
 import landingImage from './../../../resources/img/community-landing.svg';
 import opportunitiesImage from './../../../resources/img/community-opportunities.svg';
 import chevronDown from './../../../resources/img/chevron-down.svg';
+
 import { Route, Switch } from 'react-router-dom'
-import MemberStory from '../MemberStory/MemberStory'
-import './style.css';
 import { BrowserRouter } from "react-router-dom";
+
+import './style.css';
 
 class Community extends Component {
   state = {
@@ -123,24 +130,28 @@ class Community extends Component {
 
           <div className="opportunities-content-container">
             <OpportunityCard
+              companyName="Google"
               position="Visual Designer"
               location="Bonifacio Global City, Taguig, Philippines"
               type="Full-time"
               experience="2 yrs experience"
               description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
             <OpportunityCard
+              companyName="Google"
               position="Visual Designer"
               location="Bonifacio Global City, Taguig, Philippines"
               type="Full-time"
               experience="2 yrs experience"
               description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
             <OpportunityCard
+              companyName="Google"
               position="Visual Designer"
               location="Bonifacio Global City, Taguig, Philippines"
               type="Full-time"
               experience="2 yrs experience"
               description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
             <OpportunityCard
+              companyName="Google"
               position="Visual Designer"
               location="Bonifacio Global City, Taguig, Philippines"
               type="Full-time"
@@ -149,33 +160,79 @@ class Community extends Component {
           </div>
         </div>
 
-        <div className="resources-container" id="resources">
-          <p className="section-label">Resources</p>
-          <h2>Here are the resources we've curated for you this week</h2>
-          <SectionToggleResources
-            toggleLabel1="Books"
-            toggleLabel2="Articles"
-            toggleLabel3="Podcasts"
-          />
-          <div className="resource-content-container">
-            <div className="resource-card">
-              <ResourceLabel resourceLabel="Book" />
-              <ResourceTitle resourceTitle="The State of UX in Asia" />
-              <AuthorPic />
-              <AuthorName authorName="Ben Kim" />
-              <ResourceDesc resourceDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur." />
-              <RedirectButton buttonText="Start Reading" redirectLink="/" />
-            </div>
-            <ResourceImage />
-            <PastResources />
-          </div>
-        </div>
+        <Resources/>
+
         <div id="contact-us" className="contact-container">
           <ContactForm />
         </div>
       </div>
     );
 
+  }
+}
+
+class Resources extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedResource: "Books",
+      isSelected: true
+    }
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    this.setState({ selectedResource: e.target.value});
+  }
+
+  render() {
+    if (this.state.selectedResource === "Books") {
+      return(
+        <div className="Resources">
+          <div className="resources-container" id="resources">
+            <p className="section-label">Resources</p>
+            <h2 className="main-title">Here are the resources we've curated for you this week</h2>
+            <div className="SectionToggleResources">
+              <button className="section-toggle selected" value="Books" onClick={this.handleClick}>Books</button>
+              <button className="section-toggle" value="Articles" onClick={this.handleClick}>Articles</button>
+              <button className="section-toggle" value="Podcasts" onClick={this.handleClick}>Podcasts</button>
+            </div>
+            <Books/>
+          </div>
+        </div>
+    )
+    } else if (this.state.selectedResource === "Articles") {
+      return(
+        <div className="Resources">
+          <div className="resources-container" id="resources">
+            <p className="section-label">Resources</p>
+            <h2 className="main-title">Here are the resources we've curated for you this week</h2>
+            <div className="SectionToggleResources">
+              <button className="section-toggle" value="Books" onClick={this.handleClick}>Books</button>
+              <button className="section-toggle selected" value="Articles" onClick={this.handleClick}>Articles</button>
+              <button className="section-toggle" value="Podcasts" onClick={this.handleClick}>Podcasts</button>
+            </div>
+            <Articles/>
+          </div>
+        </div>
+      )
+    } else if (this.state.selectedResource === "Podcasts") {
+      return(
+        <div className="Resources">
+          <div className="resources-container" id="resources">
+            <p className="section-label">Resources</p>
+            <h2 className="main-title">Here are the resources we've curated for you this week</h2>
+            <div className="SectionToggleResources">
+              <button className="section-toggle" value="Books" onClick={this.handleClick}>Books</button>
+              <button className="section-toggle" value="Articles" onClick={this.handleClick}>Articles</button>
+              <button className="section-toggle selected" value="Podcasts" onClick={this.handleClick}>Podcasts</button>
+            </div>
+            <Podcasts/>
+          </div>
+        </div>
+      )
+    }
   }
 }
 

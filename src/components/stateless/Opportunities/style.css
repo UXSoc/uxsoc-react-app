@@ -25,3 +25,17 @@
   grid-column: 8/8;
   grid-row: 2/2;
 }
+
+.OpportunityCard .company-logo {
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.OpportunityCard .RedirectButton {
+  margin-top: 5rem;
+  margin-right: 4.25rem;
+}
+
+.OpportunityCard .RedirectButton img {
+  margin-top: 0.3rem;
+}

@@ -1,3 +1,25 @@
+.resource-content-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.main-title {
+  width: 40rem;
+}
+
+.resource-card {
+  z-index: 1;
+  width: 528px;
+  height: 448px;
+  background: #FFFFFF;
+  box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
+  grid-column: 9/9;
+  grid-row: 3/8;
+  margin-top: -2rem;
+  margin-right: -3rem;
+}
+
 .ResourceLabel {
   color: #B3BCC4;
   font-size: 1rem;
@@ -13,6 +35,7 @@
 .ResourceTitle {
   font-size: 2rem;
   text-align: left;
+  width: 25rem;
   margin-left: 2.5rem;
   margin-top: 1rem;
 }
@@ -34,6 +57,17 @@
 .ResourceImage {
   grid-column: 4/9;
   grid-row: 1/12;
+  margin-left: -3rem;
+}
+
+.ResourceLink {
+  margin-top: -1.5rem;
+}
+
+.ResourceLink a {
+  font-family: "Proxima-Nova", sans-serif;
+  font-size: 1rem;
+  margin-left: 2.5rem;
 }
 
 .PastResources {

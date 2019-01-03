@@ -89,7 +89,7 @@
 
 /* opportuniies */
 .opportunities-container {
-  height: 1788px;
+  height: 1650px;
 }
 
 .opportunities-container h2 {
@@ -109,6 +109,13 @@
   margin-top: 1rem;
 }
 
+.company-name {
+  font-family: "Proxima-Nova", sans-serif;
+  font-size: 16px;
+  margin-left: 5.5rem;
+  margin-top: -1.7rem;
+}
+
 .opportunity-position {
   font-size: 28px;
   font-family: "Rubik", sans-serif;
@@ -117,7 +124,7 @@
   text-align: left;
   line-height: 33px;
   margin-left: 50px;
-  margin-top: 105px;
+  margin-top: 1.5rem;
 }
 
 .opportunity-location {
@@ -172,29 +179,8 @@
 
 /* resources */
 .resources-container {
-  height: 1275px;
+  height: 1230px;
   background: #EEF1F6;
   padding-top: 0.5rem;
   position: relative;
-}
-
-.resources-container h2 {
-  width: 40rem;
-}
-
-.resource-content-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-}
-
-.resource-card {
-  z-index: 1;
-  width: 528px;
-  height: 448px;
-  background: #FFFFFF;
-  box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
-  grid-column: 9/9;
-  grid-row: 3/8;
-  margin-top: -1rem;
 }
