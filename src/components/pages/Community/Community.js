@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Navigation from '../../state/Navigation/Navigation';
-import SectionToggleEvents from './../../state/SectionToggle/SectionToggle';
-import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from './../../stateless/Events/EventDetails';
 import { AuthorPic, AuthorName } from './../../stateless/Author/Author';
 import MemberStory from '../MemberStory/MemberStory'
 import { MemberStoriesImage, MemberStoriesLabel, MemberStoriesTitle } from './../../stateless/MemberStories/MemberStories';
 import OpportunityCard from '../../stateless/Opportunities/OpportunityCard';
+
+import UpcomingEvents from '../../stateless/Events/UpcomingEvents/UpcomingEvents';
+import PastEvents from '../../stateless/Events/PastEvents/PastEvents';
 
 import Books from '../../stateless/Resources/Books/Books';
 import Articles from '../../stateless/Resources/Articles/Articles';
@@ -24,28 +25,7 @@ import { BrowserRouter } from "react-router-dom";
 import './style.css';
 
 class Community extends Component {
-  state = {
-    whatsHappening: []
-  }
-  componentDidMount = async () => {
-    // const { data } = await fetch(
-    //   "https://admu.directus.uxsociety.org/api/1.1/tables/community"
-    // )
-    // console.log(data)
-
-    const data = await fetch("http://178.128.60.23:1337/events").then(data => {
-      return data.json()
-    })
-
-
-    this.setState({
-      whatsHappening: data
-    })
-  }
-
   render() {
-    const { whatsHappening } = this.state
-    const lastEl = whatsHappening.length  - 1
     return (
       <div>
         <Navigation />
@@ -58,49 +38,7 @@ class Community extends Component {
           </button>
         </div>
 
-        <div className="events-container" id="events">
-          <p className="section-label">Events</p>
-          <h2>What's happening</h2>
-          <SectionToggleEvents toggleLabel1="Upcoming" toggleLabel2="Past" />
-          <div className="event-card">
-            <div className="event-info">
-              <EventLabel
-                eventLabel={
-                  (whatsHappening[lastEl] && whatsHappening[lastEl].Category) ||
-                  "Information Architecture"
-                }
-              />
-              <EventName
-                eventName={
-                  (whatsHappening[lastEl] && whatsHappening[lastEl].Name) ||
-                  "UX&Chill Ep 08"
-                }
-              />
-
-              <EventDetails
-                date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) ||"24 September 2018, 5:00 to 7:30 PM"}
-                location={
-                  (whatsHappening[lastEl] && whatsHappening[lastEl].Location) ||
-                  "Faura Hall, Ateneo de Manila University"
-                }
-                speaker={
-                  (whatsHappening[lastEl] && whatsHappening[lastEl].Speaker) || "Avery Si"
-                }
-              />
-
-              <AboutHeader aboutHeader="About the event"/>
-              <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
-              <AboutHeader aboutHeader="About the speaker"/>
-              <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
-
-              <RedirectButton
-                buttonText="Register Now"
-                redirectLink="/"/>
-
-            </div>
-            <EventImage />
-          </div>
-        </div>
+        <Events/>
 
         <div className="ms-container" id="member-stories">
           <p className="section-label">Member Stories</p>
@@ -171,12 +109,58 @@ class Community extends Component {
   }
 }
 
+class Events extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedEvent: "Upcoming"
+    }
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    this.setState({ selectedEvent: e.target.value});
+  }
+
+  render() {
+    if (this.state.selectedEvent === "Upcoming") {
+      return(
+        <div className="Events">
+          <div className="events-container" id="events">
+            <p className="section-label">Events</p>
+            <h2>What's happening</h2>
+            <div className="SectionToggleEvents">
+              <button className="section-toggle selected" value="Upcoming" onClick={this.handleClick}>Upcoming</button>
+              <button className="section-toggle" value="Past" onClick={this.handleClick}>Past</button>
+            </div>
+            <UpcomingEvents/>
+          </div>
+        </div>
+    )
+    } else if (this.state.selectedEvent === "Past") {
+      return(
+        <div className="Events">
+          <div className="events-container" id="events">
+            <p className="section-label">Events</p>
+            <h2>What's happening</h2>
+            <div className="SectionToggleEvents">
+              <button className="section-toggle" value="Upcoming" onClick={this.handleClick}>Upcoming</button>
+              <button className="section-toggle selected" value="Past" onClick={this.handleClick}>Past</button>
+            </div>
+            <PastEvents/>
+          </div>
+        </div>
+      )
+    }
+  }
+}
+
 class Resources extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedResource: "Books",
-      isSelected: true
+      selectedResource: "Books"
     }
 
     this.handleClick = this.handleClick.bind(this);
