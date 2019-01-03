@@ -184,7 +184,6 @@ class Resources extends Component {
 
   handleClick(e) {
     this.setState({ selectedResource: e.target.value});
-    // e.target.classList.add("selected");
   }
 
   render() {
@@ -193,7 +192,7 @@ class Resources extends Component {
         <div className="Resources">
           <div className="resources-container" id="resources">
             <p className="section-label">Resources</p>
-            <h2>Here are the resources we've curated for you this week</h2>
+            <h2 className="main-title">Here are the resources we've curated for you this week</h2>
             <div className="SectionToggleResources">
               <button className="section-toggle selected" value="Books" onClick={this.handleClick}>Books</button>
               <button className="section-toggle" value="Articles" onClick={this.handleClick}>Articles</button>
@@ -208,7 +207,7 @@ class Resources extends Component {
         <div className="Resources">
           <div className="resources-container" id="resources">
             <p className="section-label">Resources</p>
-            <h2>Here are the resources we've curated for you this week</h2>
+            <h2 className="main-title">Here are the resources we've curated for you this week</h2>
             <div className="SectionToggleResources">
               <button className="section-toggle" value="Books" onClick={this.handleClick}>Books</button>
               <button className="section-toggle selected" value="Articles" onClick={this.handleClick}>Articles</button>
@@ -223,7 +222,7 @@ class Resources extends Component {
         <div className="Resources">
           <div className="resources-container" id="resources">
             <p className="section-label">Resources</p>
-            <h2>Here are the resources we've curated for you this week</h2>
+            <h2 className="main-title">Here are the resources we've curated for you this week</h2>
             <div className="SectionToggleResources">
               <button className="section-toggle" value="Books" onClick={this.handleClick}>Books</button>
               <button className="section-toggle" value="Articles" onClick={this.handleClick}>Articles</button>

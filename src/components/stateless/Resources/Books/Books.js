@@ -4,8 +4,6 @@ import { AuthorPic, AuthorName } from '../../Author/Author';
 import bookCover from '../../../../../src/resources/img/book-cover.svg';
 import RedirectButton from '../../../state/RedirectButton/RedirectButton';
 
-import '../style.css';
-
 class Books extends Component {
   render() {
     return(
@@ -16,7 +14,7 @@ class Books extends Component {
             <ResourceTitle resourceTitle="The State of UX in Asia" />
             <AuthorPic />
             <AuthorName authorName="Ben Kim" />
-            <ResourceDesc resourceDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur." />
+            <ResourceDesc resourceDesc="This is an annual report highlighting the State of User Experience Design and Research in the Asian continent. This report features real stories from UX Practitioners all over the region." />
             <RedirectButton buttonText="Start Reading" redirectLink="/" />
           </div>
           <ResourceImage resourceImage={bookCover}/>
