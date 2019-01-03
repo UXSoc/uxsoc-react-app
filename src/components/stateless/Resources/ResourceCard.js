@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import bookCover from './../../../resources/img/book-cover.svg';
+// import bookCover from './../../../resources/img/book-cover.svg';
 import './style.css';
 
 class ResourceLabel extends Component {
@@ -31,9 +31,10 @@ class ResourceDesc extends Component {
 
 class ResourceImage extends Component {
   render() {
+    const { resourceImage } = this.props;
     return(
       <div className="ResourceImage">
-        <img src={bookCover} alt="resource"/>
+        <img src={resourceImage} alt="resource"/>
       </div>
     )
   }
@@ -41,9 +42,10 @@ class ResourceImage extends Component {
 
 class PastResources extends Component {
   render() {
+    const { pastResources } = this.props;
     return(
       <div className="PastResources">
-        <a style={{color: "#008ed4"}}href="/">Browse through past resources</a>
+        <a style={{color: "#008ed4"}} href={pastResources}>Browse through past resources</a>
       </div>
     )
   }

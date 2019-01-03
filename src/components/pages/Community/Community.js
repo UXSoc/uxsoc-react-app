@@ -2,19 +2,24 @@ import React, { Component } from 'react';
 import Navigation from '../../state/Navigation/Navigation';
 import { SectionToggleEvents, SectionToggleResources } from './../../state/SectionToggle/SectionToggle';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from './../../stateless/Events/EventDetails';
-import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources } from '../../stateless/Resources/ResourceCard';
+// import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources } from '../../stateless/Resources/ResourceCard';
+// import { PastResources } from '../../stateless/Resources/ResourceCard';
 import { AuthorPic, AuthorName } from './../../stateless/Author/Author';
+import MemberStory from '../MemberStory/MemberStory'
 import { MemberStoriesImage, MemberStoriesLabel, MemberStoriesTitle } from './../../stateless/MemberStories/MemberStories';
 import OpportunityCard from '../../stateless/Opportunities/OpportunityCard';
+import Books from '../../stateless/Resources/Books/Books';
 import ContactForm from './../../state/ContactForm/ContactForm';
 import RedirectButton from './../../state/RedirectButton/RedirectButton';
+
 import landingImage from './../../../resources/img/community-landing.svg';
 import opportunitiesImage from './../../../resources/img/community-opportunities.svg';
 import chevronDown from './../../../resources/img/chevron-down.svg';
+
 import { Route, Switch } from 'react-router-dom'
-import MemberStory from '../MemberStory/MemberStory'
-import './style.css';
 import { BrowserRouter } from "react-router-dom";
+
+import './style.css';
 
 class Community extends Component {
   state = {
@@ -161,18 +166,8 @@ class Community extends Component {
             toggleLabel2="Articles"
             toggleLabel3="Podcasts"
           />
-          <div className="resource-content-container">
-            <div className="resource-card">
-              <ResourceLabel resourceLabel="Book" />
-              <ResourceTitle resourceTitle="The State of UX in Asia" />
-              <AuthorPic />
-              <AuthorName authorName="Ben Kim" />
-              <ResourceDesc resourceDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur." />
-              <RedirectButton buttonText="Start Reading" redirectLink="/" />
-            </div>
-            <ResourceImage />
-            <PastResources />
-          </div>
+
+          <Books/>
         </div>
         <div id="contact-us" className="contact-container">
           <ContactForm />
