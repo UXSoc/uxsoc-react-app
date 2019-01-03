@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import bookCover from './../../../resources/img/book-cover.svg';
 import './style.css';
 
 class ResourceLabel extends Component {
@@ -40,6 +39,17 @@ class ResourceImage extends Component {
   }
 }
 
+class ResourceLink extends Component {
+  render() {
+    const { resourceLink } = this.props;
+    return(
+      <div className="ResourceLink">
+        <a style={{color: "#008ED4"}} href={resourceLink}>www.rootspodcast.design</a>
+      </div>
+    )
+  }
+}
+
 class PastResources extends Component {
   render() {
     const { pastResources } = this.props;
@@ -50,4 +60,4 @@ class PastResources extends Component {
     )
   }
 }
-export { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources };
+export { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, ResourceLink, PastResources };

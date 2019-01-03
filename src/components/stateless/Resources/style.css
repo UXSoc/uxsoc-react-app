@@ -35,7 +35,7 @@
 .ResourceTitle {
   font-size: 2rem;
   text-align: left;
-  width: 30rem;
+  width: 25rem;
   margin-left: 2.5rem;
   margin-top: 1rem;
 }
@@ -58,6 +58,16 @@
   grid-column: 4/9;
   grid-row: 1/12;
   margin-left: -3rem;
+}
+
+.ResourceLink {
+  margin-top: -1.5rem;
+}
+
+.ResourceLink a {
+  font-family: "Proxima-Nova", sans-serif;
+  font-size: 1rem;
+  margin-left: 2.5rem;
 }
 
 .PastResources {
