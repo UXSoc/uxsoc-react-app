@@ -57,3 +57,45 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 320px) {
+  .EventLabel {
+    font-size: 12px;
+    margin-top: 12.5rem;
+    margin-left: 1.3rem;
+  }
+
+  .EventImage img {
+    width: 84%;
+    height: 157px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -45rem;
+  }
+
+  .EventName {
+    font-size: 32px;
+    text-align: left;
+    margin-left: 1.2rem;
+    margin-top: -0.5rem;
+  }
+
+  .EventDetails {
+    margin-left: 1rem;
+    margin-top: -1rem;
+  }
+
+  .AboutHeader {
+    margin-left: 1.4rem;
+  }
+
+  .AboutDesc {
+    width: 225px;
+    margin-left: 1.4rem;
+  }
+
+  .RedirectButton a {
+    margin-right: -1rem;
+  }
+}
