@@ -74,6 +74,10 @@ h2 {
     font-size: 24px;
   }
 
+  .section-label {
+    font-size: 12px;
+  }
+
   .journey-button {
     width: 248px;
     grid-column: 1/1;

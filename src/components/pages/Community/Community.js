@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from '../../state/Navigation/Navigation';
-import { AuthorPic, AuthorName } from './../../stateless/Author/Author';
-import MemberStory from '../MemberStory/MemberStory'
-import { MemberStoriesImage, MemberStoriesLabel, MemberStoriesTitle } from './../../stateless/MemberStories/MemberStories';
+// import MemberStory from '../MemberStory/MemberStory'
+import MemberStories from './../../stateless/MemberStories/MemberStories';
 import OpportunityCard from '../../stateless/Opportunities/OpportunityCard';
 
 import UpcomingEvents from '../../stateless/Events/UpcomingEvents/UpcomingEvents';
@@ -13,7 +12,6 @@ import Articles from '../../stateless/Resources/Articles/Articles';
 import Podcasts from '../../stateless/Resources/Podcasts/Podcasts';
 
 import ContactForm from './../../state/ContactForm/ContactForm';
-import RedirectButton from './../../state/RedirectButton/RedirectButton';
 
 import landingImage from './../../../resources/img/community-landing.svg';
 import opportunitiesImage from './../../../resources/img/community-opportunities.svg';
@@ -40,26 +38,7 @@ class Community extends Component {
 
         <Events/>
 
-        <div className="ms-container" id="member-stories">
-          <p className="section-label">Member Stories</p>
-          <h2>Read up on a fellow member's UX journey</h2>
-          <div className="ms-content-container">
-            <MemberStoriesImage />
-            <div className="ms-card">
-              <MemberStoriesLabel
-                memberStoriesLabel="Featured"/>
-              <MemberStoriesTitle
-                memberStoriesTitle="How I fell in love with UXSoc's advocacy"/>
-              <AuthorPic/>
-              <AuthorName authorName="Jiggy Villanueva, Executive Vice President"/>
-
-              <RedirectButton
-                buttonText="Read Jiggy's Story"
-                redirectLink="/member-story"/>
-
-            </div>
-          </div>
-        </div>
+        <MemberStories/>
 
         <div className="opportunities-container" id="opportunities">
 					<p className="section-label">Opportunities</p>

@@ -1,6 +1,37 @@
 import React, { Component } from 'react';
+import { AuthorPic, AuthorName } from '../../stateless/Author/Author';
+import RedirectButton from '../../state/RedirectButton/RedirectButton';
 import msImage from './../../../resources/img/member-stories.png';
 import './style.css';
+
+class MemberStories extends Component {
+  render() {
+    return(
+      <div className="MemberStories">
+        <div className="ms-container" id="member-stories">
+          <p className="section-label">Member Stories</p>
+          <h2>Read up on a fellow member's UX journey</h2>
+          <div className="ms-content-container">
+            <MemberStoriesImage />
+            <div className="ms-card">
+              <MemberStoriesLabel
+                memberStoriesLabel="Featured"/>
+              <MemberStoriesTitle
+                memberStoriesTitle="How I fell in love with UXSoc's advocacy"/>
+              <AuthorPic/>
+              <AuthorName authorName="Jiggy Villanueva, Executive Vice President"/>
+
+              <RedirectButton
+                buttonText="Read Jiggy's Story"
+                redirectLink="/member-story"/>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
 
 class MemberStoriesImage extends Component {
   render() {
@@ -30,4 +61,4 @@ class MemberStoriesTitle extends Component {
   }
 }
 
-export { MemberStoriesImage, MemberStoriesLabel, MemberStoriesTitle  };
+export default MemberStories;
