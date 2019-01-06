@@ -1,0 +1,65 @@
+.about-ux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -90px;
+}
+
+.about-uxsociety {
+  margin: auto 0;
+  padding-right: 216px;
+}
+
+.about-ux img {
+  margin-left: 77px;
+}
+
+.about-uxsociety h2 {
+  margin-left: 45px;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 24px;
+  color: #101010;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.about-uxsociety p {
+  margin: 0;
+  padding: 0;
+  margin-left: 45px;
+  font-family: Proxima Nova, sans-serif;
+  line-height: 30px;
+  font-size: 20px;
+  color: #101010;
+}
+
+.about-box {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+          margin-top: 72px;
+}
+
+.about-CoreValues {
+  padding: 72px 180px;
+}
+
+.about-CoreValues h1 {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 36px;
+  text-align: center;
+  color: #20252B;
+}
