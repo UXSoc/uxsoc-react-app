@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import Navigation from '../../state/Navigation/Navigation';
 // import MemberStory from '../MemberStory/MemberStory'
+
+import Events from './../../state/Events/Events';
 import MemberStories from './../../stateless/MemberStories/MemberStories';
 import OpportunityCard from '../../stateless/Opportunities/OpportunityCard';
-
-import UpcomingEvents from '../../stateless/Events/UpcomingEvents/UpcomingEvents';
-import PastEvents from '../../stateless/Events/PastEvents/PastEvents';
 
 import Books from '../../stateless/Resources/Books/Books';
 import Articles from '../../stateless/Resources/Articles/Articles';
@@ -85,53 +84,6 @@ class Community extends Component {
       </div>
     );
 
-  }
-}
-
-class Events extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedEvent: "Upcoming"
-    }
-
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(e) {
-    this.setState({ selectedEvent: e.target.value});
-  }
-
-  render() {
-    if (this.state.selectedEvent === "Upcoming") {
-      return(
-        <div className="Events">
-          <div className="events-container" id="events">
-            <p className="section-label">Events</p>
-            <h2>What's happening</h2>
-            <div className="SectionToggleEvents">
-              <button className="section-toggle selected" value="Upcoming" onClick={this.handleClick}>Upcoming</button>
-              <button className="section-toggle" value="Past" onClick={this.handleClick}>Past</button>
-            </div>
-            <UpcomingEvents/>
-          </div>
-        </div>
-    )
-    } else if (this.state.selectedEvent === "Past") {
-      return(
-        <div className="Events">
-          <div className="events-container" id="events">
-            <p className="section-label">Events</p>
-            <h2>What's happening</h2>
-            <div className="SectionToggleEvents">
-              <button className="section-toggle" value="Upcoming" onClick={this.handleClick}>Upcoming</button>
-              <button className="section-toggle selected" value="Past" onClick={this.handleClick}>Past</button>
-            </div>
-            <PastEvents/>
-          </div>
-        </div>
-      )
-    }
   }
 }
 

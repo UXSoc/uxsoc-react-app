@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import calendarIcon from './../../../resources/img/calendar.svg';
-import locationIcon from './../../../resources/img/location.svg';
-import speakerIcon from './../../../resources/img/speaker.svg';
-import eventImage from './../../../resources/img/sample-img.png';
+import calendarIcon from '../../../../resources/img/calendar.svg';
+import locationIcon from '../../../../resources/img/location.svg';
+import speakerIcon from '../../../../resources/img/speaker.svg';
+import eventImage from '../../../../resources/img/sample-img.png';
 
-import './style.css';
+import '../style.css';
 
 class EventDetails extends Component {
   render() {

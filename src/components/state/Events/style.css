@@ -95,7 +95,8 @@
     margin-left: 1.4rem;
   }
 
-  .RedirectButton a {
-    margin-right: -1rem;
+  .RedirectButton {
+    margin-right: -3rem;
+    margin-left: -1rem;
   }
 }
