@@ -55,38 +55,6 @@
   background: #FFFFFF;
 }
 
-/* member stories */
-.ms-container {
-  height: 1000px;
-  background: #FFFFFF;
-}
-
-.ms-container h2 {
-  width: 38rem;
-}
-
-.ms-content-container {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-}
-
-.ms-card {
-  z-index: 1;
-  width: 568px;
-  height: 448px;
-  background: #FFFFFF;
-  box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
-  margin-top: 2rem;
-  grid-column: 6/10;
-  grid-row: 2/8;
-}
-
-.ms-card .AuthorName {
-  margin-bottom: 5rem;
-}
-
 /* opportuniies */
 .opportunities-container {
   height: 1650px;
