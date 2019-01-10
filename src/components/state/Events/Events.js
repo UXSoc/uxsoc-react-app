@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import UpcomingEvents from '../../state/Events/UpcomingEvents/UpcomingEvents';
 import PastEvents from '../../state/Events/PastEvents/PastEvents';
 
+import './style.css';
+
 class Events extends Component {
   constructor(props) {
     super(props);

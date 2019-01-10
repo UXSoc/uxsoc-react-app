@@ -1,3 +1,26 @@
+.events-container {
+  height: 900px;
+  background: #EEF1F6;
+  padding-top: 1rem;
+}
+
+.events-container .section-label {
+  margin-top: 5.25rem;
+}
+
+.event-card {
+  width: 52rem;
+  display: grid;
+  grid-template-columns: 27.5rem 25rem;
+  grid-template-rows: 32rem;
+  margin: auto;
+}
+
+.event-info {
+  height: 100%;
+  background: #FFFFFF;
+}
+
 .EventDetails {
   color: #20252B;
   font-size: 12px;

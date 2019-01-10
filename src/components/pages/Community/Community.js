@@ -4,7 +4,7 @@ import Navigation from '../../state/Navigation/Navigation';
 
 import Events from './../../state/Events/Events';
 import MemberStories from './../../stateless/MemberStories/MemberStories';
-import OpportunityCard from '../../stateless/Opportunities/OpportunityCard';
+import Opportunities from './../../stateless/Opportunities/Opportunities';
 
 import Books from '../../stateless/Resources/Books/Books';
 import Articles from '../../stateless/Resources/Articles/Articles';
@@ -13,7 +13,6 @@ import Podcasts from '../../stateless/Resources/Podcasts/Podcasts';
 import ContactForm from './../../state/ContactForm/ContactForm';
 
 import landingImage from './../../../resources/img/community-landing.svg';
-import opportunitiesImage from './../../../resources/img/community-opportunities.svg';
 import chevronDown from './../../../resources/img/chevron-down.svg';
 
 import { Route, Switch } from 'react-router-dom'
@@ -39,42 +38,7 @@ class Community extends Component {
 
         <MemberStories/>
 
-        <div className="opportunities-container" id="opportunities">
-					<p className="section-label">Opportunities</p>
-          <h2>Discover your passion through our curated list of job openings</h2>
-          <img src={opportunitiesImage} alt="opportunities"/>
-
-          <div className="opportunities-content-container">
-            <OpportunityCard
-              companyName="Google"
-              position="Visual Designer"
-              location="Bonifacio Global City, Taguig, Philippines"
-              type="Full-time"
-              experience="2 yrs experience"
-              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
-            <OpportunityCard
-              companyName="Google"
-              position="Visual Designer"
-              location="Bonifacio Global City, Taguig, Philippines"
-              type="Full-time"
-              experience="2 yrs experience"
-              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
-            <OpportunityCard
-              companyName="Google"
-              position="Visual Designer"
-              location="Bonifacio Global City, Taguig, Philippines"
-              type="Full-time"
-              experience="2 yrs experience"
-              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
-            <OpportunityCard
-              companyName="Google"
-              position="Visual Designer"
-              location="Bonifacio Global City, Taguig, Philippines"
-              type="Full-time"
-              experience="2 yrs experience"
-              description="At Google, Visual designers weave iconography, typography, color, space and texture together to help our users successfully navigate through our products."/>
-          </div>
-        </div>
+        <Opportunities/>
 
         <Resources/>
 
