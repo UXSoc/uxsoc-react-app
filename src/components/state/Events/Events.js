@@ -16,7 +16,7 @@ class Events extends Component {
   }
 
   handleClick(e) {
-    this.setState({ selectedEvent: e.target.value});
+    this.setState({ selectedEvent: e.target.value });
   }
 
   render() {

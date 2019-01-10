@@ -119,9 +119,8 @@
     margin-left: 6rem;
   }
 
-  .RedirectButton a {
-    float: right;
-    margin-right: 1rem;
+  .ms-card .RedirectButton a {
+    margin-right: -0.5rem;
   }
 }
 
@@ -143,11 +142,6 @@
   .ms-card .AuthorName {
     margin-left: 6.5rem;
   }
-
-  .RedirectButton a {
-    float: right;
-    margin-right: 1.5rem;
-  }
 }
 
 @media screen and (max-width: 425px) {
@@ -167,16 +161,15 @@
   }
 
   .MemberStoriesLabel, .MemberStoriesTitle, .ms-card .AuthorPic  {
-    margin-left: 2.5rem;
+    margin-left: 2rem;
   }
 
   .ms-card .AuthorName {
-    margin-left: 5.5rem;
+    margin-left: 5rem;
   }
 
-  .RedirectButton a {
-    float: right;
-    margin-right: 10rem;
+  .ms-card .RedirectButton a {
+    margin-right: -1rem;
   }
 }
 
@@ -187,13 +180,12 @@
   }
 
   .ms-image {
-    width: 84vw;
+    width: 88vw;
     height: 40vh;
-    margin-left: -0.5rem;
+    margin-left: -1rem;
   }
 
-  .RedirectButton a {
-    float: left;
-    margin-left: 4.5rem;
+  .ms-card .RedirectButton a {
+    margin-right: -1.5rem;
   }
 }

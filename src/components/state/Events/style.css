@@ -137,15 +137,9 @@
     font-size: 14px;
   }
 
-  .RedirectButton {
-    position: absolute;
-    margin-right: 5rem;
-    margin-top: -5rem;
-  }
-
-  .RedirectButton img {
-    position: absolute;
-    margin-left: 0rem;
+  .event-card .RedirectButton {
+    margin-top: 2.5rem;
+    margin-right: -2rem;
   }
 }
 
@@ -188,21 +182,17 @@
   .EventImage img {
     width: 80vw;
     height: 32vh;
-    top: -40.5rem;
+    top: -41.5rem;
+  }
+
+  .event-card .RedirectButton {
+    margin-top: 3rem;
+    margin-right: -1.5rem;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .RedirectButton {
-    position: absolute;
-    margin-left: 2.5rem;
-    margin-top: -5rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .RedirectButton {
-    margin-right: 2.5rem;
-    margin-left: -0.5rem;
+  .event-card .RedirectButton {
+    margin-top: 0.4rem;
   }
 }
