@@ -128,12 +128,12 @@
   margin-top: 0.3rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .opportunities-container {
-    height: 2230px;
+    height: 2300px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5rem 0.5rem 18rem repeat(4, 426px);
+    grid-template-rows: 1rem 5rem 15rem repeat(4, 426px);
     justify-items: center;
   }
 
@@ -142,8 +142,8 @@
   }
 
   .opportunities-container h2 {
-    width: 286px;
-    line-height: 34px;
+    width: 90vw;
+    line-height: 42px;
   }
 
   .opportunities-img {
@@ -160,7 +160,7 @@
   }
 
   .OpportunityCard {
-    width: 262px;
+    width: 78vw;
     height: 380px;
   }
 
@@ -198,23 +198,24 @@
   }
 
   .opportunity-location {
+    width: 16.5rem;
     margin-top: -1rem;
     margin-bottom: 0.75rem;
   }
 
   .opportunity-location li {
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 2.6rem;
+    margin-top: -14.5px;
   }
 
   .opportunity-location img {
-    float: right;
-    margin-top: 0.1rem;
+    margin-top: 0.5rem;
     margin-right: 3.25rem;
   }
 
   .opportunity-type, .opportunity-experience {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .opportunity-type {
@@ -224,14 +225,100 @@
   }
 
   .opportunity-desc {
-    width: 220px;
-    font-size: 12px;
+    width: 75vw;
+    font-size: 14px;
     line-height: 20px;
     margin-left: 1.5rem;
   }
 
   .OpportunityCard .RedirectButton {
-    margin-top: 5.3rem;
+    margin-top: 10rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: -1.2rem;
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .opportunities-container {
+    height: 2300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem 5rem 15rem repeat(4, 426px);
+    justify-items: center;
+  }
+
+  .opportunities-container h2 {
+    width: 90vw;
+    line-height: 42px;
+  }
+
+  .OpportunityCard {
+    width: 86vw;
+    height: 380px;
+  }
+
+  .OpportunityCard .RedirectButton {
+    margin-top: 8.8rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: -1.2rem;
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .opportunity-desc {
+    width: 72vw;
+  }
+
+  .OpportunityCard .RedirectButton {
+    margin-top: 8.8rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: -1.2rem;
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .opportunity-desc {
+    width: 70vw;
+  }
+
+  .OpportunityCard .RedirectButton {
+    margin-top: 7.5rem;
+    margin-left: 3.5rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: -1.2rem;
+    margin-left: 5.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .OpportunityCard {
+    width: 86vw;
+    height: 380px;
+  }
+
+  .opportunity-location img {
+    position: relative;
+    margin-top: 0.1rem;
+    margin-right: 7rem;
+  }
+
+  .opportunity-desc {
+    width: 68vw;
+  }
+
+  .OpportunityCard .RedirectButton {
+    margin-top: 6.25rem;
     margin-left: 1.5rem;
   }
 
