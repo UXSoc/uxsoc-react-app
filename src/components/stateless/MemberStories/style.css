@@ -62,6 +62,11 @@
     margin-bottom: 15rem;
   }
 
+  .ms-container h2 {
+    width: 258px;
+    line-height: 34px;
+  }
+
   .ms-image {
     width: 270px;
     height: 186px;
@@ -104,7 +109,6 @@
 
   .RedirectButton a {
     float: left;
-    /* margin-top: -3.5rem; */
     margin-left: 4.5rem;
   }
 }

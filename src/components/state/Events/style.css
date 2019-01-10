@@ -82,6 +82,20 @@
 }
 
 @media screen and (max-width: 320px) {
+  .events-container {
+    height: 1100px;
+    background: #EEF1F6;
+    padding-top: 1rem;
+  }
+
+  .event-card {
+    width: 270px;
+    display: grid;
+    grid-template-columns: 270px;
+    grid-template-rows: 745px;
+    margin: auto;
+  }
+
   .EventLabel {
     font-size: 12px;
     margin-top: 12.5rem;

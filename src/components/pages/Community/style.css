@@ -31,14 +31,6 @@
   margin-top: 0.5rem;
 }
 
-/* resources */
-.resources-container {
-  height: 1230px;
-  background: #EEF1F6;
-  padding-top: 0.5rem;
-  position: relative;
-}
-
 /* section toggles */
 .SectionToggleEvents {
   width: 296px;
@@ -87,24 +79,5 @@
   .round-btn img {
     width: 16px;
     height: 9px;
-  }
-
-  .events-container {
-    height: 1100px;
-    background: #EEF1F6;
-    padding-top: 1rem;
-  }
-
-  .event-card {
-    width: 270px;
-    display: grid;
-    grid-template-columns: 270px;
-    grid-template-rows: 745px;
-    margin: auto;
-  }
-
-  .ms-container h2 {
-    width: 258px;
-    line-height: 34px;
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources } from '../ResourceCard';
+import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources } from '../ResourceCard/ResourceCard';
 import { AuthorPic, AuthorName } from '../../Author/Author';
 import articleImage from '../../../../../src/resources/img/article-img.svg';
 import RedirectButton from '../../../state/RedirectButton/RedirectButton';
