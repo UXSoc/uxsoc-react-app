@@ -81,34 +81,36 @@
   height: 100%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .events-container {
     height: 1100px;
     background: #EEF1F6;
     padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .event-card {
-    width: 270px;
+    width: 90vw;
     display: grid;
-    grid-template-columns: 270px;
-    grid-template-rows: 745px;
-    margin: auto;
+    grid-template-columns: 90vw;
+    grid-template-rows: 750px;
   }
 
   .EventLabel {
-    font-size: 12px;
-    margin-top: 12.5rem;
+    font-size: 14px;
+    margin-top: 20.5rem;
     margin-left: 1.3rem;
   }
 
   .EventImage img {
-    width: 84%;
-    height: 157px;
+    width: 84vw;
+    height: 45vh;
     display: block;
     margin: auto;
     position: relative;
-    top: -45rem;
+    top: -45.5rem;
   }
 
   .EventName {
@@ -121,6 +123,50 @@
   .EventDetails {
     margin-left: 1rem;
     margin-top: -1rem;
+    font-size: 14px;
+  }
+
+  .AboutHeader {
+    margin-left: 1.4rem;
+    font-size: 14px;
+  }
+
+  .AboutDesc {
+    width: 82vw;
+    margin-left: 1.4rem;
+    font-size: 14px;
+  }
+
+  .RedirectButton {
+    position: absolute;
+    margin-right: 5rem;
+    margin-top: -5rem;
+  }
+
+  .RedirectButton img {
+    position: absolute;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .event-card {
+    grid-template-rows: 685px;
+  }
+
+  .EventLabel {
+    font-size: 12px;
+    margin-top: 16.5rem;
+  }
+
+  .EventImage img {
+    width: 84vw;
+    height: 45vh;
+    top: -41.5rem;
+  }
+
+  .EventDetails {
+    font-size: 12px;
   }
 
   .AboutHeader {
@@ -128,12 +174,35 @@
   }
 
   .AboutDesc {
-    width: 225px;
-    margin-left: 1.4rem;
+    width: 75vw;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .EventLabel {
+    font-size: 12px;
+    margin-top: 12.5rem;
   }
 
+  .EventImage img {
+    width: 80vw;
+    height: 32vh;
+    top: -40.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
   .RedirectButton {
-    margin-right: -3rem;
-    margin-left: -1rem;
+    position: absolute;
+    margin-left: 2.5rem;
+    margin-top: -5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .RedirectButton {
+    margin-right: 2.5rem;
+    margin-left: -0.5rem;
   }
 }

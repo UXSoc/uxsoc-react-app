@@ -55,7 +55,7 @@
   margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .ms-container {
     height: 400px;
     margin-top: -4rem;

@@ -128,11 +128,11 @@
   margin-top: 0.3rem;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .opportunities-container {
     height: 2230px;
     display: grid;
-    grid-template-columns: 320px;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.5rem 0.5rem 18rem repeat(4, 426px);
     justify-items: center;
   }
