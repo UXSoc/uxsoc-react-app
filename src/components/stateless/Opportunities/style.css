@@ -127,3 +127,116 @@
 .OpportunityCard .RedirectButton img {
   margin-top: 0.3rem;
 }
+
+@media screen and (max-width: 320px) {
+  .opportunities-container {
+    height: 2230px;
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 0.5rem 0.5rem 18rem repeat(4, 426px);
+    justify-items: center;
+  }
+
+  .opportunities-container .section-label {
+    margin-top: -2.5rem;
+  }
+
+  .opportunities-container h2 {
+    width: 286px;
+    line-height: 34px;
+  }
+
+  .opportunities-img {
+    width: 326px;
+    height: 168px;
+  }
+
+  .opportunities-content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 24px;
+    margin-top: 1rem;
+  }
+
+  .OpportunityCard {
+    width: 262px;
+    height: 380px;
+  }
+
+  .OpportunityCard:first-of-type {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  .OpportunityCard:nth-of-type(2) {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+
+  .OpportunityCard:nth-of-type(3) {
+    grid-column: 1/1;
+    grid-row: 3/3;
+  }
+
+  .OpportunityCard:nth-of-type(4) {
+    grid-column: 1/1;
+    grid-row: 4/4;
+  }
+
+  .OpportunityCard .company-logo {
+    margin-left: 1.5rem;
+  }
+
+  .company-name {
+    margin-left: 4rem;
+  }
+
+  .opportunity-position {
+    font-size: 24px;
+    margin-left: 1.5rem;
+  }
+
+  .opportunity-location {
+    margin-top: -1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .opportunity-location li {
+    font-size: 10px;
+    margin-left: 2.6rem;
+  }
+
+  .opportunity-location img {
+    float: right;
+    margin-top: 0.1rem;
+    margin-right: 3.25rem;
+  }
+
+  .opportunity-type, .opportunity-experience {
+    font-size: 10px;
+  }
+
+  .opportunity-type {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 1.5rem;
+  }
+
+  .opportunity-desc {
+    width: 220px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 1.5rem;
+  }
+
+  .OpportunityCard .RedirectButton {
+    margin-top: 5.3rem;
+    margin-left: 1.5rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: -1.2rem;
+    margin-left: 5rem;
+  }
+}

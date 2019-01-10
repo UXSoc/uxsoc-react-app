@@ -12,7 +12,7 @@ class Opportunities extends Component {
         <div className="opportunities-container" id="opportunities">
 					<p className="section-label">Opportunities</p>
           <h2>Discover your passion through our curated list of job openings</h2>
-          <img src={opportunitiesImage} alt="opportunities"/>
+          <img src={opportunitiesImage} className="opportunities-img" alt="opportunities"/>
 
           <div className="opportunities-content-container">
             <OpportunityCard
