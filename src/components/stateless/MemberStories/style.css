@@ -189,3 +189,17 @@
     margin-right: -1.5rem;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .ms-image {
+    width: 90vw;
+  }
+
+  .MemberStoriesLabel, .MemberStoriesTitle, .ms-card .AuthorPic  {
+    margin-left: 1.25rem;
+  }
+
+  .ms-card .AuthorName {
+    margin-left: 4rem;
+  }
+}
