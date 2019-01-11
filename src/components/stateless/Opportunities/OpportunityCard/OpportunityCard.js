@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
-import RedirectButton from './../../state/RedirectButton/RedirectButton';
-import locationIcon from './../../../resources/img/location.svg';
-import companyLogo from '../../../resources/img/company-logo.svg';
-import './style.css';
+import RedirectButton from '../../../state/RedirectButton/RedirectButton';
+import locationIcon from '../../../../resources/img/location.svg';
+import companyLogo from '../../../../resources/img/company-logo.svg';
+
+import '../style.css';
 
 class OpportunityCard extends Component {
   render() {

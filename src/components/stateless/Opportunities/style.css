@@ -1,7 +1,95 @@
+.opportunities-container {
+  height: 1650px;
+}
+
+.opportunities-container h2 {
+  width: 37.5rem;
+}
+
+.opportunities-container img {
+  display: block;
+  margin: auto;
+}
+
+.opportunities-content-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-row-gap: 84px;
+  margin-top: 1rem;
+}
+
+.company-name {
+  font-family: "Proxima-Nova", sans-serif;
+  font-size: 16px;
+  margin-left: 5.5rem;
+  margin-top: -1.7rem;
+}
+
+.opportunity-position {
+  font-size: 28px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  line-height: 33px;
+  margin-left: 50px;
+  margin-top: 1.5rem;
+}
+
+.opportunity-location {
+  margin-top: -1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.opportunity-location li {
+  font-family: "Proxima-Nova", sans-serif;
+  font-size: 12px;
+  margin-top: -1rem;
+  margin-left: 70px;
+  list-style-type: none;
+}
+
+.opportunity-location img {
+  position: relative;
+  left: -11rem;
+}
+
+.opportunity-type, .opportunity-experience {
+  font-family: "Proxima-Nova", sans-serif;
+  color: black;
+  font-size: 14px;
+  display: inline;
+  background: #C0EAFF;
+  border-radius: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.opportunity-type {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: 50px;
+}
+
+.opportunity-experience {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 15px;
+}
+
+.opportunity-desc {
+  width: 366px;
+  font-family: "Proxima-Nova", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 50px;
+  margin-top: 28px;
+}
+
 .OpportunityCard {
   width: 468px;
   height: 340px;
-  /* padding: 50px 42px 120px 60px; */
   box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
   border-bottom: 70px solid #F1F5FA;
 }
@@ -32,10 +120,236 @@
 }
 
 .OpportunityCard .RedirectButton {
-  margin-top: 5rem;
+  margin-top: 6rem;
   margin-right: 4.25rem;
 }
 
 .OpportunityCard .RedirectButton img {
   margin-top: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .opportunities-container {
+    height: 2300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem 5rem 15rem repeat(4, 426px);
+    justify-items: center;
+  }
+
+  .opportunities-container .section-label {
+    margin-top: -2.5rem;
+  }
+
+  .opportunities-container h2 {
+    width: 90vw;
+    line-height: 42px;
+  }
+
+  .opportunities-img {
+    width: 326px;
+    height: 168px;
+  }
+
+  .opportunities-content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 24px;
+    margin-top: 1rem;
+  }
+
+  .OpportunityCard {
+    width: 78vw;
+    height: 380px;
+  }
+
+  .OpportunityCard:first-of-type {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  .OpportunityCard:nth-of-type(2) {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+
+  .OpportunityCard:nth-of-type(3) {
+    grid-column: 1/1;
+    grid-row: 3/3;
+  }
+
+  .OpportunityCard:nth-of-type(4) {
+    grid-column: 1/1;
+    grid-row: 4/4;
+  }
+
+  .OpportunityCard .company-logo {
+    margin-left: 1.5rem;
+  }
+
+  .company-name {
+    margin-left: 4rem;
+  }
+
+  .opportunity-position {
+    font-size: 24px;
+    margin-left: 1.5rem;
+  }
+
+  .opportunity-location {
+    width: 16.5rem;
+    margin-top: -1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .opportunity-location li {
+    font-size: 12px;
+    margin-left: 2.6rem;
+    margin-top: -14.5px;
+  }
+
+  .opportunity-location img {
+    margin-top: 0.5rem;
+    margin-right: 3.25rem;
+  }
+
+  .opportunity-type, .opportunity-experience {
+    font-size: 12px;
+  }
+
+  .opportunity-type {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 1.5rem;
+  }
+
+  .opportunity-desc {
+    width: 75vw;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 1.5rem;
+  }
+
+  .OpportunityCard .RedirectButton {
+    margin-top: 10rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: -1.2rem;
+    margin-left: 5rem;
+  }
+
+  .OpportunityCard .RedirectButton {
+    margin-top: 9.25rem;
+    float: left;
+    margin-left: 23.5rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: 0.35rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .opportunities-container {
+    height: 2300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem 5rem 15rem repeat(4, 426px);
+    justify-items: center;
+  }
+
+  .opportunities-container h2 {
+    width: 90vw;
+    line-height: 42px;
+  }
+
+  .OpportunityCard {
+    width: 86vw;
+    height: 380px;
+  }
+
+  .OpportunityCard .RedirectButton {
+    margin-top: 8rem;
+    float: left;
+    margin-left: 18.5rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: 0.4rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .opportunities-container {
+    height: 2300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem 5rem 15rem repeat(4, 426px);
+    justify-items: center;
+    margin-top: -6rem;
+  }
+
+  .opportunity-desc {
+    width: 72vw;
+  }
+
+  .OpportunityCard .RedirectButton {
+    margin-top: 6.5rem;
+    float: left;
+    margin-left: 9.5rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .opportunity-desc {
+    width: 70vw;
+  }
+
+  .OpportunityCard .RedirectButton {
+    margin-top: 5.5rem;
+    float: left;
+    margin-left: 8rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: -1.2rem;
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .OpportunityCard {
+    width: 86vw;
+    height: 380px;
+  }
+
+  .opportunity-location img {
+    position: relative;
+    margin-top: 0.1rem;
+    margin-right: 3.25rem;
+  }
+
+  .opportunity-desc {
+    width: 68vw;
+  }
+
+  .OpportunityCard .RedirectButton {
+    margin-top: 5.5rem;
+    float: left;
+    margin-left: 5.5rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: -1.2rem;
+    margin-left: 5.5rem;
+  }
 }

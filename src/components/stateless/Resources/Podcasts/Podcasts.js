@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, ResourceLink, PastResources } from '../ResourceCard';
+import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, ResourceLink, PastResources } from '../ResourceCard/ResourceCard';
 import podcastImage from '../../../../../src/resources/img/podcast-img.svg';
 import RedirectButton from '../../../state/RedirectButton/RedirectButton';
+
+import '../style.css';
 
 class Podcasts extends Component {
   render() {

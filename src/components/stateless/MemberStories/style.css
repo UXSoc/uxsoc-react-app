@@ -1,3 +1,34 @@
+.ms-container {
+  height: 1000px;
+  background: #FFFFFF;
+}
+
+.ms-container h2 {
+  width: 38rem;
+}
+
+.ms-content-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.ms-card {
+  z-index: 1;
+  width: 568px;
+  height: 448px;
+  background: #FFFFFF;
+  box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
+  margin-top: 2rem;
+  grid-column: 6/10;
+  grid-row: 2/8;
+}
+
+.ms-card .AuthorName {
+  margin-bottom: 5rem;
+}
+
 .MemberStoriesImage {
   grid-column: 2/9;
   grid-row: 1/8;
@@ -22,4 +53,153 @@
   margin-left: 2.5rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .ms-image {
+    width: 75vw;
+  }
+
+  .ms-card {
+    grid-column: 5/10;
+    grid-row: 3/8;
+    margin-left: -4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ms-container {
+    height: 580px;
+    margin-top: -4rem;
+    margin-bottom: 15rem;
+  }
+
+  .ms-container h2 {
+    width: 70vw;
+    line-height: 47px;
+  }
+
+  .ms-image {
+    width: 84vw;
+    height: 70vh;
+    margin-left: -0.5rem;
+  }
+
+  .ms-card {
+    height: 14rem;
+    margin-top: 12rem;
+    grid-column: 2/10;
+    grid-row: 2/8;
+    margin-left: 1.75rem;
+    box-shadow: 0 4px rgba(207, 204, 204, 0.23);
+  }
+
+  .MemberStoriesLabel {
+    font-size: 12px;
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+  }
+
+  .MemberStoriesTitle {
+    font-size: 18px;
+    line-height: 26px;
+    width: 1rem;
+    margin-left: 2.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .ms-card .AuthorPic {
+    margin-left: 2.5rem;
+  }
+
+  .ms-card .AuthorName {
+    font-size: 12px;
+    margin-bottom: 2.75rem;
+    margin-left: 6rem;
+  }
+
+  .ms-card .RedirectButton a {
+    margin-right: -0.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ms-card {
+    width: 100vw;
+    height: 16rem;
+    margin-top: 12rem;
+    grid-column: 1/10;
+    grid-row: 2/8;
+    box-shadow: 0 4px rgba(207, 204, 204, 0.23);
+    margin-left: 0rem;
+  }
+
+  .MemberStoriesLabel, .MemberStoriesTitle, .ms-card .AuthorPic  {
+    margin-left: 3.5rem;
+  }
+
+  .ms-card .AuthorName {
+    margin-left: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ms-container h2 {
+    width: 258px;
+    line-height: 34px;
+  }
+
+  .ms-image {
+    width: 84vw;
+    height: 40vh;
+    margin-left: -0.5rem;
+  }
+
+  .ms-card {
+    margin-top: 9rem;
+  }
+
+  .MemberStoriesLabel, .MemberStoriesTitle, .ms-card .AuthorPic  {
+    margin-left: 2rem;
+  }
+
+  .ms-card .AuthorName {
+    margin-left: 5rem;
+  }
+
+  .ms-card .RedirectButton a {
+    margin-right: -1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ms-container h2 {
+    width: 258px;
+    line-height: 34px;
+  }
+
+  .ms-image {
+    width: 88vw;
+    height: 40vh;
+    margin-left: -1rem;
+  }
+
+  .ms-card .RedirectButton a {
+    margin-right: -1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .ms-image {
+    width: 90vw;
+  }
+
+  .MemberStoriesLabel, .MemberStoriesTitle, .ms-card .AuthorPic  {
+    margin-left: 1.25rem;
+  }
+
+  .ms-card .AuthorName {
+    margin-left: 4rem;
+  }
 }
