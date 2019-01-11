@@ -1,3 +1,10 @@
+.resources-container {
+  height: 1230px;
+  background: #EEF1F6;
+  padding-top: 0.5rem;
+  position: relative;
+}
+
 .resource-content-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -50,15 +57,8 @@
   margin-bottom: 2.5rem;
 }
 
-.RedirectButton {
+.resource-card .RedirectButton {
   margin-top: 2.5rem;
-}
-
-.resources-container {
-  height: 1230px;
-  background: #EEF1F6;
-  padding-top: 0.5rem;
-  position: relative;
 }
 
 .ResourceImage {
@@ -90,4 +90,276 @@
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.selected {
+  color: #20252b;
+  border-bottom: 1px solid #20252b;
+}
+
+@media screen and (max-width: 600px) {
+  .resources-container {
+    height: 1050px;
+    padding-top: 0.25rem;
+    position: relative;
+  }
+
+  .main-title {
+    width: 60vw;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .SectionToggleResources .section-toggle {
+    width: 125px;
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  .SectionToggleResources .section-toggle:first-of-type {
+    margin-left: 2.5rem;
+  }
+
+  .resource-content-container {
+    width: 86vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin-left: 3.25rem;
+    margin-top: -2rem;
+  }
+
+  .ResourceImage img {
+    width: 80vw;
+    height: auto;
+  }
+
+  .resource-card {
+    z-index: 1;
+    width: 84vw;
+    height: 415px;
+    grid-column: 5/5;
+    grid-row: 4/8;
+    margin-top: -2rem;
+  }
+
+  .ResourceLabel {
+    font-size: 12px;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .ResourceTitle {
+    width: 26rem;
+    margin-left: 1.5rem;
+    margin-bottom: 3rem;
+    line-height: 34px;
+  }
+
+  .resource-card .AuthorPic {
+    margin-left: 1.5rem;
+  }
+
+  .resource-card .AuthorName {
+    margin-left: 5rem;
+  }
+
+  .ResourceLink {
+    margin-left: -0.9rem;
+  }
+
+  .ResourceDesc {
+    width: 68vw;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .resource-card .RedirectButton {
+    margin-right: 0rem;
+  }
+
+  .resource-card .RedirectButton img{
+    margin-top: 0.25rem;
+  }
+
+  .PastResources {
+    grid-column: 5/10;
+    grid-row: 8/12;
+    margin-left: 7rem;
+    margin-top: 2rem;
+  }
+
+  .PastResources a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .resources-container {
+    height: 1050px;
+    padding-top: 0.25rem;
+    position: relative;
+  }
+
+  .main-title {
+    width: 268px;
+  }
+
+  .SectionToggleResources .section-toggle {
+    width: 125px;
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  .SectionToggleResources .section-toggle:first-of-type {
+    margin-left: 1.5rem;
+  }
+
+  .resource-content-container {
+    width: 86vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin-left: 2.5rem;
+    margin-top: -2rem;
+  }
+
+  .ResourceImage img {
+    width: 80vw;
+    height: auto;
+  }
+
+  .resource-card {
+    z-index: 1;
+    width: 84vw;
+    height: 415px;
+    grid-column: 5/5;
+    grid-row: 3/8;
+    margin-top: -2rem;
+  }
+
+  .ResourceLabel {
+    font-size: 12px;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .ResourceTitle {
+    width: 18rem;
+  }
+
+  .ResourceDesc {
+    width: 68vw;
+  }
+
+  .resource-card .RedirectButton {
+    margin-right: -0.5rem;
+  }
+
+  .PastResources {
+    grid-column: 5/10;
+    grid-row: 9/12;
+    margin-left: 1.75rem;
+  }
+
+  .PastResources a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .SectionToggleResources .section-toggle {
+    width: 125px;
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  .SectionToggleResources .section-toggle:first-of-type {
+    margin-left: 0rem;
+  }
+
+  .resource-content-container {
+    width: 86vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin-left: 2.5rem;
+    margin-top: -2rem;
+  }
+
+  .resource-card {
+    z-index: 1;
+    width: 80vw;
+    height: 415px;
+    grid-column: 4/5;
+    grid-row: 3/8;
+    margin-top: -0.5rem;
+  }
+
+  .ResourceTitle {
+    width: 12rem;
+  }
+
+  .ResourceDesc {
+    width: 65vw;
+  }
+
+  .resource-card .RedirectButton {
+    margin-right: -2rem;
+  }
+
+  .PastResources {
+    grid-column: 1/10;
+    grid-row: 9/12;
+    margin-left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main-title {
+    width: 268px;
+    line-height: 34px;
+  }
+
+  .SectionToggleResources .section-toggle {
+    width: 106px;
+    padding: 0.5rem;
+  }
+
+  .SectionToggleResources .section-toggle:first-of-type {
+    margin-left: 0rem;
+  }
+
+  .resource-content-container {
+    width: 86vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin-left: 2.5rem;
+  }
+
+  .resource-card {
+    z-index: 1;
+    width: 245px;
+    height: 415px;
+    grid-column: 4/4;
+    grid-row: 3/8;
+    margin-top: -2rem;
+  }
+
+  .ResourceDesc {
+    width: 62vw;
+  }
+
+  .resource-card .RedirectButton {
+    margin-right: -2rem;
+  }
+
+  .PastResources {
+    grid-column: 1/10;
+    grid-row: 9/12;
+    margin-left: -0.25rem;
+  }
 }

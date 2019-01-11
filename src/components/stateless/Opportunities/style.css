@@ -317,12 +317,12 @@
   .OpportunityCard .RedirectButton {
     margin-top: 5.5rem;
     float: left;
-    margin-left: 7.5rem;
+    margin-left: 8rem;
   }
 
   .OpportunityCard .RedirectButton img {
-    margin-top: -1.15rem;
-    margin-left: 0.5rem;
+    margin-top: -1.2rem;
+    margin-left: 6rem;
   }
 }
 
@@ -335,7 +335,7 @@
   .opportunity-location img {
     position: relative;
     margin-top: 0.1rem;
-    margin-right: 7rem;
+    margin-right: 3.25rem;
   }
 
   .opportunity-desc {
@@ -345,6 +345,11 @@
   .OpportunityCard .RedirectButton {
     margin-top: 5.5rem;
     float: left;
-    margin-left: 5rem;
+    margin-left: 5.5rem;
+  }
+
+  .OpportunityCard .RedirectButton img {
+    margin-top: -1.2rem;
+    margin-left: 5.5rem;
   }
 }
