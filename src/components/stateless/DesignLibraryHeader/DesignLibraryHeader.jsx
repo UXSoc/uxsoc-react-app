@@ -13,7 +13,7 @@ class DesignLibraryHeader extends Component {
                         <h4 className = "articleSmallTitle">DESIGN LIBRARY</h4>
                         <div className="bigHeaderContainer"><h1 className = "articleBigHeader">A resource library for all your UX needs</h1></div>
                     </div>
-                    <img src={header} alt="header"></img>
+                    <img src={header} alt="header"/>
 
                 </div>
             </div>
