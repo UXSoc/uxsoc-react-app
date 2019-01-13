@@ -6,10 +6,10 @@ class Laptop extends Component {
         super(props);
         this.state = {  }
     }
-    render() { 
-        return ( 
+    render() {
+        return (
             <div>
-                <img src={laptop}></img>
+                <img src={laptop} alt="case-study"/>
                 <div className="tedXLaptoptextBG">
                     <h1 className="tedXLaptoptext"><a href={this.props.link}>{this.props.text}</a></h1>
                 </div>
@@ -17,5 +17,5 @@ class Laptop extends Component {
          );
     }
 }
- 
+
 export default Laptop;

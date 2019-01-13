@@ -6,10 +6,10 @@ class Meeting extends Component {
         super(props);
         this.state = {  }
     }
-    render() { 
-        return ( 
+    render() {
+        return (
             <div>
-                <img src = {meeting}></img>
+                <img src={meeting} alt="case-study"/>
                 <div className="meetingTextBG">
             <h1 className="meetingText" ><a href={this.props.link} className="aMeeting">{this.props.text}</a></h1>
             </div>
@@ -17,5 +17,5 @@ class Meeting extends Component {
          );
     }
 }
- 
+
 export default Meeting;

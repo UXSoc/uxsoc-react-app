@@ -5,17 +5,17 @@ class TedX extends Component {
         super(props);
         this.state = {  }
     }
-    render() { 
-        return ( 
+    render() {
+        return (
             <div className="caseStudies">
-            <img src = {tedx}></img>
+            <img src = {tedx} alt="case-study"/>
             <div className="tedXLaptoptextBG">
             <h1 className="tedXLaptoptext" ><a href={this.props.link}>{this.props.text}</a></h1>
             </div>
-            
+
             </div>
          );
     }
 }
- 
+
 export default TedX;

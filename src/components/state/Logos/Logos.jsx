@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import './style.css'
-import shield from '../../../resources/img/work-imgs/logo.svg'
-import tugon from '../../../resources/img/work-imgs/tugon-logo.svg'
-import lions from '../../../resources/img/work-imgs/LIONS-Logo.svg'
-import uxph from '../../../resources/img/work-imgs/uxph.svg'
 
 
 class Logos extends Component {
@@ -11,34 +7,34 @@ class Logos extends Component {
         super(props);
         this.state = {  }
     }
-    render() 
-    
-    { 
-       
-        return ( 
+    render()
+
+    {
+
+        return (
             <div className = "mainLogos">
                 <div className = "indivLogos">
-                    <div className="indivLogo shield">       
-                     <img src={this.props.logo1}></img>
+                    <div className="indivLogo shield">
+                     <img src={this.props.logo1} alt="logo1"/>
                     </div>
                     <div className="indivLogo tugon">
-                    <img src={this.props.logo2}></img>
+                    <img src={this.props.logo2} alt="logo2"/>
 
                     </div>
                     <div className="indivLogo lions">
-                    <img src={this.props.logo3}></img>
+                    <img src={this.props.logo3} alt="logo3"/>
 
                     </div>
                     <div className="indivLogo uxph">
-                    <img src={this.props.logo4}></img>
+                    <img src={this.props.logo4} alt="logo4"/>
 
                     </div>
 
- 
+
                 </div>
             </div>
          );
     }
 }
- 
+
 export default Logos;

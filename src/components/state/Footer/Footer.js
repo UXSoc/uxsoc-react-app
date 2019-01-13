@@ -70,16 +70,16 @@ class Footer extends Component {
           <div className="footer-follow">
             <h4>Follow Us</h4>
             <div className="footer-icons">
-              <a href='https://www.facebook.com/UXSoc/' target="_blank">
+              <a href='https://www.facebook.com/UXSoc/' target="_blank" rel="noopener noreferrer">
                 <img alt='uxsoc-logo' src={facebook}/>
               </a>
-              <a href='https://twitter.com/uxsocietyph'>
+              <a href='https://twitter.com/uxsocietyph' target="_blank" rel="noopener noreferrer">
                 <img alt='uxsoc-logo' src={twitter}/>
               </a>
-              <a href='https://medium.com/user-experience-society'>
+              <a href='https://medium.com/user-experience-society' target="_blank" rel="noopener noreferrer">
                 <img alt='uxsoc-logo' src={medium}/>
               </a>
-              <a href='https://github.com/UXSoc'>
+              <a href='https://github.com/UXSoc' target="_blank" rel="noopener noreferrer">
                 <img alt='uxsoc-logo' src={github}/>
               </a>
             </div>

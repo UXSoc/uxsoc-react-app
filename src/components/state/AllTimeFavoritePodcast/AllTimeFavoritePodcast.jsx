@@ -7,12 +7,12 @@ class AllTimeFavoritePodcast extends Component {
         super(props);
         this.state = {  }
     }
-    render() { 
-        return ( 
+    render() {
+        return (
             <div>
                 <div className={`${this.props.class}`}>
                 <div className="image">
-                    <img src={this.props.image} />
+                    <img src={this.props.image} alt="all-time-favorite-podcast" />
                 </div>
                 <div className="rightSideText">
                 <div className = "podcastText">
@@ -22,15 +22,15 @@ class AllTimeFavoritePodcast extends Component {
 
                 </div>
                 <div className="buttons">
-                    <div><img src = {playButton} /></div>
+                    <div><img src = {playButton} alt="play-button" /></div>
                     <div className = "barsContainer"></div>
                 </div>
                 </div>
-            
+
             </div>
             </div>
          );
     }
 }
- 
+
 export default AllTimeFavoritePodcast;

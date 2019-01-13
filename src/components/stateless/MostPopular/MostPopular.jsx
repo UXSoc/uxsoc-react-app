@@ -5,15 +5,15 @@ class MostPopular extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
-        
+
     }
-    render() { 
-        
-        return ( 
+    render() {
+
+        return (
             <div className={`mostPopularSection ${this.props.class}`}>
-                
+
                 <div className = "wholeItemContainer">
-                    <img src={rectangle}/>
+                    <img src={rectangle} alt="most-popular"/>
                     <div className = "itemHeaderContainer"><h3 className="itemHeader">{this.props.hText}</h3></div>
                     <div className = "itemTextContainer"><p className="itemText">{this.props.pText}</p></div>
                 </div>
@@ -21,5 +21,5 @@ class MostPopular extends Component {
          );
     }
 }
- 
+
 export default MostPopular;

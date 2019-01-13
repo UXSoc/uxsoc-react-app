@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css'
-import mainImage from '../../../resources/img/work-imgs/productivity.svg'
+// import mainImage from '../../../resources/img/work-imgs/productivity.svg'
 import illustrationSecurity from '../../../../src/resources/img/member-story-imgs/illustration-security.svg'
 import rectangle from '../../../resources/img/member-story-imgs/Rectangle.png'
 import ellipse from '../../../resources/img/member-story-imgs/Ellipse.png'
@@ -10,26 +10,26 @@ class MainMemberStory extends Component {
         super(props);
         this.state = {  }
     }
-    render() { 
-        return ( 
-        
+    render() {
+        return (
+
         <div className="memberStoryMainPage">
             <div className="memberStoryHeader">
                 <div className="MSheaderText">
                     <h4 className="memberStoryHeader">MEMBER STORIES</h4>
                     <h1 className="storyTitle">How I fell in love with UXSoc's <br />advocacy</h1>
                     <div className="memberStoryAuthor">
-                        
+
                         <div className="authorAndPosition">
-                        <span className="ellipse"><img src={ellipse}></img></span>
+                        <span className="ellipse"><img src={ellipse} alt="ellipse"/></span>
                         <span>Jiggy Villanueva, Executive Vice President</span>
                         </div>
                     </div>
                     <div className="security-img">
-                    <img src={illustrationSecurity}></img>
+                    <img src={illustrationSecurity} alt="security"></img>
                     </div>
                 </div>
-                </div>  
+                </div>
 
                 <div className="memberStoryText">
 
@@ -70,7 +70,7 @@ class MainMemberStory extends Component {
                 </div>
 
                 <div className="MSbottomImage">
-                <img src = {rectangle}></img>
+                <img src = {rectangle} alt="rectangle"/>
                 </div>
 
                 <div className = "MSbuttons">
@@ -83,17 +83,12 @@ class MainMemberStory extends Component {
                     <h4 className="otherStoriesButton">SEE OTHER MEMBER STORIES ⟶</h4>
                 </div>
 
-
                 </div>
-                
 
-                
-            
-              
-        </div> 
-        
+        </div>
+
         );
     }
 }
- 
+
 export default MainMemberStory;
