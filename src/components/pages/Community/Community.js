@@ -8,6 +8,7 @@ import Opportunities from './../../stateless/Opportunities/Opportunities';
 import Resources from './../../stateless/Resources/Resources';
 
 import ContactForm from './../../state/ContactForm/ContactForm';
+import Footer from './../../state/Footer/Footer';
 
 import landingImage from './../../../resources/img/community-landing.svg';
 import chevronDown from './../../../resources/img/chevron-down.svg';
@@ -42,6 +43,7 @@ class Community extends Component {
         <div id="contact-us" className="contact-container">
           <ContactForm />
         </div>
+        <Footer/>
       </div>
     );
 
