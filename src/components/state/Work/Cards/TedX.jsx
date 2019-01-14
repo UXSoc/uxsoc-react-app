@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
 import tedx from '../../../../resources/img/work-imgs/tedx.png'
-class TedX extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() {
-        return (
-            <div className="caseStudies">
-            <img src = {tedx} alt="case-study"/>
-            <div className="tedXLaptoptextBG">
-            <h1 className="tedXLaptoptext" ><a href={this.props.link}>{this.props.text}</a></h1>
-            </div>
 
-            </div>
-         );
-    }
+import '../style.css'
+
+class TedX extends Component {
+  render() {
+    return (
+      <div className="TedX">
+        <img src={tedx} alt="case-study"/>
+        <div className="case-study-bg">
+          <h1 className="case-study-text"><a href={this.props.link}>{this.props.text}</a></h1>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default TedX;

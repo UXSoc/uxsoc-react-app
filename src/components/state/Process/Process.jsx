@@ -11,12 +11,12 @@ class Process extends Component {
       <div className="process">
         <div className="headers">
           <p className="section-label">Process</p>
-          <h2>The method to our madness</h2>
+          <h2 className="method-title">The method to our madness</h2>
           <img src={productivity2} className="processImage" alt="process=1"/>
           <img src={arrowRight} className = "arrowRight" alt="arrow-right"/>
           <img src={arrowLeft} className = "arrowLeft" alt="arrow-left"/>
           <h2 className="discovery">01. Discovery</h2>
-          <p>This is our research phase. We try to get as much information about
+          <p className="discovery-text">This is our research phase. We try to get as much information about
             our client and their needs. We do stakeholder interviews, user surveys,
             competitive analysis, naturalistic observations, affinity mapping
             and brand workshops to understand the user needs and align it with

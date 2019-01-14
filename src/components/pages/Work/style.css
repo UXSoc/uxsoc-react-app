@@ -1,34 +1,30 @@
-/* h1 {
-    font-size: 300%;
-} */
-
 h4 {
     color: rgb(204, 203, 203);
     letter-spacing: 7px;
 }
 
 body {
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
 }
 
 .Work .landing-container .section-label {
     text-align: left;
-    margin-left: 9.5rem;
+    margin-left: 11.5rem;
 }
 
 .Work .landing-container h2 {
     width: 730px;
     text-align: left;
-    margin-left: 9.5rem;
+    margin-left: 11.5rem;
 }
 
 .Work .landing-container .journey-button {
-    margin-left: 9.5rem;
+    margin-left: 11.5rem;
 }
 
 .Work .landing-container img {
     position: absolute;
-    right: 9.5rem;
+    right: 11.5rem;
     height: 568px;
     width: 704px;
     margin-top: 7rem;

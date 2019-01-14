@@ -6,7 +6,7 @@ import ContactForm from '../../state/ContactForm/ContactForm';
 import Process from '../../state/Process/Process';
 import Services from '../../stateless/Services/Services';
 import Workcomp from '../../state/Work/Work';
-import Logos from '../../state/Logos/Logos';
+import Logos from '../../stateless/Logos/Logos';
 import mainImage from '../../../resources/img/work-imgs/productivity.svg';
 
 import shield from '../../../resources/img/work-imgs/logo.svg';
@@ -27,16 +27,17 @@ class Work extends Component {
           <button className="journey-button">Contact Us</button>
           <img src={mainImage} alt="work with ux society"></img>
         </div>
+
         <div id="process">
-        <Process/>
+          <Process/>
         </div>
 
         <div id="services">
-          <Services />
+          <Services/>
         </div>
 
         <div id="work">
-        <Workcomp />
+          <Workcomp/>
         </div>
 
         <div>

@@ -1,95 +1,74 @@
-div{
-    line-height: 1.5;
-}
-
-.mainServicesComp{
-    height: 1716px;
-    position: relative;
-    margin-top: 500px;
-}
-
-.services {
-    text-align: center;
-    position: relative;
-    height:300px;
-    margin-top: 400px;
-}
-
-.prodRev{
-    position: relative;
-    font-size: 160%;
+div {
+  line-height: 1.5;
 }
 
 h3 {
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
+  font-size: 28px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.services {
+  height: 1716px;
+  position: relative;
+  display: block;
+  margin: 32rem 11.5rem 0 11.5rem;
+}
+
+.services h2 {
+  margin-bottom: 8rem;
 }
 
 .services-paragraph {
-    height: 108px;
-    width: 477px;
-    text-align: justify;
-    position: relative;
-    font-family: "Proxima-Nova", sans-serif;
+  height: 108px;
+  width: 477px;
+  position: relative;
+  font-family: "Proxima-Nova", sans-serif;
 }
 
-.img2{
-    left: 930px;
-    position: relative;
-    top: -300px;
+.row-1, .row-2, .row-3 {
+  position: relative;
+  left: 0;
 }
 
-.row2{
-    position: relative;
-    left: 330px;
-    margin-top: -100px;
+.row-1 {
+  margin-top: -3rem;
 }
 
-.row1{
-    position: relative;
-    top: -99px;
-    left: 130px;
+.row-1-text {
+  position: absolute;
+  top: 8rem;
+  right: 0;
 }
 
-.row3{
-    position: relative;
-    left: 130px;
-    top: -290px;
+.row-1 p {
+  width: 30vw;
 }
 
-.img1{
-    position:relative;
-    left: 160px;
+.row-2 {
+  margin-top: 10rem;
 }
 
-.img3{
-    position: relative;
-    left: 160px;
+.row-2 p {
+  width: 37.5vw;
 }
 
-.webDesign{
-    position: relative;
-    font-size: 160%;
+.row-2 img {
+  position: absolute;
+  right: 0;
+  top: -12rem;
 }
 
-.designWorkshops{
-    position: relative;
-    font-size: 160%;
+.row-3 {
+  margin-top: 6rem;
 }
 
-.row1text{
-    top: -290px;
-    left: 740px;
-    position: relative;
-    height: 108px;
-    width: 448px;
-
+.row-3-text {
+  position: absolute;
+  top: 8rem;
+  right: -1rem;
 }
 
-.row3text{
-    top: -290px;
-    left: 740px;
-    position: relative;
-    height: 108px;
-    width: 448px;
+.row-3 p {
+  width: 30vw;
 }

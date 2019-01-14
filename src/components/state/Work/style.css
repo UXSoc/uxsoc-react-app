@@ -1,83 +1,90 @@
-.mainWork{
-    height: 1240px;
-    margin-left: 180px;
-    position: relative;
+.case-studies {
+  height: 1240px;
+  position: relative;
+  display: block;
+  margin: 0 11.5rem 0 11.5rem;
 }
 
-.caseStudies{
-    position: relative;
-    top: -30px;
+.case-studies .section-label {
+  position: absolute;
+  top: -6rem;
+  left: 0;
 }
 
-.meetingDiv{
-    margin-top: -100px;
-    position: relative;
+.case-studies h2 {
+  position: absolute;
+  top: 3rem;
+  left: 0;
 }
 
-.laptopDiv{
-    position: relative;
-    left: 533px;
-    top: -900px;
+.case-studies img {
+  width: 100%;
+  height: 100%;
 }
 
-.tedXLaptoptext{
-    font-family:"Rubik";
-    padding-top: 29px;
-    padding-left: 32px;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 500;
-    height: 36px;
-    text-align: left;
+.case-study-bg {
+  position: relative;
+  height: 90px;
+  line-height: 90px;
+  width: 35vw;
+  top: -116px;
+  fill: solid;
 }
 
-.tedXdiv{
-    height: 10px;
+.case-study-text a {
+  font-family: "Rubik", sans-serif;
+  padding-left: 32px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+  height: 36px;
+  text-align: left;
 }
 
-.tedXLaptoptextBG{
-    position: relative;
-    height: 90px;
-    width: 490px;
-    background: rgba(244, 244, 244, 0.7);
-    top: -116px;
+.TedX {
+  width: 35vw;
+  height: 480px;
+  position: absolute;
+  top: 8rem;
 }
 
-.meetingTextBG{
-    position: relative;
-    height: 90px;
-    width: 490px;
-    background: rgba(92, 89, 89, 0.7);
-    top: -116px;
-    fill: solid;
+.TedX .case-study-bg, .Laptop .case-study-bg {
+  background: rgba(244, 244, 244, 0.7);
 }
 
-.meetingText{
-    font-family:"Rubik";
-    padding-top: 29px;
-    padding-left: 32px;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 600;
-    height: 36px;
-    text-align: left;
-    color: #FFFFFF
+.Meeting {
+  width: 35vw;
+  height: 480px;
+  position: absolute;
+  top: 40.5rem;
+}
+
+.Meeting .case-study-bg {
+  background: rgba(92, 89, 89, 0.7);
+}
+
+.Meeting .case-study-text {
+  color: #FFFFFF
+}
+
+.Laptop {
+  width: 35vw;
+  height: 480px;
+  position: absolute;
+  top: 15rem;
+  right: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: black;
 }
 
 
-.aMeeting:visited{
-    font-family: "Rubik";
-    color: #ffffff;
-}
-
-.workHead {
-    font-family: "Proxima-Nova", sans-serif;
+.aMeeting:visited {
+  font-family: "Rubik";
+  color: #ffffff;
 }
