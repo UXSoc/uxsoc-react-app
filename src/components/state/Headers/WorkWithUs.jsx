@@ -11,7 +11,7 @@ class Header extends Component {
                     <h4 className="workwithux">WORK WITH UX SOCIETY</h4>
                     <h1 className = "mainheader">Crafting the best experiences <br />to achieve your goals</h1>
                     <div className="buttonDiv"><button className="journey-button">CONTACT US</button></div>
-                    <img src = {mainImage} className = "mainImage"></img>
+                    <img src = {mainImage} className = "mainImage" alt="work-with-us"/>
                 </div>
             </div>
         );

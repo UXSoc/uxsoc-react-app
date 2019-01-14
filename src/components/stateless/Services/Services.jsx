@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.css'
 import productivityGirl from '../../../resources/img/work-imgs/productivity-2.svg'
 
@@ -11,12 +11,12 @@ return (
                     </div>
                     <div className="threeRows">
                     <div className = "row1">
-                        <img src = {productivityGirl} className = "img1"></img>
+                        <img src = {productivityGirl} alt="service-1" className = "img1"></img>
                         <div className = "row1text">
                         <h3 className = "webDesign">Web Design and Development</h3>
-                        <p className="services-paragraph">We help you create effective products on the web, 
-                        from aesthetics, flow to usability. We believe that we can 
-                        create a competitive advantage to your organization 
+                        <p className="services-paragraph">We help you create effective products on the web,
+                        from aesthetics, flow to usability. We believe that we can
+                        create a competitive advantage to your organization
                         through human-centered design. </p>
                         </div>
                     </div>
@@ -24,17 +24,17 @@ return (
                 <div>
                     <div className = "row2">
                     <h3 className = "prodRev">Product Review and Recommendation</h3>
-                    <p className="services-paragraph">Have a product to improve? Tell us about it. We help you 
-                    identify which areas you can refine on and tell you the steps 
-                    to take in order to achieve a better product for 
+                    <p className="services-paragraph">Have a product to improve? Tell us about it. We help you
+                    identify which areas you can refine on and tell you the steps
+                    to take in order to achieve a better product for
                     your customers.</p>
                     </div>
-                    <img src = {productivityGirl} className = "img2"></img>
+                    <img src = {productivityGirl} alt="service-2" className = "img2"></img>
                 </div>
 
                 <div>
                     <div className = "row3">
-                        <img src = {productivityGirl} className = "img3"></img>
+                        <img src = {productivityGirl} alt="service-3" className = "img3"></img>
                         <div className = "row3text">
                         <h3 className = "designWorkshops">Design Workshops</h3>
                         <p className="services-paragraph">

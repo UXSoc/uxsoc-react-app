@@ -7,7 +7,6 @@ import Services from '../../stateless/Services/Services'
 import Workcomp from '../../state/Work/Work'
 import Logos from '../../state/Logos/Logos'
 import ContactForm from '../../state/ContactForm/ContactForm'
-import HomeCard from '../../state/HomeCard/HomeCard'
 
 import shield from '../../../resources/img/work-imgs/logo.svg'
 import tugon from '../../../resources/img/work-imgs/tugon-logo.svg'
