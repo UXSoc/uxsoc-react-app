@@ -1,50 +1,63 @@
-
-
-.process{
-    position: relative;
-    text-align: center;
-    margin-right: 200px;
-    height: 1028px;
-    top: 560px;
-    left: 50px;
+.process {
+  position: relative;
+  text-align: center;
+  margin-right: 200px;
+  height: 1028px;
+  top: 560px;
+  left: 50px;
 }
 
-.arrowRight{
-    position:relative;
-    top: -230px;
-    left: 28px;
-    height:46px;
-    width: 23px;
+.headers {
+  position: absolute;
+  border: 2px solid red;
 }
 
-.processImage{
-    width: 891px;
-    height: 498px;
-}
-.arrowLeft{
-    position:relative;
-    top: -230px;
-    left: -980px;
-    height:46px;
-    width: 23px;
+.headers h2 {
+  margin-left: -1.5rem;
 }
 
+.headers p {
+  margin-top: 14rem;
+  margin-bottom: -10rem;
+  margin-left: 4rem;
+}
+
+.arrowLeft {
+  height: 46px;
+  width: 23px;
+  position: absolute;
+  top: 30rem;
+  left: 4rem;
+}
+
+.arrowRight {
+  height: 46px;
+  width: 23px;
+  position: absolute;
+  top: 30rem;
+  right: 4rem;
+}
+
+.processImage {
+  width: 92vw;
+  height: 498px;
+}
 
 .discovery{
-    text-align: left;
-    position:relative;
-    margin-top:54px;
-    font-size: 36px
+  text-align: left;
+  position:relative;
+  margin-top:54px;
+  font-size: 36px
 }
 
-.text {
-    width: 556px;
-    height: 136px;
-    position: relative;
-    left: 368px;
-    right: 216px;
-    top: -80px;
-    text-align: justify;
-    line-height: 1.5;
-    font-family: "Proxima-Nova", sans-serif;
+.process p {
+  width: 556px;
+  height: 136px;
+  position: relative;
+  left: 368px;
+  right: 216px;
+  top: -80px;
+  text-align: justify;
+  line-height: 1.5;
+  font-family: "Proxima-Nova", sans-serif;
 }
