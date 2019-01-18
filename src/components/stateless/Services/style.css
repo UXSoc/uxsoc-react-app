@@ -72,3 +72,12 @@ h3 {
 .row-3 p {
   width: 30vw;
 }
+
+@media screen and (max-width: 320px) {
+  .services {
+    height: 1716px;
+    position: relative;
+    display: block;
+    margin: 0rem 11.5rem 0 11.5rem;
+  }
+}
