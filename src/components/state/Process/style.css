@@ -167,8 +167,8 @@
     grid-row-gap: 1.5rem;
   }
 
-  .MethodBlock {
-    border: 2px solid orange;
+  .MethodBlock:not(:first-of-type) {
+    display: block;
   }
 }
 
