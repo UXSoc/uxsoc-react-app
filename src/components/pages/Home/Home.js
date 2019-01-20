@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import Navigation from '../../state/Navigation/Navigation';
 import landingImage from './../../../resources/img/home-landing.svg';
 import mobileLanding from './../../../resources/img/home-landing-mobile.svg';
-import blue1 from './../../../resources/img/home-blue1.svg';
-import blue2 from './../../../resources/img/home-blue-2.svg';
+import designLeaders from './../../../resources/img/design-leaders.svg';
 
-import HomeCard from '../../state/HomeCard/HomeCard';
+import { HomeCardLeft, HomeCardRight } from '../../state/HomeCard/HomeCard';
 import ContactForm from '../../state/ContactForm/ContactForm';
 import Footer from './../../state/Footer/Footer';
 
@@ -26,17 +25,16 @@ class Home extends Component {
           <div id="blue-home" className='home-blue-section'>
             <p className='home-blue-text'><strong>User Experience Society</strong> aims to guide the design
               leaders of tomorrow, creating products and <br/> services that will make the world <em>a better place</em></p>
-            <img src={blue1} alt='blue1' className='blue1'/>
-            <img src={blue2} alt='blue2' className='blue2'/>
+            <img src={designLeaders} alt='design leaders' className='design-leaders-img'/>
           </div>
           <div className="HomeCard-container">
-            <HomeCard
+            <HomeCardLeft
               sectionLabel="Community"
               headerLabel="Geared for Growth"
               btnLabel="Experience the Mafia"
               link="/community"
               caption="Engage yourself with the community. Discover what you can do and how you can grow with us."/>
-            <HomeCard
+            <HomeCardRight
               sectionLabel="Consultancy"
               headerLabel="Crafted for Work"
               btnLabel="Explore our projects"

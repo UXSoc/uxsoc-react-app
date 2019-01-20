@@ -6,16 +6,9 @@
   text-align: center;
 }
 
-.HomeCard:first-of-type {
-  margin-left: 175px;
-}
-
-.HomeCard:last-of-type {
-  margin-right: 180px;
-}
-
 .HomeCard img {
-  width: 500px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .HomeCard h2 {
@@ -38,7 +31,25 @@
   margin-bottom: 2rem;
 }
 
-.card-caption:last-of-type {
+.HomeCardLeft {
+  margin-left: 175px;
+}
+
+.HomeCardRight {
+  margin-right: 180px;
+}
+
+.HomeCardLeft img {
+  width: 390px;
+  height: 272px;
+}
+
+.HomeCardRight img {
+  width: 370px;
+  height: 275px;
+}
+
+.HomeCardRight .card-caption {
   width: 380px;
 }
 
@@ -73,7 +84,7 @@
     width: 400px;
   }
 
-  .HomeCard:first-of-type {
+  .HomeCardLeft {
     margin-left: 0px;
   }
 
