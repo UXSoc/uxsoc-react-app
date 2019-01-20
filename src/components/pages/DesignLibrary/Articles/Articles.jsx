@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Navigation from '../../../state/Navigation/Navigation';
 import Header from '../../../stateless/DesignLibraryHeader/DesignLibraryHeader'
 import SectionSelect from '../../../state/DesignLibrarySectionSelect/DesignLibrarySectionSelect'

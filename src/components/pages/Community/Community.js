@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-
+import {Link} from 'react-router-dom';
 import Navigation from '../../state/Navigation/Navigation';
 // import MemberStory from '../MemberStory/MemberStory'
 
@@ -29,23 +28,29 @@ class Community extends Component {
           <p className="section-label">UX Society Community</p>
           <h2>Learn and grow with an amazing community</h2>
           <img className="landing-image" src={landingImage} alt="landing" />
-          <AnchorLink href='#event'>
+          <Link to='/community#events'>
             <button className="round-btn">
               <img src={chevronDown} alt="down" />
             </button>
-          </AnchorLink>
+          </Link>
         </div>
 
-        <div id="event">
+        <div id="events">
           <Events/>
         </div>
 
+        <div id="member-stories">
+          <MemberStories/>
+        </div>
 
-        <MemberStories/>
+        <div id="opportunities">
+          {/* <Opportunities/> */}
+        </div>
 
-        {/* <Opportunities/> */}
+        <div id="resources">
+          <Resources/>
 
-        <Resources/>
+        </div>
 
         <div id="contact-us" className="contact-container">
           <ContactForm />

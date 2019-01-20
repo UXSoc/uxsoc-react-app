@@ -1,3 +1,7 @@
+.Contact {
+  padding-top: 60px;
+}
+
 .contact-container {
   background: #FFFFFF;
 }
@@ -37,6 +41,14 @@ input, textarea {
   outline: none;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #B3BCC4;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #B3BCC4;
 }
 
 input::placeholder, textarea::placeholder {
@@ -153,6 +165,14 @@ input::placeholder, textarea::placeholder {
   textarea {
     padding: 15px;
     margin-bottom: 3rem;
+  }
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    font-size: 14px;
   }
 
   input::placeholder, textarea::placeholder {

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import logo from './../../../resources/logo/uxsoc-logo.svg';
 import './style.css';
@@ -54,7 +53,7 @@ class Navigation extends Component {
 
             {/* Contact Us */}
             <div className='navbar-item navbar-contact'>
-              <AnchorLink className='navbar-link' href='#contact-us'>Contact Us</AnchorLink>
+              <a className='navbar-link' href='#contact-us'>Contact Us</a>
             </div>
           </div>
         </div>
@@ -78,9 +77,9 @@ class NavDropdown extends Component {
       <Link className='dropdown-link' to='/work'>
         <li>Work</li>
       </Link>
-      <AnchorLink className='dropdown-link' href='#contact-us'>
+      <a className='dropdown-link' href='#contact-us'>
         <li>Contact Us</li>
-      </AnchorLink>
+      </a>
     </div>)
   }
 }

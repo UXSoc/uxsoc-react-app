@@ -24,7 +24,7 @@ class Resources extends Component {
     if (this.state.selectedResource === "Books") {
       return(
         <div className="Resources">
-          <div className="resources-container" id="resources">
+          <div className="resources-container">
             <p className="section-label">Resources</p>
             <h2 className="main-title">Here are the resources we've curated for you this week</h2>
             <div className="SectionToggleResources">
