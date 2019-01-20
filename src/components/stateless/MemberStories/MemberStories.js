@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { AuthorPic, AuthorName } from '../../stateless/Author/Author';
 import RedirectButton from '../../state/RedirectButton/RedirectButton';
-import msImage from './../../../resources/img/member-stories.png';
+import frances from './../../../resources/others/frances.png';
+import msImage from './../../../resources/others/frances-article.jpeg';
 import './style.css';
 
 class MemberStories extends Component {
@@ -17,13 +18,13 @@ class MemberStories extends Component {
               <MemberStoriesLabel
                 memberStoriesLabel="Featured"/>
               <MemberStoriesTitle
-                memberStoriesTitle="How I fell in love with UXSoc's advocacy"/>
-              <AuthorPic/>
-              <AuthorName authorName="Jiggy Villanueva, Executive Vice President"/>
+                memberStoriesTitle="How to Start Your Passion Project and Make Time for It"/>
+              <AuthorPic authorPic={frances}/>
+              <AuthorName authorName="Frances To, Vice President for UX Design"/>
 
               <RedirectButton
-                buttonText="Read Jiggy's Story"
-                redirectLink="/member-story"/>
+                buttonText="Read Frances's Story"
+                redirectLink="https://medium.com/@francesto927/how-to-start-your-passion-project-and-make-time-for-it-d27687c7e47e"/>
 
             </div>
           </div>
@@ -37,7 +38,7 @@ class MemberStoriesImage extends Component {
   render() {
     return(
       <div className="MemberStoriesImage">
-        <img src={msImage} className="ms-image" alt="member stories"/>
+        <img src={msImage} className="ms-image" width="1100" alt="member stories"/>
       </div>
     )
   }

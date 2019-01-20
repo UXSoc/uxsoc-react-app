@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from '../EventDetails/EventDetails';
 import RedirectButton from '../../../state/RedirectButton/RedirectButton';
+import Jffc from './../../../../resources/others/jffc.png';
 
 class UpcomingEvents extends Component {
   constructor(props) {
@@ -36,38 +37,39 @@ class UpcomingEvents extends Component {
             <EventLabel
               eventLabel={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Category) ||
-                "Information Architecture"
+                "Conference"
               }
             />
 
             <EventName
               eventName={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Name) ||
-                "UX Crawl"
+                "Junior Form, Function, and Class"
               }
             />
 
             <EventDetails
-              date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) ||"24 September 2018, 5:00 to 7:30 PM"}
+              date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) ||"26-27 January 2019 7:30 am to 4:00 pm"}
               location={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Location) ||
-                "Faura Hall, Ateneo de Manila University"
+                "De La Salle University - Manila"
               }
-              speaker={
-                (whatsHappening[lastEl] && whatsHappening[lastEl].Speaker) || "Avery Si"
-              }
+              // speaker={
+              //   (whatsHappening[lastEl] && whatsHappening[lastEl].Speaker) || "Avery Si"
+              // }
             />
 
             <AboutHeader aboutHeader="About the event"/>
-            <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
-            <AboutHeader aboutHeader="About the speaker"/>
-            <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
+            <AboutDesc aboutDesc="Junior Form, Function, and Class (JFFC) is an annual 2-day event and is Asia’s premiere student web design conference providing opportunities and learning experiences which help students develop their design skills further. "/>
+            {/* <AboutHeader aboutHeader="About the speaker"/>
+            <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/> */}
 
             <RedirectButton
-              buttonText="Register Now"
-              redirectLink="/"/>
+              buttonText="Learn More"
+              redirectLink="https://jffc.asia/"/>
+
           </div>
-          <EventImage/>
+          <EventImage eventImage={Jffc}/>
         </div>
       </div>
     )

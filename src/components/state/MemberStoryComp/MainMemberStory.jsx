@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 import './style.css'
 // import mainImage from '../../../resources/img/work-imgs/productivity.svg'
 import illustrationSecurity from '../../../../src/resources/img/member-story-imgs/illustration-security.svg'
-import rectangle from '../../../resources/img/member-story-imgs/Rectangle.png'
-import ellipse from '../../../resources/img/member-story-imgs/Ellipse.png'
+import jiggy from './../../../resources/others/jiggy.JPG';
 
 class MainMemberStory extends Component {
     constructor(props) {
@@ -20,7 +18,7 @@ class MainMemberStory extends Component {
               <h1 className="storyTitle">How I fell in love with UXSoc's <br />advocacy</h1>
               <div className="memberStoryAuthor">
                 <div className="authorAndPosition">
-                  <span className="ellipse"><img src={ellipse} alt="ellipse"/></span>
+                  <span className="ellipse"><img src={jiggy} alt="author" width="35" style={{borderRadius: '50%'}}/></span>
                   <span>Jiggy Villanueva, Executive Vice President</span>
                 </div>
               </div>
@@ -64,11 +62,11 @@ class MainMemberStory extends Component {
               </div>
             </div>
 
-            <div className="MSbottomImage">
+            {/* <div className="MSbottomImage">
               <img src = {rectangle} width="900" alt="rectangle"/>
-            </div>
+            </div> */}
 
-            <div className = "MSbuttons">
+            {/* <div className = "MSbuttons">
 
               <Link to="/community">
                 <div>
@@ -76,11 +74,11 @@ class MainMemberStory extends Component {
                 </div>
               </Link>
 
-              {/* <div>
+              <div>
                   <h4 className="otherStoriesButton">SEE OTHER MEMBER STORIES ⟶</h4>
-              </div> */}
+              </div>
 
-            </div>
+            </div> */}
 
         </div>
 

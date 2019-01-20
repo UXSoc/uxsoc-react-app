@@ -4,7 +4,7 @@
 }
 
 .ms-container h2 {
-  width: 38rem;
+  width: 80%;
 }
 
 .ms-content-container {
@@ -19,7 +19,8 @@
   width: 568px;
   height: 448px;
   background: #FFFFFF;
-  box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
+          box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
   margin-top: 2rem;
   grid-column: 6/10;
   grid-row: 2/8;
@@ -91,7 +92,8 @@
     grid-column: 2/10;
     grid-row: 2/8;
     margin-left: 1.75rem;
-    box-shadow: 0 4px rgba(207, 204, 204, 0.23);
+    -webkit-box-shadow: 0 4px rgba(207, 204, 204, 0.23);
+            box-shadow: 0 4px rgba(207, 204, 204, 0.23);
   }
 
   .MemberStoriesLabel {
@@ -131,7 +133,8 @@
     margin-top: 12rem;
     grid-column: 1/10;
     grid-row: 2/8;
-    box-shadow: 0 4px rgba(207, 204, 204, 0.23);
+    -webkit-box-shadow: 0 4px rgba(207, 204, 204, 0.23);
+            box-shadow: 0 4px rgba(207, 204, 204, 0.23);
     margin-left: 0rem;
   }
 

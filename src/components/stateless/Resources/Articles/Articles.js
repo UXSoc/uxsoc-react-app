@@ -1,28 +1,29 @@
-import React, { Component } from 'react';
-import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage, PastResources } from '../ResourceCard/ResourceCard';
+import React from 'react';
+import { ResourceLabel, ResourceTitle, ResourceDesc, ResourceImage } from '../ResourceCard/ResourceCard';
 import { AuthorPic, AuthorName } from '../../Author/Author';
-import articleImage from '../../../../../src/resources/img/article-img.svg';
+import articleImage from './../../../../resources/others/chapman.jpg';
 import RedirectButton from '../../../state/RedirectButton/RedirectButton';
+import xavi from './../../../../resources/others/xavi.jpg';
 
-class Articles extends Component {
-  render() {
-    return(
-      <div className="Articles">
-        <div className="resource-content-container">
-          <div className="resource-card">
-            <ResourceLabel resourceLabel="Article"/>
-            <ResourceTitle resourceTitle="UI Design in Different Countries"/>
-            <AuthorPic />
-            <AuthorName authorName="Cuberto" />
-            <ResourceDesc resourceDesc="This article focuses on our experience with products developed with different cultural target audiences in mind." />
-            <RedirectButton buttonText="Start Reading" redirectLink="/"/>
+const Articles = () => {
+  return(
+    <div className="Articles">
+      <div className="resource-content-container">
+        <div className="resource-card">
+          <ResourceLabel resourceLabel="Article"/>
+          <ResourceTitle resourceTitle="UX Society at Chapman University"/>
+          <AuthorPic authorPic={xavi}/>
+          <AuthorName authorName="Xavi Ablaza" />
+          <ResourceDesc resourceDesc="Building a system for knowledge transfer and longevity." />
+          <div style={{marginTop: '60px'}}>
+            <RedirectButton buttonText="Start Reading" redirectLink="https://medium.com/user-experience-society/ux-society-at-chapman-university-60dc17815230"/>
           </div>
-          <ResourceImage resourceImage={articleImage}/>
-          <PastResources pastResources={"/"}/>
         </div>
+        <ResourceImage resourceImage={articleImage} imageWidth="720"/>
+        {/* <PastResources pastResources={"/"}/> */}
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Articles;
