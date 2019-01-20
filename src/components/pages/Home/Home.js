@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../../state/Navigation/Navigation';
 import landingImage from './../../../resources/img/home-landing.svg';
-import mobileLanding from './../../../resources/img/home-landing-mobile.svg';
 import designLeaders from './../../../resources/img/design-leaders.svg';
 
 import { HomeCardLeft, HomeCardRight } from '../../state/HomeCard/HomeCard';
@@ -20,7 +19,7 @@ class Home extends Component {
             <h1 className='main-title-leader'>We make <br/> design leaders</h1>
             <a className='journey-button' style={{color: "white"}}href="#blue-home">Start Your Journey</a>
             <img className='home-landing-image' src={landingImage} alt='landing'/>
-            <img className='mobile-landing-image' src={mobileLanding} alt='mobile landing'/>
+            <img className='mobile-landing-image' src={landingImage} alt='mobile landing'/>
           </div>
           <div id="blue-home" className='home-blue-section'>
             <p className='home-blue-text'><strong>User Experience Society</strong> aims to guide the design

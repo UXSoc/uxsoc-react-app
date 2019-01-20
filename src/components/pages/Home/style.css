@@ -59,6 +59,7 @@
   line-height: 1.76;
   color: #ffffff;
   text-align: center;
+  margin-top: -1rem;
 }
 
 .design-leaders-img {
@@ -80,6 +81,14 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .design-leaders-img {
+    position: absolute;
+    top: 1050px;
+    left: -2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .north-star-title {
     margin-left: -3.5rem;
@@ -95,26 +104,23 @@
     margin-left: -3.5rem;
   }
 
+  .home-landing-image {
+    margin-left: -8.5rem;
+  }
+
   .home-blue-text {
     font-size: 34px;
     margin-top: -1rem;
   }
 
-  .blue1 {
+  .design-leaders-img {
     display: none;
-  }
-
-  .blue2 {
-    position: absolute;
-    top: 400px;
-    right: 0px;
   }
 
   .HomeCard-container {
     position: relative;
     z-index: 1;
     height: 800px;
-    width: 100%;
     background: #EEF1F6;
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
@@ -140,10 +146,18 @@
     margin-left: -2.25rem;
   }
 
+  .home-landing-image {
+    margin-left: -17.5rem;
+  }
+
+  .home-blue-section {
+    height: 350px;
+  }
+
   .home-blue-text {
     width: 450px;
     font-size: 28px;
-    margin-top: -5rem;
+    margin-top: -6rem;
   }
 
   .HomeCard-container {
@@ -171,16 +185,14 @@
     margin-left: -1.75rem;
   }
 
-  .blue2 {
-    position: absolute;
-    top: 350px;
-    right: 0px;
+  .home-blue-section {
+    height: 300px;
   }
 
   .home-blue-text {
     width: 370px;
     font-size: 24px;
-    margin-top: -5rem;
+    margin-top: -4rem;
   }
 
   .HomeCard-container {
@@ -215,19 +227,13 @@
   }
 
   .home-blue-section {
-    height: 500px;
-  }
-
-  .blue2 {
-    position: absolute;
-    top: 340px;
-    right: 0px;
+    height: 300px;
   }
 
   .home-blue-text {
     width: 350px;
     font-size: 20px;
-    margin-top: -3rem;
+    margin-top: -2.5rem;
   }
 }
 
@@ -251,13 +257,14 @@
   }
 
   .mobile-landing-image {
+    z-index: -99;
     width: 320px;
     height: 305px;
     display: block;
     grid-column: 1/1;
     grid-row: 4/7;
     margin-top: 7rem;
-    margin-left: -2.6rem;
+    margin-left: 2rem;
   }
 
   .home-landing-container .journey-button {
@@ -268,24 +275,12 @@
 
   .home-blue-section {
     margin-top: -11.5rem;
-    height: 295px;
+    height: 280px;
     width: 100%;
     background-color: #008ed4;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .blue1 {
-    display: none;
-  }
-
-  .blue2 {
-    z-index: 2;
-    width: 204px;
-    height: 257px;
-    position: absolute;
-    top: 680px;
   }
 
   .home-blue-text {
@@ -296,7 +291,7 @@
     line-height: 33px;
     color: #ffffff;
     text-align: left;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   .HomeCard-container {
@@ -307,7 +302,7 @@
     display: inline-grid;
     grid-template-columns: 100%;
     grid-template-rows: 435px 300px;
-    grid-row-gap: 20px;
+    grid-row-gap: 3rem;
     justify-items: center;
     justify-content: center;
     padding-top: 10rem;
