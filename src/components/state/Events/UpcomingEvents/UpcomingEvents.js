@@ -43,7 +43,7 @@ class UpcomingEvents extends Component {
             <EventName
               eventName={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Name) ||
-                "UX&Chill Ep 08"
+                "UX Crawl"
               }
             />
 

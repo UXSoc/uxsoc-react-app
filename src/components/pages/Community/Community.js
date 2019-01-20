@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import Navigation from '../../state/Navigation/Navigation';
 // import MemberStory from '../MemberStory/MemberStory'
 
 import Events from './../../state/Events/Events';
 import MemberStories from './../../stateless/MemberStories/MemberStories';
-import Opportunities from './../../stateless/Opportunities/Opportunities';
+// import Opportunities from './../../stateless/Opportunities/Opportunities';
 import Resources from './../../stateless/Resources/Resources';
 
 import ContactForm from './../../state/ContactForm/ContactForm';
@@ -27,22 +28,34 @@ class Community extends Component {
           <p className="section-label">UX Society Community</p>
           <h2>Learn and grow with an amazing community</h2>
           <img className="landing-image" src={landingImage} alt="landing" />
-          <button className="round-btn">
-            <img src={chevronDown} alt="down" />
-          </button>
+          <Link to='/community#events'>
+            <button className="round-btn">
+              <img src={chevronDown} alt="down" />
+            </button>
+          </Link>
         </div>
 
-        <Events/>
+        <div id="events">
+          <Events/>
+        </div>
 
-        <MemberStories/>
+        <div id="member-stories">
+          <MemberStories/>
+        </div>
 
-        <Opportunities/>
+        <div id="opportunities">
+          {/* <Opportunities/> */}
+        </div>
 
-        <Resources/>
+        <div id="resources">
+          <Resources/>
+
+        </div>
 
         <div id="contact-us" className="contact-container">
           <ContactForm />
         </div>
+
         <Footer/>
       </div>
     );
