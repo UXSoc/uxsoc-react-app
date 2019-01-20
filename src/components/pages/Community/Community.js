@@ -49,7 +49,6 @@ class Community extends Component {
 
         <div id="resources">
           <Resources/>
-
         </div>
 
         <div id="contact-us" className="contact-container">
