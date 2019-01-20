@@ -300,11 +300,11 @@
   .OpportunityCard .RedirectButton {
     margin-top: 6.5rem;
     float: left;
-    margin-left: 9.5rem;
+    margin-left: 8.75rem;
   }
 
   .OpportunityCard .RedirectButton img {
-    margin-top: 0.3rem;
+    margin-top: 0.35rem;
     margin-left: 0.5rem;
   }
 }
