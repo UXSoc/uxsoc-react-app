@@ -124,6 +124,23 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 5vw;
     margin-right: 5vw;
     -webkit-box-orient: horizontal;
