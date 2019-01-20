@@ -1,83 +1,221 @@
-.mainWork{
-    height: 1240px;
-    margin-left: 180px;
-    position: relative;
+.case-studies {
+  height: 1240px;
+  width: 92vw;
+  position: relative;
+  display: block;
+  margin: 0 auto;
 }
 
-.caseStudies{
-    position: relative;
-    top: -30px;
+.case-studies .section-label {
+  position: absolute;
+  top: -6rem;
+  left: 0;
 }
 
-.meetingDiv{
-    margin-top: -100px;
-    position: relative;
+.case-studies h2 {
+  position: absolute;
+  top: 3rem;
+  left: 0;
 }
 
-.laptopDiv{
-    position: relative;
-    left: 533px;
-    top: -900px;
+.case-studies img {
+  width: 100%;
+  height: 100%;
 }
 
-.tedXLaptoptext{
-    font-family:"Rubik";
-    padding-top: 29px;
-    padding-left: 32px;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 500;
-    height: 36px;
-    text-align: left;
+.case-study-bg {
+  position: relative;
+  height: 90px;
+  line-height: 90px;
+  width: 35vw;
+  top: -116px;
+  fill: solid;
 }
 
-.tedXdiv{
-    height: 10px;
+.case-study-text a {
+  font-family: "Rubik", sans-serif;
+  padding-left: 32px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+  height: 36px;
+  text-align: left;
 }
 
-.tedXLaptoptextBG{
-    position: relative;
-    height: 90px;
-    width: 490px;
-    background: rgba(244, 244, 244, 0.7);
-    top: -116px;
+.TedX, .Meeting, .Laptop {
+  width: 35vw;
+  height: 480px;
+  position: absolute;
 }
 
-.meetingTextBG{
-    position: relative;
-    height: 90px;
-    width: 490px;
-    background: rgba(92, 89, 89, 0.7);
-    top: -116px;
-    fill: solid;
+.TedX {
+  top: 8rem;
 }
 
-.meetingText{
-    font-family:"Rubik";
-    padding-top: 29px;
-    padding-left: 32px;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 600;
-    height: 36px;
-    text-align: left;
-    color: #FFFFFF
+.TedX .case-study-bg, .Laptop .case-study-bg {
+  background: rgba(244, 244, 244, 0.7);
+}
+
+.Meeting {
+  top: 40.5rem;
+}
+
+.Meeting .case-study-bg {
+  background: rgba(92, 89, 89, 0.7);
+}
+
+.Meeting .case-study-text {
+  color: #FFFFFF
+}
+
+.Laptop {
+  top: 15rem;
+  right: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: black;
 }
 
 
-.aMeeting:visited{
-    font-family: "Rubik";
-    color: #ffffff;
+.aMeeting:visited {
+  font-family: "Rubik";
+  color: #ffffff;
 }
 
-.workHead {
-    font-family: "Proxima-Nova", sans-serif;
+@media screen and (max-width: 1024px) {
+  .TedX, .Meeting, .Laptop {
+    width: 42vw;
+    height: 480px;
+    position: absolute;
+  }
+
+  .case-study-bg {
+    width: 42vw;
+  }
+
+  .case-study-text {
+    width: 42vw;
+  }
+
+  .Laptop .case-study-text {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .Laptop .case-study-text a {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .case-studies {
+    width: 86vw;
+    height: 1260px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .case-studies img {
+    width: 62vw;
+    height: 56vh;
+  }
+
+  .case-study-bg {
+    position: relative;
+    height: 50px;
+    line-height: 38px;
+    width: 62vw;
+    top: -4.85rem;
+    fill: solid;
+  }
+
+  .Laptop {
+    position: absolute;
+    top: 30rem;
+    right: 9.6rem;
+  }
+
+  .Laptop .case-study-text {
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .Meeting {
+    top: 52rem;
+  }
+
+  .case-study-text {
+    padding-left: 15px;
+    width: 62vw;
+    text-align: left;
+  }
+
+  .case-study-text a {
+    padding-left: 0;
+    font-size: 18px;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .case-studies {
+    width: 88vw;
+    height: 960px;
+  }
+
+  .case-studies img {
+    width: 62vw;
+    height: 40vh;
+  }
+
+  .Laptop {
+    top: 24rem;
+    right: 7.5rem;
+  }
+
+  .Meeting {
+    top: 40rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .case-studies {
+    width: 90vw;
+    height: 860px;
+  }
+
+  .case-studies img {
+    width: 62vw;
+    height: 35vh;
+  }
+
+  .Laptop {
+    top: 22rem;
+    right: 5.4rem;
+  }
+
+  .Meeting {
+    top: 36rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Laptop {
+    right: 4.7rem;
+  }
+  .Laptop .case-study-bg {
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Laptop {
+    right: 4rem;
+  }
 }

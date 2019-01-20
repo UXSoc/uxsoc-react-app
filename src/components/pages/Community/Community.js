@@ -21,7 +21,7 @@ import './style.css';
 class Community extends Component {
   render() {
     return (
-      <div>
+      <div className="Community">
         <Navigation />
         <div className="landing-container">
           <p className="section-label">UX Society Community</p>
