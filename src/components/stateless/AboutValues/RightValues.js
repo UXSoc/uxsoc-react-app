@@ -6,6 +6,19 @@ const RightValues = props => {
   const ValueSection = styled.div`
     display: flex;
     flex-direction: row-reverse;
+
+    img {
+      margin-right: 30px;
+    }
+
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+      text-align: center;
+
+      img {
+        margin: 0;
+      }
+    }
   `
 
   const Values = styled.div`
@@ -13,7 +26,6 @@ const RightValues = props => {
   `
 
   const ValueTitle = styled.h3`
-    margin-left: 120px;
     font-family: Rubik, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -23,8 +35,6 @@ const RightValues = props => {
   `
 
   const ValueDetails = styled.p`
-    width: 80%;
-    margin-left: 120px;
     font-family: Proxima Nova;
     line-height: 30px;
     font-size: 18px;
