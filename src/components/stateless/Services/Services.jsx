@@ -11,7 +11,7 @@ const Services = () => {
       <h2>What we can do for you</h2>
       <div className="threeRows">
         <div className="row-1">
-          <img src={productivityGirl} alt="service-1"></img>
+          <img src={productivityGirl} alt="service-1"/>
           <div className="row-1-text">
             <h3>Web Design and Development</h3>
             <p className="services-paragraph">We help you create effective products on the web,
@@ -30,13 +30,13 @@ const Services = () => {
               to take in order to achieve a better product for
               your customers.</p>
             </div>
-            <img src={productivityGirl} alt="service-2"></img>
+            <img src={productivityGirl} alt="service-2"/>
           </div>
         </div>
 
         <div>
           <div className="row-3">
-            <img src = {productivityGirl} alt="service-3"></img>
+            <img src = {productivityGirl} alt="service-3"/>
             <div className="row-3-text">
               <h3>Design Workshops</h3>
               <p className="services-paragraph">

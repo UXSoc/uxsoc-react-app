@@ -5,6 +5,12 @@
   left: 50px;
 }
 
+.process .section-label {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .headers {
   position: absolute;
   left: 8.5rem;
@@ -111,7 +117,7 @@
 
 @media screen and (max-width: 600px) {
   .process {
-    height: 1200px;
+    height: 1005px;
     top: 0;
     left: 0;
   }
@@ -173,6 +179,10 @@
 }
 
 @media screen and (max-width: 425px) {
+  .process {
+    height: 980px;
+  }
+
   .headers {
     left: 1.5rem;
   }
@@ -191,6 +201,10 @@
 }
 
 @media screen and (max-width: 375px) {
+  .process {
+    height: 1050px;
+  }
+
   .headers {
     left: 1.25rem;
   }
@@ -209,6 +223,10 @@
 }
 
 @media screen and (max-width: 320px) {
+  .process {
+    height: 1200px;
+  }
+
   .method-subheader {
     left: 0;
   }

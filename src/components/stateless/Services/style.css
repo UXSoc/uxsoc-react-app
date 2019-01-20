@@ -9,10 +9,11 @@ h3 {
 }
 
 .services {
-  height: 1716px;
+  height: 1550px;
+  width: 92vw;
   position: relative;
   display: block;
-  margin: 32rem 11.5rem 0 11.5rem;
+  margin: 35rem auto 5rem auto;
 }
 
 .services h2 {
@@ -73,11 +74,134 @@ h3 {
   width: 30vw;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .services {
-    height: 1716px;
+    width: 88vw;
+    height: 1370px;
     position: relative;
     display: block;
-    margin: 0rem 11.5rem 0 11.5rem;
+    margin: 5rem auto;
+  }
+
+  .services .section-label {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .services img {
+    width: 176px;
+    height: 170px;
+  }
+
+  .services p {
+    width: 84vw;
+    line-height: 27px;
+    font-size: 16px;
+    margin-top: -0.5rem;
+  }
+
+  .row-1 {
+    margin-top: -6rem;
+  }
+
+  .row-1-text, .row-3-text {
+    position: absolute;
+    top: 12rem;
+    right: 0;
+    text-align: right;
+  }
+
+  .row-2 {
+    margin-top: 30rem;
+  }
+
+  .row-2-text {
+    position: absolute;
+    top: 0rem;
+  }
+
+  .row-3 {
+    margin-top: 45rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services {
+    width: 88vw;
+    height: 1140px;
+    position: relative;
+    display: block;
+    margin: 5rem auto;
+  }
+
+  .services .section-label {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .services img {
+    width: 176px;
+    height: 170px;
+  }
+
+  .services p {
+    width: 84vw;
+    line-height: 19px;
+    font-size: 12px;
+    margin-top: -0.5rem;
+  }
+
+  .row-1 {
+    margin-top: -6rem;
+  }
+
+  .row-1-text, .row-3-text {
+    position: absolute;
+    top: 12rem;
+    right: 0;
+    text-align: right;
+  }
+
+  .row-2 {
+    margin-top: 24rem;
+  }
+
+  .row-2-text {
+    position: absolute;
+    top: 0rem;
+  }
+
+  .row-3 {
+    margin-top: 34rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .services {
+    height: 1255px;
+  }
+
+  .row-2 {
+    margin-top: 25rem;
+  }
+
+  .row-3 {
+    margin-top: 37rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .services {
+    height: 1275px;
   }
 }
