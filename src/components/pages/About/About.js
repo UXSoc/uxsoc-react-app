@@ -4,6 +4,7 @@ import Navigation from '../../state/Navigation/Navigation';
 import AboutBox from './../../stateless/AboutBox/AboutBox';
 import LeftValues from './../../stateless/AboutValues/LeftValues';
 import RightValues from './../../stateless/AboutValues/RightValues';
+import ContactForm from '../../state/ContactForm/ContactForm';
 import Footer from './../../state/Footer/Footer';
 
 import CoreValues from './../../../resources/img/work-imgs/productivity-2.svg';
@@ -79,6 +80,9 @@ class About extends Component {
             details="We believe that quality work we put out in the community represents who we are as an organization. Therefore, we aspire to create the best products that will not only help the community, but create an awareness that will transform people's perception of design."
             img={CoreValues}
           />
+        </div>
+        <div id="contact-us" className="contact-container">
+          <ContactForm/>
         </div>
         <Footer/>
       </div>

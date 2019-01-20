@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 import Navigation from '../../state/Navigation/Navigation';
 // import MemberStory from '../MemberStory/MemberStory'
 
 import Events from './../../state/Events/Events';
 import MemberStories from './../../stateless/MemberStories/MemberStories';
-import Opportunities from './../../stateless/Opportunities/Opportunities';
+// import Opportunities from './../../stateless/Opportunities/Opportunities';
 import Resources from './../../stateless/Resources/Resources';
 
 import ContactForm from './../../state/ContactForm/ContactForm';
@@ -27,22 +29,28 @@ class Community extends Component {
           <p className="section-label">UX Society Community</p>
           <h2>Learn and grow with an amazing community</h2>
           <img className="landing-image" src={landingImage} alt="landing" />
-          <button className="round-btn">
-            <img src={chevronDown} alt="down" />
-          </button>
+          <AnchorLink href='#event'>
+            <button className="round-btn">
+              <img src={chevronDown} alt="down" />
+            </button>
+          </AnchorLink>
         </div>
 
-        <Events/>
+        <div id="event">
+          <Events/>
+        </div>
+
 
         <MemberStories/>
 
-        <Opportunities/>
+        {/* <Opportunities/> */}
 
         <Resources/>
 
         <div id="contact-us" className="contact-container">
           <ContactForm />
         </div>
+
         <Footer/>
       </div>
     );
