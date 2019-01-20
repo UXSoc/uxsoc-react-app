@@ -13,15 +13,15 @@ import Footer from './../../state/Footer/Footer';
 import landingImage from './../../../resources/img/community-landing.svg';
 import chevronDown from './../../../resources/img/chevron-down.svg';
 
-import { Route, Switch } from 'react-router-dom'
-import { BrowserRouter } from "react-router-dom";
+// import { Route, Switch } from 'react-router-dom'
+// import { BrowserRouter } from "react-router-dom";
 
 import './style.css';
 
 class Community extends Component {
   render() {
     return (
-      <div>
+      <div className="Community">
         <Navigation />
         <div className="landing-container">
           <p className="section-label">UX Society Community</p>

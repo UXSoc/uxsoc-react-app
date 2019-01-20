@@ -6,11 +6,10 @@ import landingImage from './../../../resources/img/home-landing.svg';
 import mobileLanding from './../../../resources/img/home-landing-mobile.svg';
 import blue1 from './../../../resources/img/home-blue1.svg';
 import blue2 from './../../../resources/img/home-blue-2.svg';
+
 import HomeCard from '../../state/HomeCard/HomeCard';
 import ContactForm from '../../state/ContactForm/ContactForm';
 import Footer from './../../state/Footer/Footer';
-import Community from './../Community/Community';
-import Work from './../Work/Work';
 
 import './style.css';
 
@@ -49,9 +48,7 @@ class Home extends Component {
           <div id="contact-us" className="contact-container">
             <ContactForm/>
           </div>
-          <div>
-            <Footer/>
-          </div>
+          <Footer/>
       </div>
     );
   }

@@ -1,50 +1,245 @@
-
-
-.process{
-    position: relative;
-    text-align: center;
-    margin-right: 200px;
-    height: 1028px;
-    top: 560px;
-    left: 50px;
+.process {
+  position: relative;
+  height: 1050px;
+  top: 560px;
+  left: 50px;
 }
 
-.arrowRight{
-    position:relative;
-    top: -230px;
-    left: 28px;
-    height:46px;
-    width: 23px;
+.process .section-label {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.processImage{
-    width: 891px;
-    height: 498px;
-}
-.arrowLeft{
-    position:relative;
-    top: -230px;
-    left: -980px;
-    height:46px;
-    width: 23px;
+.headers {
+  position: absolute;
+  left: 8.5rem;
+  right: 15rem;
 }
 
-
-.discovery{
-    text-align: left;
-    position:relative;
-    margin-top:54px;
-    font-size: 36px
+.headers .method-title {
+  text-align: center;
 }
 
-.text {
-    width: 556px;
+.headers .section-label {
+  position: relative;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.arrowLeft, .arrowRight {
+  height: 46px;
+  width: 23px;
+  position: absolute;
+  top: 32rem;
+}
+
+.arrowLeft {
+  left: 0;
+}
+
+.arrowRight {
+  right: 0;
+}
+
+.processImage {
+  width: 56vw;
+  height: 498px;
+  display: block;
+  margin: auto;
+}
+
+.method-subheader {
+  text-align: left;
+  position: relative;
+  margin-top: 54px;
+  font-size: 36px
+}
+
+.method-text {
+  width: 40vw;
+  height: 136px;
+  position: absolute;
+  top: 49.5rem;
+  right: 0;
+  line-height: 1.5;
+  font-family: "Proxima-Nova", sans-serif;
+}
+
+.MethodBlock:not(:first-of-type) {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .headers {
+    width: 90vw;
+    position: absolute;
+    left: 0;
+  }
+
+  .method-text {
+    width: 52vw;
+    position: absolute;
+    top: 50rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .process {
+    height: 840px;
+    top: 0;
+    left: 0;
+  }
+
+  .headers {
+    width: 90vw;
+    position: absolute;
+    left: 2.25rem;
+  }
+
+  .processImage {
+    width: 84vw;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  .arrowLeft, .arrowRight {
+    top: 26rem;
+  }
+
+  .method-text {
+    width: 52vw;
+    position: absolute;
+    top: 42rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .process {
+    height: 1005px;
+    top: 0;
+    left: 0;
+  }
+
+  .headers {
+    left: 2rem;
+    width: 88vw;
+  }
+
+  .headers .method-title {
+    line-height: normal;
+  }
+
+  .headers .section-label {
+    margin-top: 5.5rem;
+  }
+
+  .arrowLeft, .arrowRight {
+    display: none;
+  }
+
+  .processImage {
+    width: 88vw;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  .method-subheader {
+    width: 6rem;
+    font-size: 14px;
+    margin-top: 0;
+    line-height: normal;
+    position: absolute;
+    left: 0.25rem;
+  }
+
+  .method-text {
+    width: 67vw;
     height: 136px;
     position: relative;
-    left: 368px;
-    right: 216px;
-    top: -80px;
-    text-align: justify;
-    line-height: 1.5;
-    font-family: "Proxima-Nova", sans-serif;
+    top: -0.4rem;
+    left: 7.5rem;
+    line-height: 15px;
+    font-size: 10px;
+  }
+
+  .method-block-container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 68px 52px 82px 68px 38px;
+    grid-row-gap: 1.5rem;
+  }
+
+  .MethodBlock:not(:first-of-type) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .process {
+    height: 980px;
+  }
+
+  .headers {
+    left: 1.5rem;
+  }
+
+  .method-text {
+    width: 59vw;
+  }
+
+  .method-block-container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 96px 82px 112px 98px 52px;
+    grid-row-gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .process {
+    height: 1050px;
+  }
+
+  .headers {
+    left: 1.25rem;
+  }
+
+  .method-text {
+    width: 55vw;
+  }
+
+  .method-block-container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 112px 98px 142px 112px 68px;
+    grid-row-gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .process {
+    height: 1200px;
+  }
+
+  .method-subheader {
+    left: 0;
+  }
+
+  .method-text {
+    width: 50vw;
+  }
+
+  .method-block-container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 158px 128px 172px 142px 82px;
+    grid-row-gap: 1.5rem;
+  }
 }

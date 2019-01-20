@@ -35,8 +35,7 @@ const LeftValues = props => {
         <ValueTitle>{props.title}</ValueTitle>
         <ValueDetails>{props.details}</ValueDetails>
       </Values>
-
-      <img src={props.img} alt="Core Value Image"/>
+      <img src={props.img} alt="Core Value"/>
     </ValueSection>
   );
 }

@@ -1,12 +1,142 @@
-h1{
-    font-size: 300%;
+.Work .landing-container .section-label {
+  text-align: left;
+  margin-left: 11.5rem;
 }
 
-h4 {
-    color: rgb(204, 203, 203);
-    letter-spacing: 7px;
+.Work .landing-container h2 {
+  width: 730px;
+  text-align: left;
+  margin-left: 11.5rem;
 }
 
-body{
-    font-family: Montserrat;
+.Work .landing-container .journey-button {
+  margin-left: 11.5rem;
 }
+
+.Work .landing-container img {
+  position: absolute;
+  right: 11.5rem;
+  height: 568px;
+  width: 704px;
+  margin-top: 7rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .Work .landing-container .section-label {
+    margin-left: 8.5rem;
+  }
+
+  .Work .landing-container h2 {
+    width: 600px;
+    margin-left: 8.5rem;
+  }
+
+  .Work .landing-container .journey-button {
+    margin-left: 8.5rem;
+  }
+
+  .Work .landing-container img {
+    right: 11.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Work .landing-container .section-label {
+    margin-left: 2.75rem;
+  }
+
+  .Work .landing-container h2 {
+    width: 450px;
+    margin-left: 2.75rem;
+  }
+
+  .Work .landing-container .journey-button {
+    width: 9.5rem;
+    height: 2.5rem;
+    font-size: 14px;
+    line-height: 2.5rem;
+    display: block;
+    margin: 14rem auto 0 auto;
+  }
+
+  .Work .landing-container img {
+    position: absolute;
+    top: 0rem;
+    right: 2.75rem;
+    height: 100%;
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Work .landing-container .section-label {
+    margin-left: 2.25rem;
+  }
+
+  .Work .landing-container h2 {
+    width: 450px;
+    margin-left: 2.25rem;
+  }
+
+  .Work .landing-container .journey-button {
+    margin: 11.5rem auto 0 auto;
+  }
+
+  .Work .landing-container img {
+    top: 12rem;
+    right: 2.25rem;
+    height: 176px;
+    width: 208px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Work .landing-container .section-label {
+    margin-left: 1.5rem;
+  }
+
+  .Work .landing-container h2 {
+    width: 400px;
+    margin-left: 1.5rem;
+  }
+
+  .Work .landing-container .journey-button {
+    margin: 14rem auto 0 auto;
+  }
+
+  .Work .landing-container img {
+    top: 8rem;
+    right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Work .landing-container h2 {
+    width: 320px;
+  }
+
+  .Work .landing-container .journey-button {
+    margin: 12rem auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Work .landing-container .section-label {
+    margin-left: 1.25rem;
+  }
+
+  .Work .landing-container h2 {
+    width: 200px;
+    margin-left: 1.25rem;
+  }
+
+  .Work .landing-container img {
+    top: 9rem;
+    right: 0;
+  }
+}
+
+
+
+
+

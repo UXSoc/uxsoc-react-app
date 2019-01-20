@@ -96,7 +96,7 @@
     margin-left: -3.5rem;
   }
 
-  .journey-button {
+  .home-landing-container .journey-button {
     margin-left: -3.5rem;
   }
 
@@ -140,9 +140,9 @@
     margin-left: -2.5rem;
   }
 
-  .journey-button {
+  .home-landing-container .journey-button {
     margin-top: -5rem;
-    margin-left: -2.5rem;
+    margin-left: -2.25rem;
   }
 
   .home-blue-text {
@@ -169,6 +169,11 @@
 @media screen and (max-width: 425px) {
   .main-title-leader, .north-star-title, .journey-button {
     margin-left: -2rem;
+  }
+
+  .home-landing-container .journey-button {
+    margin-top: 3rem;
+    margin-left: -1.75rem;
   }
 
   .blue2 {
@@ -210,8 +215,8 @@
     margin-left: -1.5rem;
   }
 
-  .journey-button {
-    margin-top: -6rem;
+  .home-landing-container .journey-button {
+    margin-top: 0.5rem;
   }
 
   .home-blue-section {
@@ -260,9 +265,10 @@
     margin-left: -2.6rem;
   }
 
-  .journey-button {
+  .home-landing-container .journey-button {
     z-index: 5;
     margin-top: 35rem;
+    margin-left: -0.2rem;
   }
 
   .home-blue-section {
