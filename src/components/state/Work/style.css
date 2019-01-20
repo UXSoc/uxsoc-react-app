@@ -122,7 +122,7 @@ a:visited {
   }
 
   .case-studies img {
-    width: 62vw;
+    width: 380px;
     height: 20rem;
   }
 
@@ -130,7 +130,7 @@ a:visited {
     position: relative;
     height: 50px;
     line-height: 38px;
-    width: 62vw;
+    width: 200px;
     top: -4.85rem;
     fill: solid;
   }
@@ -138,12 +138,13 @@ a:visited {
   .Laptop {
     position: absolute;
     top: 30rem;
-    right: 9.6rem;
+    right: 3.6rem;
   }
 
   .Laptop .case-study-text {
     text-align: left;
     padding-left: 15px;
+    line-height: 15px;
   }
 
   .Meeting {
@@ -152,7 +153,7 @@ a:visited {
 
   .case-study-text {
     padding-left: 15px;
-    width: 62vw;
+    width: 200px;
     text-align: left;
   }
 
@@ -170,13 +171,13 @@ a:visited {
   }
 
   .case-studies img {
-    width: 62vw;
+    width: 280px;
     height: 14rem;
   }
 
   .Laptop {
     top: 24rem;
-    right: 7.5rem;
+    right: 1.8rem;
   }
 
   .Meeting {
@@ -191,13 +192,13 @@ a:visited {
   }
 
   .case-studies img {
-    width: 62vw;
+    width: 200px;
     height: 12rem;
   }
 
   .Laptop {
     top: 22rem;
-    right: 5.4rem;
+    right: 1.4rem;
   }
 
   .Meeting {
@@ -207,8 +208,9 @@ a:visited {
 
 @media screen and (max-width: 375px) {
   .Laptop {
-    right: 4.7rem;
+    right: 2.7rem;
   }
+
   .Laptop .case-study-bg {
     line-height: 15px;
   }

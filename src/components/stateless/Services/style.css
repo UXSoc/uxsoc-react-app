@@ -10,7 +10,7 @@ h3 {
 
 .services {
   height: 1550px;
-  width: 92vw;
+  width: 75vw;
   position: relative;
   display: block;
   margin: 35rem auto 5rem auto;
@@ -72,6 +72,12 @@ h3 {
 
 .row-3 p {
   width: 30vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .services {
+    width: 92vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
