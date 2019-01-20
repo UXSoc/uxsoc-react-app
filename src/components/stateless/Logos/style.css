@@ -1,10 +1,6 @@
 .Logos {
-  /* width: 100%; */
   height: 293px;
   background-color: #EEF1F6;
-  /* position: absolute; */
-  /* left: 11.5rem;
-  right: 11.5rem; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -16,6 +12,7 @@
   width: 84vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
   justify-items: center;
 }
 
@@ -26,4 +23,42 @@
 .logo img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .Logos {
+    height: 200px;
+  }
+
+  .logo img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Logos {
+    height: 300px;
+  }
+
+  .logo-container {
+    width: 84vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: auto;
+  }
 }
