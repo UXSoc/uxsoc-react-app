@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
 import laptop from '../../../../resources/img/work-imgs/laptop.png'
 
+import '../style.css'
+
 class Laptop extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
-            <div>
-                <img src={laptop}></img>
-                <div className="tedXLaptoptextBG">
-                    <h1 className="tedXLaptoptext"><a href={this.props.link}>{this.props.text}</a></h1>
-                </div>
-            </div>
-         );
-    }
+  render() {
+    return (
+      <div className="Laptop">
+        <img src={laptop} alt="case-study"/>
+        <div className="case-study-bg">
+          <h1 className="case-study-text"><a href={this.props.link}>{this.props.text}</a></h1>
+        </div>
+      </div>
+    );
+  }
 }
- 
+
 export default Laptop;

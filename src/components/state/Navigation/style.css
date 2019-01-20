@@ -18,11 +18,11 @@
   margin-right: 13vw;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .navbar-mr {
@@ -31,8 +31,8 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .navbar-link, .dropdown-link {
@@ -42,7 +42,7 @@
   font-family: "Proxima-Nova",sans-serif;
   font-weight: 500;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   text-align: center;
   margin-left: 15px;
   margin-right: 15px;
@@ -80,6 +80,7 @@
 }
 
 .NavDropdown {
+  display: none;
   z-index: 99;
   width: 100vw;
   height: auto;
@@ -87,9 +88,8 @@
   background: #008ed4;
   position: fixed;
   top: 6rem;
-  /* opacity: 0.9; */
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .NavDropdown li {
@@ -102,6 +102,40 @@
   background: #006ca1;
 }
 
+@media screen and (max-width: 1024px) {
+  .navbar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navbar-container {
     display: -webkit-box;
@@ -111,33 +145,22 @@
     margin-right: 5vw;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .navbar-menu {
-    display: block;
-    margin-top: 8px;
-    margin-right: -50vw;
-    width: 3rem;
-  }
-
-  .menu-icon {
-    fill: #ABABAB;
-    cursor: pointer;
-  }
-
-  .navbar-link {
+  .none {
     display: none;
   }
-}
 
-@media screen and (max-width: 600px) {
+  .NavDropdown {
+    display: block;
+  }
   .navbar-menu {
     display: block;
     margin-top: 8px;
@@ -146,8 +169,15 @@
   }
 
   .menu-icon {
-    fill: #ABABAB;
     cursor: pointer;
+    width: 40px;
+  }
+
+  .menu-icon div {
+    background: #ABABAB;
+    width: 100%;
+    margin: 5px;
+    height: 8px
   }
 
   .navbar-link {

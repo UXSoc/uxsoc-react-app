@@ -8,7 +8,7 @@ class MemberStories extends Component {
   render() {
     return(
       <div className="MemberStories">
-        <div className="ms-container" id="member-stories">
+        <div className="ms-container">
           <p className="section-label">Member Stories</p>
           <h2>Read up on a fellow member's UX journey</h2>
           <div className="ms-content-container">

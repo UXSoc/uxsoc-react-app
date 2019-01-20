@@ -6,6 +6,19 @@ const LeftValues = props => {
   const ValueSection = styled.div`
     display: flex;
     flex-direction: row;
+
+    img {
+      margin-left: 30px;
+    }
+
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+      text-align: center;
+
+      img {
+        margin: 0;
+      }
+    }
   `
 
   const Values = styled.div`
@@ -22,7 +35,6 @@ const LeftValues = props => {
   `
 
   const ValueDetails = styled.p`
-    width: 80%;
     font-family: Proxima Nova;
     line-height: 30px;
     font-size: 18px;
@@ -35,8 +47,7 @@ const LeftValues = props => {
         <ValueTitle>{props.title}</ValueTitle>
         <ValueDetails>{props.details}</ValueDetails>
       </Values>
-
-      <img src={props.img} alt="Core Value Image"/>
+      <img src={props.img} alt="Core Value"/>
     </ValueSection>
   );
 }

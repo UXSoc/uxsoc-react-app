@@ -1,7 +1,7 @@
 .events-container {
   height: 900px;
   background: #EEF1F6;
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
 .events-container .section-label {
@@ -106,7 +106,7 @@
 
   .EventImage img {
     width: 84vw;
-    height: 60vh;
+    height: 18rem;
     display: block;
     margin: auto;
     position: relative;
@@ -181,7 +181,7 @@
 
   .EventImage img {
     width: 80vw;
-    height: 32vh;
+    height: 10rem;
     top: -41.5rem;
   }
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Navigation from '../../../state/Navigation/Navigation';
 import Header from '../../../stateless/DesignLibraryHeader/DesignLibraryHeader'
 import SectionSelect from '../../../state/DesignLibrarySectionSelect/DesignLibrarySectionSelect'
@@ -11,12 +10,12 @@ class DesignLibraryArticles extends Component {
         super(props);
         this.state = {  }
     }
-    render() { 
+    render() {
         const tempHText = "50 Things I've Learned from Spending 3 Years as a UX Intern";
         const tempPText = "Over the last 3 years, I've worked as a design intern at 2 independent advertising agencies...";
         return (
             <div>
-             
+
             <Navigation />
             <div>
                 <Header />
@@ -53,7 +52,7 @@ class DesignLibraryArticles extends Component {
                             pText = {tempPText}/>
                 <AllTimeFavorites class = {"faves3"} hText = {tempHText}
                             pText = {tempPText}/>
-            
+
             </div>
             <div>
 
@@ -65,6 +64,5 @@ class DesignLibraryArticles extends Component {
           );
     }
 }
- 
+
 export default DesignLibraryArticles;
- 
