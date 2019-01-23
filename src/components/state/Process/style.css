@@ -17,6 +17,10 @@
   right: 15rem;
 }
 
+.headers img:hover {
+  cursor: pointer;
+}
+
 .headers .method-title {
   text-align: center;
 }
