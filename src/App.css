@@ -96,3 +96,8 @@ h2 {
     margin-top: -1.5rem;
   }
 }
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}

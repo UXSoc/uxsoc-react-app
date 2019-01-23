@@ -1,22 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.css';
 
-class AuthorPic extends Component {
-  render() {
-    const { authorPic } = this.props;
-    return(
-      <div className="AuthorPic">{authorPic}</div>
-    )
-  }
+const AuthorPic = props => {
+  return <img className="AuthorPic" src={props.authorPic} alt="author"/>
 }
 
-class AuthorName extends Component {
-  render() {
-    const { authorName } = this.props;
-    return(
-      <p className="AuthorName">{authorName}</p>
-    )
-  }
+const AuthorName = props => {
+  return <p className="AuthorName">{props.authorName}</p>
 }
 
 export { AuthorPic, AuthorName }

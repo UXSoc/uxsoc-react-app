@@ -12,9 +12,11 @@ class Work extends Component {
       <div className="case-studies">
         <p className="section-label">Work</p>
         <h2>Case Studies</h2>
-        <TedX text="TedxADMU" link=""/>
-        <Meeting text="TALAB" link=""/>
-        <Laptop text="Office of Student Activities" link=""/>
+        <div>
+          <TedX text="TedxADMU" link="http://alexiscollado.com/tedx.html"/>
+          <Meeting text="TALAB" link="https://medium.com/user-experience-society/an-evaluation-of-the-talab-enlistment-process-3261cc5146"/>
+          <Laptop text="Office of Student Activities" link=""/>
+        </div>
       </div>
     );
   }

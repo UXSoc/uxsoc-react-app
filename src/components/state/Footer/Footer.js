@@ -34,12 +34,12 @@ class Footer extends Component {
                   <Link to='/community#events'>
                     <li>Events</li>
                   </Link>
-                  <Link to='/community#member-stories'>
+                  {/* <Link to='/community#member-stories'>
                     <li>Member Stories</li>
                   </Link>
                   <Link to="/community#opportunities">
                     <li>Opportunities</li>
-                  </Link>
+                  </Link> */}
                   <Link to="/community#resources">
                     <li>Resources</li>
                   </Link>

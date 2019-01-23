@@ -6,16 +6,9 @@
   text-align: center;
 }
 
-.HomeCard:first-of-type {
-  margin-left: 175px;
-}
-
-.HomeCard:last-of-type {
-  margin-right: 180px;
-}
-
 .HomeCard img {
-  width: 500px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .HomeCard h2 {
@@ -38,8 +31,32 @@
   margin-bottom: 2rem;
 }
 
-.card-caption:last-of-type {
+.HomeCardLeft {
+  margin-left: 175px;
+}
+
+.HomeCardRight {
+  margin-right: 180px;
+}
+
+.HomeCardLeft img {
+  width: 390px;
+  height: 272px;
+}
+
+.HomeCardRight img {
+  width: 370px;
+  height: 275px;
+}
+
+.HomeCardRight .card-caption {
   width: 380px;
+}
+
+@media screen and (max-width: 1024px) {
+  .HomeCard {
+    width: 450px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -50,7 +67,8 @@
 
   .HomeCard img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    margin-top: 3rem;
   }
 
   .HomeCard h2 {
@@ -73,11 +91,11 @@
     width: 400px;
   }
 
-  .HomeCard:first-of-type {
+  .HomeCardLeft {
     margin-left: 0px;
   }
 
-  .HomeCard:last-of-type {
+  .HomeCardRight {
     margin-right: 0px;
   }
 }
@@ -92,7 +110,7 @@
 @media screen and (max-width: 320px) {
   .HomeCard {
     width: 275px;
-    height: 330px;
+    height: 360px;
   }
 
   .HomeCard:first-of-type {

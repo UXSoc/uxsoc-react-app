@@ -45,8 +45,8 @@ class Work extends Component {
           <Logos logo1={shield} logo2={tugon} logo3={lions} logo4={uxph}/>
         </div>
 
-        <div>
-          <ContactForm />
+        <div id="contact-us" className="contact-container">
+          <ContactForm/>
         </div>
         <Footer/>
       </div>

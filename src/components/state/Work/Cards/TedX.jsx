@@ -6,12 +6,14 @@ import '../style.css'
 class TedX extends Component {
   render() {
     return (
-      <div className="TedX">
-        <img src={tedx} alt="case-study"/>
-        <div className="case-study-bg">
-          <h1 className="case-study-text"><a href={this.props.link}>{this.props.text}</a></h1>
+      <a href={this.props.link} target="_blank" rel="noopener noreferrer">
+        <div className="TedX">
+          <img src={tedx} alt="case-study"/>
+          <div className="case-study-bg">
+            <h1 className="case-study-text"><a href={this.props.link}>{this.props.text}</a></h1>
+          </div>
         </div>
-      </div>
+      </a>
     );
   }
 }

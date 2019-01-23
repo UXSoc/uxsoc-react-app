@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from '../EventDetails/EventDetails';
 import RedirectButton from '../../../state/RedirectButton/RedirectButton';
+import UXChill from './../../../../resources/others/UX&Chill 3.png';
 
 class PastEvents extends Component {
   constructor(props) {
@@ -36,38 +37,38 @@ class PastEvents extends Component {
             <EventLabel
               eventLabel={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Category) ||
-                "Information Architecture"
+                "Conference"
               }
             />
 
             <EventName
               eventName={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Name) ||
-                "UX&Chill Ep 08"
+                "UX & Chill"
               }
             />
 
             <EventDetails
-              date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) ||"24 September 2018, 5:00 to 7:30 PM"}
+              date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) ||"13, 21, and 29 November 2018 5:00 to 7:00 pm"}
               location={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Location) ||
-                "Faura Hall, Ateneo de Manila University"
+                "Ateneo de Manila University"
               }
-              speaker={
-                (whatsHappening[lastEl] && whatsHappening[lastEl].Speaker) || "Avery Si"
-              }
+              // speaker={
+              //   (whatsHappening[lastEl] && whatsHappening[lastEl].Speaker) || "Avery Si"
+              // }
             />
 
             <AboutHeader aboutHeader="About the event"/>
-            <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
-            <AboutHeader aboutHeader="About the speaker"/>
-            <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/>
+            <AboutDesc aboutDesc="Learn more about innovation, design-thinking, and all about user experience (UX) in this three-day workshop which will unfold over the month of November. UX&Chill aims to promote UX and its uses to various demographics, and invite experts to share about their expertise and journey in the UX industry."/>
+            {/* <AboutHeader aboutHeader="About the speaker"/>
+            <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/> */}
 
             <RedirectButton
-              buttonText="Register Now"
-              redirectLink="/"/>
+              buttonText="Learn More"
+              redirectLink="https://uxchill.uxsociety.org"/>
           </div>
-          <EventImage/>
+          <EventImage eventImage={UXChill}/>
         </div>
       </div>
     )

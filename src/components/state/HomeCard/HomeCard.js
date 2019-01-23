@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import cardImage from './../../../resources/img/community-consultancy.svg';
+import leftImage from './../../../resources/img/geared-for-growth.svg';
+import rightImage from './../../../resources/img/crafted-for-work.svg';
 import './style.css';
 
-class HomeCard extends Component {
+class HomeCardLeft extends Component {
   render() {
     const { sectionLabel, headerLabel, caption, btnLabel, link } = this.props;
     return(
-      <div className="HomeCard">
-        <img src={cardImage} alt="people"></img>
+      <div className="HomeCard HomeCardLeft">
+        <img src={leftImage} alt="people"></img>
         <p className="section-label">{sectionLabel}</p>
         <h2>{headerLabel}</h2>
         <p className="card-caption">{caption}</p>
@@ -20,4 +21,21 @@ class HomeCard extends Component {
   }
 }
 
-export default HomeCard;
+class HomeCardRight extends Component {
+  render() {
+    const { sectionLabel, headerLabel, caption, btnLabel, link } = this.props;
+    return(
+      <div className="HomeCard HomeCardRight">
+        <img src={rightImage} alt="people"></img>
+        <p className="section-label">{sectionLabel}</p>
+        <h2>{headerLabel}</h2>
+        <p className="card-caption">{caption}</p>
+        <Link to={link}>
+          <button className="blue-btn-big">{btnLabel}</button>
+        </Link>
+      </div>
+    )
+  }
+}
+
+export { HomeCardLeft, HomeCardRight};

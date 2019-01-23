@@ -2,19 +2,18 @@ import React, { Component } from 'react';
 
 import calendarIcon from '../../../../resources/img/calendar.svg';
 import locationIcon from '../../../../resources/img/location.svg';
-import speakerIcon from '../../../../resources/img/speaker.svg';
-import eventImage from '../../../../resources/img/sample-img.png';
+// import speakerIcon from '../../../../resources/img/speaker.svg';
 
 import '../style.css';
 
 class EventDetails extends Component {
   render() {
-    const { date, location, speaker } = this.props;
+    const { date, location } = this.props;
     return(
       <div className="EventDetails">
         <img src={calendarIcon} alt="calendar"/><li>{date}</li>
         <img src={locationIcon} alt="location"/><li>{location}</li>
-        <img src={speakerIcon} alt="speaker"/><li>{speaker}</li>
+        {/* <img src={speakerIcon} alt="speaker"/><li>{speaker}</li> */}
       </div>
     )
   }
@@ -62,6 +61,7 @@ class AboutDesc extends Component {
 
 class EventImage extends Component {
   render() {
+    const { eventImage } = this.props;
     return(
       <div className="EventImage">
         <img src={eventImage} alt="event"/>

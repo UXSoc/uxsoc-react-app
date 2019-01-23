@@ -1,8 +1,7 @@
 .RedirectButton {
   cursor: pointer;
-  margin-top: -0.7rem;
-  position: relative;
-  right: -2rem;
+  margin-top: 15px;
+  margin-right: 60px;
 }
 
 .RedirectButton a {
@@ -12,16 +11,11 @@
   text-decoration: none;
   text-transform: uppercase;
   float: right;
-  margin-right: 1rem;
-  margin-top: -1rem;
   cursor: pointer;
 }
 
 .RedirectButton img {
   width: 16px;
   height: 13px;
-  float: right;
-  margin-top: 0.3rem;
-  margin-right: 5rem;
-  padding-left: 1rem;
+  margin: auto 8px;
 }

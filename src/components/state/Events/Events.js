@@ -20,35 +20,17 @@ class Events extends Component {
   }
 
   render() {
-    if (this.state.selectedEvent === "Upcoming") {
-      return(
-        <div className="Events">
-          <div className="events-container" id="events">
-            <p className="section-label">Events</p>
-            <h2>What's happening</h2>
-            <div className="SectionToggleEvents">
-              <button className="section-toggle selected" value="Upcoming" onClick={this.handleClick}>Upcoming</button>
-              <button className="section-toggle" value="Past" onClick={this.handleClick}>Past</button>
-            </div>
-            <UpcomingEvents/>
-          </div>
+    return(
+      <div className="events-container">
+        <p className="section-label">Events</p>
+        <h2>What's happening</h2>
+        <div className="SectionToggleEvents">
+          <button className={this.state.selectedEvent === "Upcoming" ? "section-toggle selected" : "section-toggle"} value="Upcoming" onClick={this.handleClick}>Upcoming</button>
+          <button className={this.state.selectedEvent === "Past" ? "section-toggle selected" : "section-toggle"} value="Past" onClick={this.handleClick}>Past</button>
         </div>
+        {this.state.selectedEvent === "Upcoming" ? <UpcomingEvents/> : <PastEvents/>}
+      </div>
     )
-    } else if (this.state.selectedEvent === "Past") {
-      return(
-        <div className="Events">
-          <div className="events-container" id="events">
-            <p className="section-label">Events</p>
-            <h2>What's happening</h2>
-            <div className="SectionToggleEvents">
-              <button className="section-toggle" value="Upcoming" onClick={this.handleClick}>Upcoming</button>
-              <button className="section-toggle selected" value="Past" onClick={this.handleClick}>Past</button>
-            </div>
-            <PastEvents/>
-          </div>
-        </div>
-      )
-    }
   }
 }
 
