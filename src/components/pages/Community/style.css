@@ -8,10 +8,10 @@
 }
 
 .landing-image {
-  width: 90%;
+  width: 85%;
   display: block;
   margin: auto;
-  margin-top: -3rem;
+  margin-top: 0;
 }
 
 .round-btn {
@@ -21,6 +21,7 @@
   background: #008ED4;
   display: block;
   margin: auto;
+  margin-top: 3rem;
   margin-bottom: 4rem;
   outline: none;
   border: none;
@@ -68,6 +69,13 @@
     width: 288px;
     line-height: normal;
     margin-bottom: 6rem;
+  }
+
+  .landing-image {
+    width: 85%;
+    display: block;
+    margin: auto;
+    margin-top: -3rem;
   }
 
   .round-btn {
