@@ -141,7 +141,7 @@
 
   .event-card .RedirectButton {
     margin-top: 2.5rem;
-    margin-right: -2rem;
+    margin-right: 1rem;
   }
 }
 
@@ -189,7 +189,6 @@
 
   .event-card .RedirectButton {
     margin-top: 3rem;
-    margin-right: -1.5rem;
   }
 }
 

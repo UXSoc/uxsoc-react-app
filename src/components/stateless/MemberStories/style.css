@@ -122,6 +122,7 @@
   }
 
   .ms-card .RedirectButton a {
+    margin-top: -2rem;
     margin-right: -0.5rem;
   }
 }
@@ -172,6 +173,7 @@
   }
 
   .ms-card .RedirectButton a {
+    margin-top: -1rem;
     margin-right: -1rem;
   }
 }

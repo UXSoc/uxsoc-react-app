@@ -5,7 +5,7 @@ import Navigation from '../../state/Navigation/Navigation';
 
 import Events from './../../state/Events/Events';
 import MemberStories from './../../stateless/MemberStories/MemberStories';
-// import Opportunities from './../../stateless/Opportunities/Opportunities';
+import Opportunities from './../../stateless/Opportunities/Opportunities';
 import Resources from './../../stateless/Resources/Resources';
 
 import ContactForm from './../../state/ContactForm/ContactForm';
@@ -44,7 +44,7 @@ class Community extends Component {
         </div>
 
         <div id="opportunities">
-          {/* <Opportunities/> */}
+          <Opportunities/>
         </div>
 
         <div id="resources">
