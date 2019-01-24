@@ -38,7 +38,7 @@ class MemberStoriesImage extends Component {
   render() {
     return(
       <div className="MemberStoriesImage">
-        <img src={msImage} className="ms-image" width="1100" alt="member stories"/>
+        <img src={msImage} className="ms-image" alt="member stories"/>
       </div>
     )
   }

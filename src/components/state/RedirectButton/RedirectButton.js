@@ -4,9 +4,9 @@ import './style.css';
 
 class RedirectButton extends Component {
   render() {
-    const { redirectLink, buttonText } = this.props;
+    const { redirectLink, buttonText, idTag } = this.props;
     return(
-        <div className="RedirectButton">
+        <div className="RedirectButton" id={idTag}>
           <a style={{color: "#008ed4"}} href={redirectLink} target="_blank" rel="noopener noreferrer">
             {buttonText}
             <img src={redirectArrow} alt="arrow"/>

@@ -1,7 +1,12 @@
 .RedirectButton {
   cursor: pointer;
-  margin-top: 15px;
-  margin-right: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .RedirectButton a {
@@ -10,7 +15,6 @@
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
-  float: right;
   cursor: pointer;
 }
 

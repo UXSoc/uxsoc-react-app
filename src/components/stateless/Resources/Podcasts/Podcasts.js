@@ -14,7 +14,7 @@ const Podcasts = () => {
           <ResourceTitle resourceTitle="Roots"/>
           <ResourceDesc resourceDesc="Roots is a podcast about the stories of Filipino designers, hosted and produced by Alexis Collado." />
           <div style={{marginTop: '60px'}}>
-            <RedirectButton buttonText="Start Listening" redirectLink="https://rootspodcast.design/"/>
+            <RedirectButton idTag="resource-button" buttonText="Start Listening" redirectLink="https://rootspodcast.design/"/>
           </div>
         </div>
         <ResourceImage resourceImage={podcastImage} imageWidth="600"/>
