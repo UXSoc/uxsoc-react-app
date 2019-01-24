@@ -20,13 +20,16 @@ import './style.css';
 class Work extends Component {
   render() {
     return(
-      <div className="Work">
+      <div>
         <Navigation/>
-        <div className="landing-container">
+        <div className="work-container">
           <p className="section-label">Work with UX Society</p>
           <h2>Crafting the best experiences to achieve your goals</h2>
           <button className="journey-button">Contact Us</button>
-          <img src={mainImage} alt="work with ux society"></img>
+          <div className="work-image">
+            <img src={mainImage} alt="work with ux society"/>
+          </div>
+
         </div>
 
         <div id="process">

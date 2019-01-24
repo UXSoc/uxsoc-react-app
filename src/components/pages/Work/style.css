@@ -1,265 +1,57 @@
-.Work .landing-container .section-label {
+.work-container {
+  width: 75%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.work-container p, .work-container h2 {
   text-align: left;
-  margin-left: 11.5rem;
 }
 
-.Work .landing-container h2 {
-  width: 730px;
-  text-align: left;
-  margin-left: 11.5rem;
+.work-container h2 {
+  width: 75%;
+  margin: 30px 0;
 }
 
-.Work .landing-container .journey-button {
-  margin-left: 11.5rem;
+.work-container button {
+  margin-top: 15px;
 }
 
-.Work .landing-container img {
-  position: absolute;
-  right: 11.5rem;
-  height: 568px;
-  width: 704px;
-  margin-top: 7rem;
+.work-image {
+  margin-top: -180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-@media screen and (max-width: 1024px) {
-  .Work .landing-container .section-label {
-    margin-left: 8.5rem;
-  }
-
-  .Work .landing-container h2 {
-    width: 600px;
-    margin-left: 8.5rem;
-  }
-
-  .Work .landing-container .journey-button {
-    margin-left: 8.5rem;
-  }
-
-  .Work .landing-container img {
-    right: 11.5rem;
-  }
+.work-image img {
+  width: 80%;
 }
 
 @media screen and (max-width: 768px) {
-  .Work .landing-container .section-label {
-    margin-left: 2.75rem;
+  .work-container p, .work-container h2 {
+    text-align: left;
   }
 
-  .Work .landing-container h2 {
-    width: 450px;
-    margin-left: 2.75rem;
+  .work-container h2 {
+    width: 100%;
+    margin: 30px 0;
+    line-height: 48px;
+    font-size: 36px;
   }
 
-  .Work .landing-container .journey-button {
-    width: 9.5rem;
-    height: 2.5rem;
-    font-size: 14px;
-    line-height: 2.5rem;
+  .work-container button {
+    margin: 0;
+  }
+
+  .work-image {
     display: block;
-    margin: 14rem auto 0 auto;
+    margin-top: 30px;
   }
-
-  .Work .landing-container img {
-    position: absolute;
-    top: 0rem;
-    right: 2.75rem;
-    height: 100%;
-    width: 45vw;
+  .work-image img {
+    width: 100%;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .Work .landing-container .section-label {
-    margin-left: 2.25rem;
-  }
-
-  .Work .landing-container h2 {
-    width: 450px;
-    margin-left: 2.25rem;
-  }
-
-  .Work .landing-container .journey-button {
-    margin: 11.5rem auto 0 auto;
-  }
-
-  .Work .landing-container img {
-    top: 12rem;
-    right: 2.25rem;
-    height: 176px;
-    width: 208px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .Work .landing-container .section-label {
-    margin-left: 1.5rem;
-  }
-
-  .Work .landing-container h2 {
-    width: 400px;
-    margin-left: 1.5rem;
-  }
-
-  .Work .landing-container .journey-button {
-    margin: 14rem auto 0 auto;
-  }
-
-  .Work .landing-container img {
-    top: 8rem;
-    right: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .Work .landing-container h2 {
-    width: 320px;
-  }
-
-  .Work .landing-container .journey-button {
-    margin: 12rem auto 0 auto;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .Work .landing-container .section-label {
-    margin-left: 1.25rem;
-  }
-
-  .Work .landing-container h2 {
-    width: 200px;
-    margin-left: 1.25rem;
-  }
-
-  .Work .landing-container img {
-    top: 9rem;
-    right: 0;
-  }
-}
-
-.Work .landing-container img {
-  position: absolute;
-  right: 11.5rem;
-  height: 568px;
-  width: 704px;
-  margin-top: 7rem;
-}
-
-@media screen and (max-width: 1024px) {
-  .Work .landing-container .section-label {
-    margin-left: 8.5rem;
-  }
-
-  .Work .landing-container h2 {
-    width: 600px;
-    margin-left: 8.5rem;
-  }
-
-  .Work .landing-container .journey-button {
-    margin-left: 8.5rem;
-  }
-
-  .Work .landing-container img {
-    right: 11.5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .Work .landing-container .section-label {
-    margin-left: 2.75rem;
-  }
-
-  .Work .landing-container h2 {
-    width: 450px;
-    margin-left: 2.75rem;
-  }
-
-  .Work .landing-container .journey-button {
-    width: 9.5rem;
-    height: 2.5rem;
-    font-size: 14px;
-    line-height: 2.5rem;
-    display: block;
-    margin: 14rem auto 0 auto;
-  }
-
-  .Work .landing-container img {
-    position: absolute;
-    top: 0rem;
-    right: 2.75rem;
-    height: 100%;
-    width: 45vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .Work .landing-container .section-label {
-    margin-left: 2.25rem;
-  }
-
-  .Work .landing-container h2 {
-    width: 450px;
-    margin-left: 2.25rem;
-  }
-
-  .Work .landing-container .journey-button {
-    margin: 11.5rem auto 0 auto;
-  }
-
-  .Work .landing-container img {
-    top: 12rem;
-    right: 2.25rem;
-    height: 176px;
-    width: 208px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .Work .landing-container .section-label {
-    margin-left: 1.5rem;
-  }
-
-  .Work .landing-container h2 {
-    width: 400px;
-    margin-left: 1.5rem;
-  }
-
-  .Work .landing-container .journey-button {
-    margin: 14rem auto 0 auto;
-  }
-
-  .Work .landing-container img {
-    top: 8rem;
-    right: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .Work .landing-container h2 {
-    width: 320px;
-  }
-
-  .Work .landing-container .journey-button {
-    margin: 12rem auto 0 auto;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .Work .landing-container .section-label {
-    margin-left: 1.25rem;
-  }
-
-  .Work .landing-container h2 {
-    width: 200px;
-    margin-left: 1.25rem;
-  }
-
-  .Work .landing-container img {
-    top: 9rem;
-    right: 0;
-  }
-}
-
-
-
-
-
