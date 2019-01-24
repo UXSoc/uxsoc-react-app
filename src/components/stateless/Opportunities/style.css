@@ -120,12 +120,13 @@
 }
 
 .OpportunityCard .RedirectButton {
-  margin-top: 6rem;
-  margin-right: 4.25rem;
+  margin-top: 5rem;
+  margin-right: 3rem;
 }
 
 .OpportunityCard .RedirectButton img {
-  margin-top: 0.3rem;
+  margin-top: -1.2rem;
+  margin-left: 6.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -232,23 +233,9 @@
   }
 
   .OpportunityCard .RedirectButton {
-    margin-top: 10rem;
-  }
-
-  .OpportunityCard .RedirectButton img {
-    margin-top: -1.2rem;
-    margin-left: 5rem;
-  }
-
-  .OpportunityCard .RedirectButton {
-    margin-top: 9.25rem;
+    margin-top: 8.25rem;
     float: left;
-    margin-left: 23.5rem;
-  }
-
-  .OpportunityCard .RedirectButton img {
-    margin-top: 0.35rem;
-    margin-left: 0.5rem;
+    margin-left: 26.5rem;
   }
 }
 
@@ -272,14 +259,9 @@
   }
 
   .OpportunityCard .RedirectButton {
-    margin-top: 8rem;
+    margin-top: 7rem;
     float: left;
-    margin-left: 18.5rem;
-  }
-
-  .OpportunityCard .RedirectButton img {
-    margin-top: 0.4rem;
-    margin-left: 0.5rem;
+    margin-left: 22rem;
   }
 }
 
@@ -298,14 +280,8 @@
   }
 
   .OpportunityCard .RedirectButton {
-    margin-top: 6.5rem;
-    float: left;
-    margin-left: 8.75rem;
-  }
-
-  .OpportunityCard .RedirectButton img {
-    margin-top: 0.35rem;
-    margin-left: 0.5rem;
+    margin-top: 5.75rem;
+    margin-left: 12rem;
   }
 }
 
@@ -315,14 +291,8 @@
   }
 
   .OpportunityCard .RedirectButton {
-    margin-top: 5.5rem;
-    float: left;
-    margin-left: 8rem;
-  }
-
-  .OpportunityCard .RedirectButton img {
-    margin-top: -1.2rem;
-    margin-left: 6rem;
+    margin-top: 4.5rem;
+    margin-left: 10rem;
   }
 }
 
@@ -343,13 +313,10 @@
   }
 
   .OpportunityCard .RedirectButton {
-    margin-top: 5.5rem;
-    float: left;
-    margin-left: 5.5rem;
+    margin-left: 8rem;
   }
 
   .OpportunityCard .RedirectButton img {
-    margin-top: -1.2rem;
-    margin-left: 5.5rem;
+    margin-left: 6.5rem;
   }
 }

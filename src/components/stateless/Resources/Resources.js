@@ -17,7 +17,7 @@ class Resources extends Component {
   }
 
   handleClick(e) {
-    this.setState({ selectedResource: e.target.value});
+    this.setState({ selectedResource: e.target.value });
   }
 
   render() {

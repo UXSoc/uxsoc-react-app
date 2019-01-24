@@ -77,6 +77,15 @@
   margin-left: 2.5rem;
 }
 
+.resource-card .AuthorPic {
+  margin-left: 2.5rem;
+}
+
+.resource-card .AuthorName {
+  margin-top: -3.7rem;
+  margin-left: 6rem;
+}
+
 .PastResources {
   grid-column: 7/12;
   grid-row: 10/12;
@@ -152,7 +161,7 @@
   .ResourceTitle {
     width: 26rem;
     margin-left: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     line-height: 34px;
   }
 
@@ -161,6 +170,7 @@
   }
 
   .resource-card .AuthorName {
+    margin-top: -3.75rem;
     margin-left: 5rem;
   }
 
@@ -172,12 +182,13 @@
     width: 68vw;
     font-size: 12px;
     line-height: 20px;
+    margin-top: -0.5rem;
     margin-left: 1.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: -1rem;
   }
 
-  .resource-card .RedirectButton {
-    margin-right: 0rem;
+  .resource-card .RedirectButton a {
+    margin-right: 3.5rem;
   }
 
   .resource-card .RedirectButton img{
