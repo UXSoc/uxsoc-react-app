@@ -8,6 +8,7 @@ import arrowRight from '../../../resources/img/work-imgs/arrowRight.svg';
 import arrowLeft from '../../../resources/img/work-imgs/arrowLeft.svg';
 
 import './style.css'
+import 'animate.css';
 
 class Process extends Component {
   constructor(props) {
@@ -76,9 +77,11 @@ class Process extends Component {
           {
             this.state.discovery ?
             <div>
-              <img src={productivity1} className="processImage" alt="process=1"/>
-              <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleDefine}/>
-              <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleMeasure}/>
+              <div className="carousel">
+                <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleMeasure}/>
+                <img src={productivity1} className={this.state.discovery ? "processImage animated fadeIn" : "processImage animated fadeOut"} alt="process=1"/>
+                <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleDefine}/>
+              </div>
               <div className="method-block-container">
               <MethodBlock
                 subheader="01. Discovery"
@@ -90,9 +93,11 @@ class Process extends Component {
               </div>
             </div> : this.state.define ?
             <div>
-              <img src={productivity2} className="processImage" alt="process=1"/>
-              <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleIdeate}/>
-              <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleDiscovery}/>
+              <div className="carousel">
+                <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleDiscovery}/>
+                <img src={productivity2} className={this.state.define ? "processImage animated fadeIn" : "processImage animated fadeOut"} alt="process=1"/>
+                <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleIdeate}/>
+              </div>
               <div className="method-block-container">
               <MethodBlock
                 subheader="02. Define"
@@ -103,9 +108,11 @@ class Process extends Component {
               </div>
             </div> : this.state.ideate ?
             <div>
-              <img src={productivity3} className="processImage" alt="process=1"/>
-              <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleBuild}/>
-              <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleDefine}/>
+              <div className="carousel">
+                <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleDefine}/>
+                <img src={productivity3} className={this.state.ideate ? "processImage animated fadeIn" : "processImage animated fadeOut"} alt="process=1"/>
+                <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleBuild}/>
+              </div>
               <div className="method-block-container">
               <MethodBlock
                 subheader="03. Ideate > Test > Prototype"
@@ -118,9 +125,11 @@ class Process extends Component {
               </div>
             </div> : this.state.build ?
             <div>
-              <img src={productivity4} className="processImage" alt="process=1"/>
-              <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleMeasure}/>
-              <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleIdeate}/>
+              <div className="carousel">
+                <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleIdeate}/>
+                <img src={productivity4} className={this.state.build ? "processImage animated fadeIn" : "processImage animated fadeOut"} alt="process=1"/>
+                <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleMeasure}/>
+              </div>
               <div className="method-block-container">
               <MethodBlock
                 subheader="04. Build and Deploy"
@@ -131,9 +140,11 @@ class Process extends Component {
               </div>
             </div> :
             <div>
-              <img src={productivity5} className="processImage" alt="process=1"/>
-              <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleDiscovery}/>
-              <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleBuild}/>
+              <div className="carousel">
+                <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleBuild}/>
+                <img src={productivity5} className={this.state.measure ? "processImage animated fadeIn" : "processImage animated fadeOut"} alt="process=1"/>
+                <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleDiscovery}/>
+              </div>
               <div className="method-block-container">
               <MethodBlock
                 subheader="05. Measure"
@@ -149,16 +160,14 @@ class Process extends Component {
   }
 }
 
-class MethodBlock extends Component {
-  render() {
-    const { subheader, text } = this.props;
-    return(
-      <div className="MethodBlock">
-        <h2 className="method-subheader">{subheader}</h2>
-        <p className="method-text">{text}</p>
-      </div>
-    )
-  }
+const MethodBlock = props => {
+  const { subheader, text } = props;
+  return(
+    <div className="MethodBlock">
+      <h2 className="method-subheader">{subheader}</h2>
+      <p className="method-text">{text}</p>
+    </div>
+  )
 }
 
 export default Process;
