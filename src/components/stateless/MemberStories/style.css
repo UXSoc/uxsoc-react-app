@@ -53,7 +53,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 4.5rem;
+  margin-top: 3.5rem;
 }
 
 .MemberStoriesTitle {
@@ -79,30 +79,30 @@
     margin-top: -3rem;
     width: 75%;
     right: auto;
+    height: 200px;
   }
 
   .MemberStoriesLabel {
     margin-top: 1.5rem;
-    margin-left: 2.5rem;
+    margin-left: 0.2rem;
   }
 
   .MemberStoriesTitle {
-    font-size: 18px;
+    font-size: 1.5rem;
     line-height: 26px;
-    width: 1rem;
-    margin-left: 2.5rem;
+    margin-left: 0.2rem;
     margin-top: -0.5rem;
     margin-bottom: 2rem;
   }
 
   .ms-card .AuthorPic {
-    margin-left: 2.5rem;
+    margin-left: 0.2rem;
   }
 
   .ms-card .AuthorName {
     font-size: 12px;
     margin-bottom: 2.75rem;
-    margin-left: 6rem;
+    margin-left: 4rem;
   }
 
   .ms-card .RedirectButton a {
@@ -114,6 +114,7 @@
 @media screen and (max-width: 520px) {
   .ms-card {
     margin-top: -1.5rem;
+    height: 250px;
   }
 
   .ms-container h2 {
@@ -127,16 +128,12 @@
     margin-left: -0.5rem;
   }
 
-  .ms-card {
-    margin-top: 9rem;
-  }
-
   .MemberStoriesLabel, .MemberStoriesTitle, .ms-card .AuthorPic  {
-    margin-left: 2rem;
+    margin-left: -0.5rem;
   }
 
   .ms-card .AuthorName {
-    margin-left: 5rem;
+    margin-left: 3rem;
   }
 
   .ms-card .RedirectButton a {
@@ -144,9 +141,10 @@
     margin-right: -1rem;
     line-height: 35px;
   }
+
   .MemberStoriesTitle {
     line-height: 36px;
-    font-size: 1.8rem;
+    font-size: 18px;
   }
 
   .MemberStoriesImage {
