@@ -69,9 +69,11 @@
   width: 120%;
 }
 
-
-
 @media screen and (max-width: 795px) {
+  .ms-container {
+    height: 800px;
+  }
+
   .ms-card {
     position: relative;
     margin-left: auto;
@@ -112,6 +114,10 @@
 }
 
 @media screen and (max-width: 520px) {
+  .ms-container {
+    height: 700px;
+  }
+
   .ms-card {
     margin-top: -1.5rem;
     height: 250px;
