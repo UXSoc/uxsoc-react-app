@@ -15,7 +15,7 @@ const Books = () => {
           <AuthorPic authorPic={donNorman}/>
           <AuthorName authorName="Don Norman" />
           <ResourceDesc resourceDesc="The Design of Everyday Things is a powerful primer on how--and why--some products satisfy customers while others only frustrate them." />
-          <RedirectButton buttonText="Start Reading" redirectLink="https://drive.google.com/file/d/1vpeumY4FjJTjSJn4BROpt7WEUjyAXTfz/view?usp=sharing" />
+          <RedirectButton idTag="resource-button" buttonText="Start Reading" redirectLink="https://drive.google.com/file/d/1vpeumY4FjJTjSJn4BROpt7WEUjyAXTfz/view?usp=sharing" />
         </div>
         <ResourceImage resourceImage={bookCover} imageWidth="540"/>
         {/* <PastResources pastResources={"/"}/> */}

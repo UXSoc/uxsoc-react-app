@@ -15,6 +15,11 @@
   width: 40rem;
 }
 
+#resource-button {
+  width: 80%;
+  margin: auto;
+}
+
 .resource-card {
   z-index: 1;
   width: 540px;
@@ -27,6 +32,7 @@
   margin-top: -2rem;
   margin-right: -3rem;
 }
+
 
 .ResourceLabel {
   color: #B3BCC4;
@@ -354,10 +360,10 @@
   .resource-card {
     z-index: 1;
     width: 245px;
-    height: 415px;
+    height: 400px;
     grid-column: 4/4;
     grid-row: 3/8;
-    margin-top: -2rem;
+    margin-top: 0.5rem;
   }
 
   .ResourceDesc {

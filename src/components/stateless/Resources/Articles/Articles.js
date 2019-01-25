@@ -16,7 +16,7 @@ const Articles = () => {
           <AuthorName authorName="Xavi Ablaza" />
           <ResourceDesc resourceDesc="Building a system for knowledge transfer and longevity." />
           <div style={{marginTop: '60px'}}>
-            <RedirectButton buttonText="Start Reading" redirectLink="https://medium.com/user-experience-society/ux-society-at-chapman-university-60dc17815230"/>
+            <RedirectButton idTag="resource-button" buttonText="Start Reading" redirectLink="https://medium.com/user-experience-society/ux-society-at-chapman-university-60dc17815230"/>
           </div>
         </div>
         <ResourceImage resourceImage={articleImage} imageWidth="720"/>

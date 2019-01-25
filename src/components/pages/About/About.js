@@ -7,7 +7,11 @@ import RightValues from './../../stateless/AboutValues/RightValues';
 import ContactForm from '../../state/ContactForm/ContactForm';
 import Footer from './../../state/Footer/Footer';
 
-import CoreValues from './../../../resources/img/work-imgs/productivity-2.svg';
+import empathy from './../../../resources/img/about-img/empathy.svg'
+import collaboration from './../../../resources/img/about-img/collaboration.svg'
+import delivery from './../../../resources/img/about-img/delivery.svg';
+import purpose from './../../../resources/img/about-img/purpose.svg'
+import quality from './../../../resources/img/about-img/quality.svg';
 import about from './../../../resources/img/about.svg';
 import './style.css';
 
@@ -58,27 +62,27 @@ class About extends Component {
           <LeftValues
             title="Champion authentic user empathy"
             details="We at UX Society will always strive to empathize with our members. We listen to your needs, suggestions, opinions, and goals in the organization and translate these into projects, events, and initiatives to serve you better."
-            img={CoreValues}
+            img={empathy}
           />
           <RightValues
             title="Foster a collaborative environment"
             details="At UX Society, you will never be alone. Every project or initiative is done in a collaborative manner. Everyone is part of the team. Don't be afraid to ask help, mentorship, or advice."
-            img={CoreValues}
+            img={collaboration}
           />
           <LeftValues
             title="Value delivery over perfection"
             details="We want to maximize the value we give to our members. We believe that what we do does not have to be perfect to produce strong results. Completion produces results. Perfectionism delays and kills results."
-            img={CoreValues}
+            img={delivery}
           />
           <RightValues
             title="Maintain a shared sense of purpose"
             details="Our advocacy is what binds us together in UX Society. This is our north star. Everything we do is always guided by our drive to establish the importatn role of design in the community through the products we create, the events we hold, the speakers we invite, and the chapters we create."
-            img={CoreValues}
+            img={purpose}
           />
           <LeftValues
             title="Establish and uphold standards of quality"
             details="We believe that quality work we put out in the community represents who we are as an organization. Therefore, we aspire to create the best products that will not only help the community, but create an awareness that will transform people's perception of design."
-            img={CoreValues}
+            img={quality}
           />
         </div>
         <div id="contact-us" className="contact-container">

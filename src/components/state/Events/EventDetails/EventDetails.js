@@ -70,4 +70,15 @@ class EventImage extends Component {
   }
 }
 
-export { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage };
+class EventImageMobile extends Component {
+  render() {
+    const { eventImage } = this.props;
+    return(
+      <div className="EventImageMobile">
+        <img src={eventImage} alt="event"/>
+      </div>
+    )
+  }
+}
+
+export { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage, EventImageMobile };

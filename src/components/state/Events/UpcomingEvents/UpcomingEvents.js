@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage } from '../EventDetails/EventDetails';
+import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage, EventImageMobile } from '../EventDetails/EventDetails';
 import RedirectButton from '../../../state/RedirectButton/RedirectButton';
 import Jffc from './../../../../resources/others/jffc.png';
 
@@ -31,9 +31,10 @@ class UpcomingEvents extends Component {
     const { whatsHappening } = this.state
     const lastEl = whatsHappening.length  - 1
     return(
-      <div className="UpcomingEvents">
+      <div>
         <div className="event-card">
           <div className="event-info">
+            <EventImageMobile eventImage={Jffc}/>
             <EventLabel
               eventLabel={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Category) ||

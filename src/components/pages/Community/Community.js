@@ -5,7 +5,7 @@ import Navigation from '../../state/Navigation/Navigation';
 
 import Events from './../../state/Events/Events';
 import MemberStories from './../../stateless/MemberStories/MemberStories';
-import Opportunities from './../../stateless/Opportunities/Opportunities';
+// import Opportunities from './../../stateless/Opportunities/Opportunities';
 import Resources from './../../stateless/Resources/Resources';
 
 import ContactForm from './../../state/ContactForm/ContactForm';
@@ -13,9 +13,6 @@ import Footer from './../../state/Footer/Footer';
 
 import landingImage from './../../../resources/img/community-landing.svg';
 import chevronDown from './../../../resources/img/chevron-down.svg';
-
-// import { Route, Switch } from 'react-router-dom'
-// import { BrowserRouter } from "react-router-dom";
 
 import './style.css';
 
@@ -43,9 +40,9 @@ class Community extends Component {
           <MemberStories/>
         </div>
 
-        <div id="opportunities">
+        {/* <div id="opportunities">
           <Opportunities/>
-        </div>
+        </div> */}
 
         <div id="resources">
           <Resources/>
