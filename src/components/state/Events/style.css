@@ -29,8 +29,9 @@
   display: grid;
   grid-template-columns: 1fr 9fr;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -0.5rem;
 }
 
 .EventDetails img {
@@ -99,6 +100,15 @@
     display: none;
   }
 
+  .EventDetails {
+    margin-left: -0.6rem;
+  }
+
+  .event-card .RedirectButton {
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+  }
+
   .EventImageMobile {
     display: block;
   }
@@ -110,6 +120,48 @@
   }
 
   .EventDetails {
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  .EventDetails img {
+    margin-top: 5px;
+    margin-left: 2px;
+  }
+
+  .AboutDesc {
+    width: 70vw;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .EventLabel {
+    font-size: 12px;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .EventImage img {
+    width: 80vw;
+    height: 10rem;
+    top: -41.5rem;
+  }
+
+  .event-card .RedirectButton {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .EventDetails {
+    width: 15rem;
+  }
+
+  .EventDetails li {
+    margin-left: -5px;
+  }
+
+  .event-card .RedirectButton {
+    margin-top: 0;
   }
 }

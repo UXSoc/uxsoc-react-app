@@ -6,9 +6,14 @@
 }
 
 .resource-content-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .main-title {
@@ -22,15 +27,14 @@
 
 .resource-card {
   z-index: 1;
+  position: relative;
   width: 540px;
   height: 400px;
   background: #FFFFFF;
   -webkit-box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
           box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
-  grid-column: 9/9;
-  grid-row: 3/8;
-  margin-top: -2rem;
-  margin-right: -3rem;
+  align-self: center;
+  margin-left: -15rem;
 }
 
 
@@ -68,9 +72,7 @@
 }
 
 .ResourceImage {
-  grid-column: 4/9;
-  grid-row: 1/12;
-  margin-left: -3rem;
+  margin-left: 0;
 }
 
 .ResourceLink {
@@ -93,8 +95,8 @@
 }
 
 .PastResources {
-  grid-column: 7/12;
-  grid-row: 10/12;
+  position: relative;
+  margin-top: 5rem;
 }
 
 .PastResources a {
@@ -112,11 +114,34 @@
   border-bottom: 1px solid #20252b;
 }
 
+@media screen and (max-width: 768px) {
+  .resources-container {
+    height: 1300px;
+    padding-top: 0.25rem;
+  }
+
+  .ResourceImage img {
+    z-index: 0;
+    width: 80vw;
+    height: auto;
+    position: absolute;
+    top: 22rem;
+    left: 4rem;
+  }
+
+  .resource-card {
+    z-index: 1;
+    position: absolute;
+    top: 36rem;
+    right: 4rem;
+  }
+
+}
+
 @media screen and (max-width: 600px) {
   .resources-container {
-    height: 1050px;
+    height: 1100px;
     padding-top: 0.25rem;
-    position: relative;
   }
 
   .main-title {
@@ -137,25 +162,24 @@
 
   .resource-content-container {
     width: 86vw;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    margin-left: 3.25rem;
-    margin-top: -2rem;
+    margin: auto;
+    margin-top: 15rem;
   }
 
   .ResourceImage img {
+    z-index: 0;
     width: 80vw;
     height: auto;
+    position: absolute;
+    top: 20rem;
+    left: 1rem;
   }
 
   .resource-card {
     z-index: 1;
-    width: 84vw;
-    height: 415px;
-    grid-column: 5/5;
-    grid-row: 4/8;
-    margin-top: -2rem;
+    position: absolute;
+    top: 28rem;
+    right: 1rem;
   }
 
   .ResourceLabel {
@@ -194,16 +218,11 @@
   }
 
   .resource-card .RedirectButton a {
-    margin-right: 3.5rem;
-  }
-
-  .resource-card .RedirectButton img{
-    margin-top: 0.25rem;
+    margin-top: 2.5rem;
+    margin-right: -2rem;
   }
 
   .PastResources {
-    grid-column: 5/10;
-    grid-row: 8/12;
     margin-left: 7rem;
     margin-top: 2rem;
   }
@@ -215,9 +234,7 @@
 
 @media screen and (max-width: 425px) {
   .resources-container {
-    height: 1050px;
-    padding-top: 0.25rem;
-    position: relative;
+    height: 950px;
   }
 
   .main-title {
@@ -236,11 +253,6 @@
 
   .resource-content-container {
     width: 86vw;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    margin-left: 2.5rem;
-    margin-top: -2rem;
   }
 
   .ResourceImage img {
@@ -252,8 +264,6 @@
     z-index: 1;
     width: 84vw;
     height: 415px;
-    grid-column: 5/5;
-    grid-row: 3/8;
     margin-top: -2rem;
   }
 
@@ -271,13 +281,12 @@
     width: 68vw;
   }
 
-  .resource-card .RedirectButton {
-    margin-right: -0.5rem;
+  .resource-card .RedirectButton a {
+    margin-top: 2.5rem;
+    margin-right: 0;
   }
 
   .PastResources {
-    grid-column: 5/10;
-    grid-row: 9/12;
     margin-left: 1.75rem;
   }
 
@@ -299,9 +308,6 @@
 
   .resource-content-container {
     width: 86vw;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
     margin-left: 2.5rem;
     margin-top: -2rem;
   }
@@ -310,8 +316,6 @@
     z-index: 1;
     width: 80vw;
     height: 415px;
-    grid-column: 4/5;
-    grid-row: 3/8;
     margin-top: -0.5rem;
   }
 
@@ -323,13 +327,7 @@
     width: 65vw;
   }
 
-  .resource-card .RedirectButton {
-    margin-right: -2rem;
-  }
-
   .PastResources {
-    grid-column: 1/10;
-    grid-row: 9/12;
     margin-left: 1.5rem;
   }
 }
@@ -351,9 +349,6 @@
 
   .resource-content-container {
     width: 86vw;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
     margin-left: 2.5rem;
   }
 
@@ -361,8 +356,6 @@
     z-index: 1;
     width: 245px;
     height: 400px;
-    grid-column: 4/4;
-    grid-row: 3/8;
     margin-top: 0.5rem;
   }
 
@@ -370,13 +363,7 @@
     width: 62vw;
   }
 
-  .resource-card .RedirectButton {
-    margin-right: -2rem;
-  }
-
   .PastResources {
-    grid-column: 1/10;
-    grid-row: 9/12;
     margin-left: -0.25rem;
   }
 }
