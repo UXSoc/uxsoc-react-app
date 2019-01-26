@@ -12,7 +12,7 @@ import collaboration from './../../../resources/img/about-img/collaboration.svg'
 import delivery from './../../../resources/img/about-img/delivery.svg';
 import purpose from './../../../resources/img/about-img/purpose.svg'
 import quality from './../../../resources/img/about-img/quality.svg';
-import about from './../../../resources/img/about.svg';
+import about from './../../../resources/img/community-opportunities.svg';
 import './style.css';
 
 class About extends Component {
@@ -30,6 +30,11 @@ class About extends Component {
       line-height: 60px;
       font-size: 50.97px;
       color: #20252B;
+
+      @media (max-width: 768px) {
+        width: 80%;
+        margin: auto;
+      }
     `
 
 

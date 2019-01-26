@@ -3,7 +3,9 @@ import Navigation from '../../state/Navigation/Navigation';
 import landingImage from './../../../resources/img/home-landing.svg';
 import designLeaders from './../../../resources/img/design-leaders.svg';
 
-import { HomeCardLeft, HomeCardRight } from '../../state/HomeCard/HomeCard';
+import Image1 from './../../../resources/img/geared-for-growth.svg';
+import Image2 from './../../../resources/img/crafted-for-work.svg';
+import HomeCard from '../../state/HomeCard/HomeCard';
 import ContactForm from '../../state/ContactForm/ContactForm';
 import Footer from './../../state/Footer/Footer';
 
@@ -27,13 +29,15 @@ class Home extends Component {
             <img src={designLeaders} alt='design leaders' className='design-leaders-img'/>
           </div>
           <div className="HomeCard-container">
-            <HomeCardLeft
+            <HomeCard
+              image={Image1}
               sectionLabel="Community"
               headerLabel="Geared for Growth"
               btnLabel="Experience the Mafia"
               link="/community"
               caption="Engage yourself with the community. Discover what you can do and how you can grow with us."/>
-            <HomeCardRight
+            <HomeCard
+              image={Image2}
               sectionLabel="Consultancy"
               headerLabel="Crafted for Work"
               btnLabel="Explore our projects"

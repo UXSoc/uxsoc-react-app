@@ -116,6 +116,7 @@
 @media screen and (max-width: 520px) {
   .ms-container {
     height: 700px;
+    padding-bottom: 7.5rem;
   }
 
   .ms-card {

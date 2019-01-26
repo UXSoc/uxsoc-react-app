@@ -34,7 +34,7 @@
 .home-landing-image {
   grid-column: 2/2;
   grid-row: 4/7;
-  margin-left: -4rem;
+  margin-left: 5rem;
 }
 
 .mobile-landing-image {
@@ -46,9 +46,15 @@
   height: 600px;
   width: 100%;
   background-color: #008ed4;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home-blue-text {
@@ -69,16 +75,17 @@
 }
 
 .HomeCard-container {
-  position: relative;
-  z-index: 1;
-  height: 960px;
+  height: 100%;
   width: 100%;
   background: #EEF1F6;
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-  align-items: center;
-  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -116,21 +123,9 @@
   .design-leaders-img {
     display: none;
   }
-
-  .HomeCard-container {
-    position: relative;
-    z-index: 1;
-    height: 800px;
-    background: #EEF1F6;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .main-title-leader {
     font-size: 45px;
     margin-top: 2.5rem;
@@ -161,19 +156,18 @@
   }
 
   .HomeCard-container {
-    position: relative;
-    z-index: 1;
-    height: auto;
-    background: #EEF1F6;
-    display: inline-grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 675px 675px;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    justify-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+                    margin: auto;
+
   }
 }
+
 
 @media screen and (max-width: 425px) {
   .main-title-leader, .north-star-title, .journey-button {
@@ -195,13 +189,6 @@
     margin-top: -4rem;
   }
 
-  .HomeCard-container {
-    height: auto;
-    grid-template-columns: 100%;
-    grid-template-rows: 650px 650px;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
 }
 
 @media screen and (max-width: 375px) {
@@ -273,14 +260,23 @@
     margin-left: -0.2rem;
   }
 
+  .journey-button {
+    display: none;
+  }
   .home-blue-section {
     margin-top: -11.5rem;
     height: 280px;
     width: 100%;
     background-color: #008ed4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .home-blue-text {
@@ -292,19 +288,5 @@
     color: #ffffff;
     text-align: left;
     margin-top: 3rem;
-  }
-
-  .HomeCard-container {
-    position: relative;
-    z-index: 1;
-    height: 830px;
-    background: #EEF1F6;
-    display: inline-grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 435px 300px;
-    grid-row-gap: 3rem;
-    justify-items: center;
-    justify-content: center;
-    padding-top: 10rem;
   }
 }

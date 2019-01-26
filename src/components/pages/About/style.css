@@ -11,7 +11,9 @@
 }
 
 .about-ux img {
+  width: 40em !important;
   margin-left: 30px;
+  margin-top: 120px;
 }
 
 
@@ -23,7 +25,7 @@
   line-height: normal;
   font-size: 24px;
   color: #101010;
-  margin-bottom: 24px;
+  margin-bottom: 15px !important;
   text-align: left;
 }
 
@@ -66,12 +68,6 @@
 }
 
 
-@media screen and (max-width: 1200px) {
-  .about-ux img {
-    margin-left: -90px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .about-ux {
     -webkit-box-orient: vertical;
@@ -79,14 +75,19 @@
         -ms-flex-direction: column;
             flex-direction: column;
             margin: 0 auto;
-  }
-  .about-box {
-    width: 100%;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
   }
 
   .about-ux img {
-    margin-left: 0;
-    margin-top: 30px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+  }
+
+  .about-box {
+    width: 100%;
   }
 
   .about-uxsociety {

@@ -8,7 +8,6 @@ import arrowRight from '../../../resources/img/work-imgs/arrowRight.svg';
 import arrowLeft from '../../../resources/img/work-imgs/arrowLeft.svg';
 
 import './style.css'
-import 'animate.css';
 
 class Process extends Component {
   constructor(props) {
@@ -79,12 +78,12 @@ class Process extends Component {
             <div>
               <div className="carousel">
                 <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleMeasure}/>
-                <img src={productivity1} className={this.state.discovery ? "processImage animated fadeIn" : "processImage animated fadeOut"} alt="process=1"/>
+                <img src={productivity1} className="processImage" alt="process=1"/>
                 <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleDefine}/>
               </div>
               <div className="method-block-container">
               <MethodBlock
-                subheader="01. Discovery"
+                subheader="01. Discover"
                 text="This is our research phase. We try to get as much information about
                 our client and their needs. We do stakeholder interviews, user surveys,
                 competitive analysis, naturalistic observations, affinity mapping
@@ -95,7 +94,7 @@ class Process extends Component {
             <div>
               <div className="carousel">
                 <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleDiscovery}/>
-                <img src={productivity2} className={this.state.define ? "processImage animated fadeIn" : "processImage animated fadeOut"} alt="process=1"/>
+                <img src={productivity2} className="processImage" alt="process=2"/>
                 <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleIdeate}/>
               </div>
               <div className="method-block-container">
@@ -110,12 +109,12 @@ class Process extends Component {
             <div>
               <div className="carousel">
                 <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleDefine}/>
-                <img src={productivity3} className={this.state.ideate ? "processImage animated fadeIn" : "processImage animated fadeOut"} alt="process=1"/>
+                <img src={productivity3} className="processImage" alt="process=3"/>
                 <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleBuild}/>
               </div>
               <div className="method-block-container">
               <MethodBlock
-                subheader="03. Ideate > Test > Prototype"
+                subheader="03. Ideate"
                 text="In this stage, we will be extracting our creative juices and think
                 about possible solutions to the problem/s. We will then text this solution
                 out. If it passes user testing, we will then mobe on to prototyping the
@@ -127,12 +126,12 @@ class Process extends Component {
             <div>
               <div className="carousel">
                 <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleIdeate}/>
-                <img src={productivity4} className={this.state.build ? "processImage animated fadeIn" : "processImage animated fadeOut"} alt="process=1"/>
+                <img src={productivity4} className="processImage" alt="process=4"/>
                 <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleMeasure}/>
               </div>
               <div className="method-block-container">
               <MethodBlock
-                subheader="04. Build and Deploy"
+                subheader="04. Develop"
                 text="When we finally settled for a specific solution, we hand it off to our
                 developers to build the product. Within one or two months, we will be deploying
                 the site. Our developers are adept in HTML, CSS, JavaScript. They also embed
@@ -142,7 +141,7 @@ class Process extends Component {
             <div>
               <div className="carousel">
                 <img src={arrowLeft} className = "arrowLeft" alt="arrow-left" onClick={this.toggleBuild}/>
-                <img src={productivity5} className={this.state.measure ? "processImage animated fadeIn" : "processImage animated fadeOut"} alt="process=1"/>
+                <img src={productivity5} className="processImage" alt="process=5"/>
                 <img src={arrowRight} className = "arrowRight" alt="arrow-right" onClick={this.toggleDiscovery}/>
               </div>
               <div className="method-block-container">
