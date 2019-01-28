@@ -4,6 +4,7 @@
   margin: auto;
   padding-bottom: 7.5rem;
 }
+
 .arrowLeft, .arrowRight {
   width: 2.5%;
 }
@@ -42,17 +43,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack:justify;
-      -ms-flex-pack:justify;
-          justify-content:space-between;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          margin-top: 60px;
 }
 
 .method-subheader {
   font-size: 36px;
-  width: 100%;
+  width: 60%;
   text-align: left;
   margin-bottom: 0;
 }
@@ -60,7 +59,7 @@
 .method-text {
   width: 100%;
   line-height: 1.5;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
 }
 
 @media screen and (max-width: 1024px) {

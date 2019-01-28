@@ -17,10 +17,21 @@ import uxph from '../../../resources/img/work-imgs/uxph.svg';
 
 import './style.css';
 
+class ScrollToTopOnMount extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  render() {
+    return null;
+  }
+}
+
+
 class Work extends Component {
   render() {
     return(
       <div>
+        <ScrollToTopOnMount/>
         <Navigation/>
         <div className="work-container">
           <p className="section-label">Work with UX Society</p>

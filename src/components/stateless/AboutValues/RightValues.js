@@ -16,7 +16,7 @@ const RightValues = props => {
       text-align: center;
 
       img {
-        margin: 0;
+        margin: 0 !important;
       }
     }
   `

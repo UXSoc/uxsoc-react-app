@@ -19,7 +19,7 @@ h2 {
 
 .section-label {
   color: #B3BCC4;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 5px;
@@ -30,7 +30,7 @@ h2 {
 .blue-btn-big {
   color: white;
   font-size: 14px;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 600;
   line-height: 19px;
   text-align: center;
@@ -52,7 +52,7 @@ h2 {
   background-color: #008ed4;
   font-size: 16px;
   font-weight: 600;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
@@ -67,6 +67,10 @@ h2 {
   line-height: 62px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.journey-button:hover, .blue-btn-big:hover {
+  background: #0885c3;
 }
 
 @media screen and (max-width: 425px) {
@@ -89,7 +93,7 @@ h2 {
     width: 80%;
     height: 45px;
     font-size: 13px;
-    font-family: "Proxima-Nova", sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     line-height: 2px;
     padding: 25px 20px;
     background: #008ED4;

@@ -20,7 +20,7 @@
 }
 
 .company-name {
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 16px;
   margin-left: 5.5rem;
   margin-top: -1.7rem;
@@ -43,7 +43,7 @@
 }
 
 .opportunity-location li {
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 12px;
   margin-top: -1rem;
   margin-left: 70px;
@@ -56,7 +56,7 @@
 }
 
 .opportunity-type, .opportunity-experience {
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   color: black;
   font-size: 14px;
   display: inline;
@@ -80,7 +80,7 @@
 
 .opportunity-desc {
   width: 366px;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 14px;
   line-height: 22px;
   margin-left: 50px;

@@ -39,7 +39,7 @@
   font-size: 18px;
   color: #3b3e42;
   width: 100%;
-  font-family: "Proxima-Nova",sans-serif;
+  font-family: "Proxima Nova",sans-serif;
   font-weight: 500;
   -ms-flex-item-align: center;
   align-self: center;
@@ -100,6 +100,11 @@
 
 .NavDropdown li:hover {
   background: #006ca1;
+}
+
+.NavDropdown li:hover, .navbar-link:hover {
+  text-decoration: underline;
+  color: inherit;
 }
 
 @media screen and (max-width: 1024px) {

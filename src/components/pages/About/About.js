@@ -15,6 +15,15 @@ import quality from './../../../resources/img/about-img/quality.svg';
 import about from './../../../resources/img/community-opportunities.svg';
 import './style.css';
 
+class ScrollToTopOnMount extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  render() {
+    return null;
+  }
+}
+
 class About extends Component {
   render() {
 
@@ -40,6 +49,7 @@ class About extends Component {
 
     return(
       <div>
+        <ScrollToTopOnMount/>
         <Navigation/>
         <div>
           <PageTitle>About User Experience Society</PageTitle>

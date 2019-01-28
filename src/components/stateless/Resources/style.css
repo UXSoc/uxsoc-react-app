@@ -33,7 +33,7 @@
 .ResourceLabel {
   color: #B3BCC4;
   font-size: 1rem;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -48,7 +48,7 @@
 .ResourceDesc {
   width: 26rem;
   color: #000000;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 1rem;
   line-height: 28px;
 }
@@ -112,7 +112,7 @@
 }
 
 .ResourceLink a {
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 1rem;
   margin-left: 2.5rem;
 }
@@ -133,7 +133,7 @@
 
 .PastResources a {
   color: #008ED4;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 600;
   font-size: 24px;
   text-decoration: none;

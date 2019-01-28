@@ -16,10 +16,21 @@ import chevronDown from './../../../resources/img/chevron-down.svg';
 
 import './style.css';
 
+class ScrollToTopOnMount extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  render() {
+    return null;
+  }
+}
+
+
 class Community extends Component {
   render() {
     return (
       <div className="Community">
+        <ScrollToTopOnMount/>
         <Navigation />
         <div className="landing-container">
           <p className="section-label">UX Society Community</p>

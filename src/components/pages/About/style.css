@@ -3,15 +3,17 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: -90px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-uxsociety {
   margin: auto 0;
-  padding-right: 216px;
 }
 
 .about-ux img {
-  width: 40em !important;
+  width: 25em !important;
   margin-left: 30px;
   margin-top: 120px;
 }
@@ -116,5 +118,27 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .about-ux img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .about-ux {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .about-ux {
+    width: 100%;
+  }
+
+  .about-ux img {
+    width: 250px !important;
   }
 }

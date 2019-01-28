@@ -11,10 +11,21 @@ import Footer from './../../state/Footer/Footer';
 
 import './style.css';
 
+class ScrollToTopOnMount extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
+  render() {
+    return null;
+  }
+}
+
+
 class Home extends Component {
   render() {
     return(
       <div>
+        <ScrollToTopOnMount/>
         <Navigation/>
           <div className='home-landing-container'>
             <h3 className='north-star-title'>Our North Star</h3>
