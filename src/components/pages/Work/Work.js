@@ -5,7 +5,7 @@ import {Helmet} from 'react-helmet';
 // import Process from '../../state/Process/Process';
 import Process from '../../state/Process/Process';
 import Services from '../../stateless/Services/Services';
-import Workcomp from '../../state/Work/Work';
+// import Workcomp from '../../state/Work/Work';
 import Footer from './../../state/Footer/Footer';
 
 import Logos from '../../stateless/Logos/Logos';
@@ -67,9 +67,9 @@ class Work extends Component {
           <Services/>
         </div>
 
-        <div id="work">
+        {/* <div id="work">
           <Workcomp/>
-        </div>
+        </div> */}
 
         <div>
           <Logos logo1={shield} logo2={tugon} logo3={lions} logo4={uxph}/>
