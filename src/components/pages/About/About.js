@@ -6,7 +6,7 @@ import LeftValues from './../../stateless/AboutValues/LeftValues';
 import RightValues from './../../stateless/AboutValues/RightValues';
 import ContactForm from '../../state/ContactForm/ContactForm';
 import Footer from './../../state/Footer/Footer';
-
+import {Helmet} from 'react-helmet';
 import empathy from './../../../resources/img/about-img/empathy.svg'
 import collaboration from './../../../resources/img/about-img/collaboration.svg'
 import delivery from './../../../resources/img/about-img/delivery.svg';
@@ -49,6 +49,21 @@ class About extends Component {
 
     return(
       <div>
+        <Helmet>
+          <meta name="generator" content="Page Generator v1.0.0"/>
+          <meta name="description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
+
+          <meta property="og:title" content="User Experience Society"/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:image" content="https://imgur.com/MovXZlH"/>
+          <meta property="og:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
+
+          <meta name="twitter:site" content="@uxsociety-website"/>
+          <meta name="twitter:creator" content="@uxsocietyph"/>
+          <meta name="twitter:title" content="User Experience Society"/>
+          <meta name="twitter:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
+          <meta name="twitter:image" content="https://imgur.com/MovXZlH"/>
+        </Helmet>
         <ScrollToTopOnMount/>
         <Navigation/>
         <div>

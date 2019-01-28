@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from '../../state/Navigation/Navigation';
 import ContactForm from '../../state/ContactForm/ContactForm';
-
+import {Helmet} from 'react-helmet';
 // import Process from '../../state/Process/Process';
 import Process from '../../state/Process/Process';
 import Services from '../../stateless/Services/Services';
@@ -31,6 +31,21 @@ class Work extends Component {
   render() {
     return(
       <div>
+        <Helmet>
+          <meta name="generator" content="Page Generator v1.0.0"/>
+          <meta name="description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
+
+          <meta property="og:title" content="User Experience Society"/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:image" content="https://imgur.com/MovXZlH"/>
+          <meta property="og:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
+
+          <meta name="twitter:site" content="@uxsociety-website"/>
+          <meta name="twitter:creator" content="@uxsocietyph"/>
+          <meta name="twitter:title" content="User Experience Society"/>
+          <meta name="twitter:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
+          <meta name="twitter:image" content="https://imgur.com/MovXZlH"/>
+        </Helmet>
         <ScrollToTopOnMount/>
         <Navigation/>
         <div className="work-container">

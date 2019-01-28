@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Navigation from '../../state/Navigation/Navigation';
 // import MemberStory from '../MemberStory/MemberStory'
-
+import {Helmet} from 'react-helmet'
 import Events from './../../state/Events/Events';
 import MemberStories from './../../stateless/MemberStories/MemberStories';
 // import Opportunities from './../../stateless/Opportunities/Opportunities';
@@ -30,6 +30,21 @@ class Community extends Component {
   render() {
     return (
       <div className="Community">
+        <Helmet>
+          <meta name="generator" content="Page Generator v1.0.0"/>
+          <meta name="description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
+
+          <meta property="og:title" content="User Experience Society"/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:image" content="https://imgur.com/MovXZlH"/>
+          <meta property="og:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
+
+          <meta name="twitter:site" content="@uxsociety-website"/>
+          <meta name="twitter:creator" content="@uxsocietyph"/>
+          <meta name="twitter:title" content="User Experience Society"/>
+          <meta name="twitter:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
+          <meta name="twitter:image" content="https://imgur.com/MovXZlH"/>
+        </Helmet>
         <ScrollToTopOnMount/>
         <Navigation />
         <div className="landing-container">
