@@ -44,6 +44,11 @@ class About extends Component {
       @media (max-width: 768px) {
         width: 80%;
         margin: auto;
+
+      }
+
+      @media (max-width: 475px) {
+        font-size: 40px;
       }
     `
 

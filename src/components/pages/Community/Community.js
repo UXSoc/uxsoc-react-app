@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 import Navigation from '../../state/Navigation/Navigation';
 // import MemberStory from '../MemberStory/MemberStory'
 import {Helmet} from 'react-helmet'
@@ -51,11 +50,11 @@ class Community extends Component {
           <p className="section-label">UX Society Community</p>
           <h2>Learn and grow with an amazing community</h2>
           <img className="landing-image" src={landingImage} alt="landing" />
-          <Link to='/community#events'>
+          <a to='/community#events'>
             <button className="round-btn">
               <img src={chevronDown} alt="down" />
             </button>
-          </Link>
+          </a>
         </div>
 
         <div id="events">

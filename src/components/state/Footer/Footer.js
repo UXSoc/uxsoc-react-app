@@ -56,9 +56,9 @@ class Footer extends Component {
                   <Link to='/work#services'>
                     <li>Services</li>
                   </Link>
-                  <Link to='/work#work'>
+                  {/* <Link to='/work#work'>
                     <li>Work</li>
-                  </Link>
+                  </Link> */}
                 </ul>
               </div>
 

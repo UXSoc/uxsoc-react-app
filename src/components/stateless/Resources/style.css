@@ -86,68 +86,13 @@
 
 @media screen and (max-width: 565px) {
   .resource-card {
-    width: 100%;
+    width: 85%;
     margin-top: -5rem;
-    margin-left: 0;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
   }
 
   .ResourceImage img {
     width: 100%;
   }
-
-/*
-
-
-
-
-
-
-.resource-card .RedirectButton {
-  margin-top: 2.5rem;
-}
-
-
-.ResourceLink {
-  margin-top: -1.5rem;
-}
-
-.ResourceLink a {
-  font-family: "Proxima Nova", sans-serif;
-  font-size: 1rem;
-  margin-left: 2.5rem;
-}
-
-.resource-card .AuthorPic {
-  margin-left: 2.5rem;
-}
-
-.resource-card .AuthorName {
-  margin-top: -3.7rem;
-  margin-left: 6rem;
-}
-
-.PastResources {
-  position: relative;
-  margin-top: 5rem;
-}
-
-.PastResources a {
-  color: #008ED4;
-  font-family: "Proxima Nova", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.selected {
-  color: #20252b;
-  border-bottom: 1px solid #20252b;
-} */
-}
-
-@media screen and (max-width: 390px) {
-
-
 }
