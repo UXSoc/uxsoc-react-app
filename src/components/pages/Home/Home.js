@@ -8,7 +8,7 @@ import Image2 from './../../../resources/img/crafted-for-work.svg';
 import HomeCard from '../../state/HomeCard/HomeCard';
 import ContactForm from '../../state/ContactForm/ContactForm';
 import Footer from './../../state/Footer/Footer';
-import MetaImage from './../../../resources/img/community-landing.svg';
+import MetaImage from './../../../resources/img/community-landing.jpg';
 import './style.css';
 
 class ScrollToTopOnMount extends Component {

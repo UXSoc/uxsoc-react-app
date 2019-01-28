@@ -15,7 +15,7 @@ import tugon from '../../../resources/img/work-imgs/tugon-logo.svg';
 import lions from '../../../resources/img/work-imgs/LIONS-Logo.svg';
 import uxph from '../../../resources/img/work-imgs/uxph.svg';
 
-import MetaImage from './../../../resources/img/community-landing.svg';
+import MetaImage from './../../../resources/img/community-landing.jpg';
 import './style.css';
 
 class ScrollToTopOnMount extends Component {

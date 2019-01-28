@@ -12,7 +12,7 @@ import Footer from './../../state/Footer/Footer';
 
 import landingImage from './../../../resources/img/community-landing.svg';
 import chevronDown from './../../../resources/img/chevron-down.svg';
-import MetaImage from './../../../resources/img/community-landing.svg';
+import MetaImage from './../../../resources/img/community-landing.jpg';
 import './style.css';
 
 class ScrollToTopOnMount extends Component {

@@ -13,7 +13,7 @@ import delivery from './../../../resources/img/about-img/delivery.svg';
 import purpose from './../../../resources/img/about-img/purpose.svg'
 import quality from './../../../resources/img/about-img/quality.svg';
 import about from './../../../resources/img/community-opportunities.svg';
-import MetaImage from './../../../resources/img/community-landing.svg';
+import MetaImage from './../../../resources/img/community-landing.jpg';
 import './style.css';
 
 class ScrollToTopOnMount extends Component {
