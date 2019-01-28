@@ -13,7 +13,7 @@ import Footer from './../../state/Footer/Footer';
 
 import landingImage from './../../../resources/img/community-landing.svg';
 import chevronDown from './../../../resources/img/chevron-down.svg';
-
+import MetaImage from './../../../resources/img/community-landing.svg';
 import './style.css';
 
 class ScrollToTopOnMount extends Component {
@@ -36,14 +36,14 @@ class Community extends Component {
 
           <meta property="og:title" content="User Experience Society"/>
           <meta property="og:type" content="website"/>
-          <meta property="og:image" content="https://imgur.com/MovXZlH"/>
+          <meta property="og:image" content={MetaImage}/>
           <meta property="og:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
 
           <meta name="twitter:site" content="@uxsociety-website"/>
           <meta name="twitter:creator" content="@uxsocietyph"/>
           <meta name="twitter:title" content="User Experience Society"/>
           <meta name="twitter:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
-          <meta name="twitter:image" content="https://imgur.com/MovXZlH"/>
+          <meta name="twitter:image" content={MetaImage}/>
         </Helmet>
         <ScrollToTopOnMount/>
         <Navigation />
