@@ -8,7 +8,8 @@ import Image2 from './../../../resources/img/crafted-for-work.svg';
 import HomeCard from '../../state/HomeCard/HomeCard';
 import ContactForm from '../../state/ContactForm/ContactForm';
 import Footer from './../../state/Footer/Footer';
-import MetaImage from './../../../resources/img/community-landing.jpg';
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 import './style.css';
 
 class ScrollToTopOnMount extends Component {
@@ -32,14 +33,14 @@ class Home extends Component {
 
           <meta property="og:title" content="User Experience Society"/>
           <meta property="og:type" content="website"/>
-          <meta property="og:image" content="https://imgur.com/a/ECzttvB"/>
+          <meta property="og:image" content="https://i.imgur.com/DKAmvO4.jpg"/>
           <meta property="og:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
 
           <meta name="twitter:site" content="@uxsociety-website"/>
           <meta name="twitter:creator" content="@uxsocietyph"/>
           <meta name="twitter:title" content="User Experience Society"/>
           <meta name="twitter:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
-          <meta name="twitter:image" content="https://imgur.com/a/ECzttvB"/>
+          <meta name="twitter:image" content="https://i.imgur.com/DKAmvO4.jpg"/>
         </Helmet>
         <ScrollToTopOnMount/>
         <Navigation/>
@@ -47,13 +48,18 @@ class Home extends Component {
             <h3 className='north-star-title'>Our North Star</h3>
             <h1 className='main-title-leader'>We make <br/> design leaders</h1>
             <a className='journey-button' style={{color: "white"}}href="#blue-home">Start Your Journey</a>
+
             <img className='home-landing-image' src={landingImage} alt='landing'/>
-            <img className='mobile-landing-image' src={landingImage} alt='mobile landing'/>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <img className='mobile-landing-image' src={landingImage} alt='mobile landing'/>
+            </ScrollAnimation>
           </div>
           <div id="blue-home" className='home-blue-section'>
             <p className='home-blue-text'><strong>User Experience Society</strong> aims to guide the design
               leaders of tomorrow, creating products and <br/> services that will make the world <em>a better place</em></p>
-            <img src={designLeaders} alt='design leaders' className='design-leaders-img'/>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <img src={designLeaders} alt='design leaders' className='design-leaders-img'/>
+            </ScrollAnimation>
           </div>
           <div className="HomeCard-container">
             <HomeCard

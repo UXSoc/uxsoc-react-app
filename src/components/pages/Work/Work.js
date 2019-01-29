@@ -14,8 +14,8 @@ import shield from '../../../resources/img/work-imgs/logo.svg';
 import tugon from '../../../resources/img/work-imgs/tugon-logo.svg';
 import lions from '../../../resources/img/work-imgs/LIONS-Logo.svg';
 import uxph from '../../../resources/img/work-imgs/uxph.svg';
-
-import MetaImage from './../../../resources/img/community-landing.jpg';
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 import './style.css';
 
 class ScrollToTopOnMount extends Component {
@@ -39,14 +39,14 @@ class Work extends Component {
 
         <meta property="og:title" content="User Experience Society"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:image" content="https://imgur.com/a/ECzttvB"/>
+        <meta property="og:image" content="https://i.imgur.com/DKAmvO4.jpg"/>
         <meta property="og:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
 
         <meta name="twitter:site" content="@uxsociety-website"/>
         <meta name="twitter:creator" content="@uxsocietyph"/>
         <meta name="twitter:title" content="User Experience Society"/>
         <meta name="twitter:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
-        <meta name="twitter:image" content="https://imgur.com/a/ECzttvB"/>
+        <meta name="twitter:image" content="https://i.imgur.com/DKAmvO4.jpg"/>
       </Helmet>
         <ScrollToTopOnMount/>
         <Navigation/>
@@ -55,7 +55,9 @@ class Work extends Component {
           <h2>Crafting the best experiences to achieve your goals</h2>
           <button className="journey-button">Contact Us</button>
           <div className="work-image">
-            <img src={mainImage} alt="work with ux society"/>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              <img src={mainImage} alt="work with ux society"/>
+            </ScrollAnimation>
           </div>
 
         </div>

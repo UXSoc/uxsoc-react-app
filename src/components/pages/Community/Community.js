@@ -12,7 +12,8 @@ import Footer from './../../state/Footer/Footer';
 
 import landingImage from './../../../resources/img/community-landing.svg';
 import chevronDown from './../../../resources/img/chevron-down.svg';
-import MetaImage from './../../../resources/img/community-landing.jpg';
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 import './style.css';
 
 class ScrollToTopOnMount extends Component {
@@ -36,22 +37,24 @@ class Community extends Component {
 
         <meta property="og:title" content="User Experience Society"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:image" content="https://imgur.com/a/ECzttvB"/>
+        <meta property="og:image" content="https://i.imgur.com/DKAmvO4.jpg"/>
         <meta property="og:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
 
         <meta name="twitter:site" content="@uxsociety-website"/>
         <meta name="twitter:creator" content="@uxsocietyph"/>
         <meta name="twitter:title" content="User Experience Society"/>
         <meta name="twitter:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
-        <meta name="twitter:image" content="https://imgur.com/a/ECzttvB"/>
+        <meta name="twitter:image" content="https://i.imgur.com/DKAmvO4.jpg"/>
       </Helmet>
         <ScrollToTopOnMount/>
         <Navigation />
         <div className="landing-container">
           <p className="section-label">UX Society Community</p>
           <h2>Learn and grow with an amazing community</h2>
-          <img className="landing-image" src={landingImage} alt="landing" />
-          <a to='/community#events'>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <img className="landing-image" src={landingImage} alt="landing" />
+          </ScrollAnimation>
+          <a href='/community#events'>
             <button className="round-btn">
               <img src={chevronDown} alt="down" />
             </button>

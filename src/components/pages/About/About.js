@@ -13,7 +13,8 @@ import delivery from './../../../resources/img/about-img/delivery.svg';
 import purpose from './../../../resources/img/about-img/purpose.svg'
 import quality from './../../../resources/img/about-img/quality.svg';
 import about from './../../../resources/img/community-opportunities.svg';
-import MetaImage from './../../../resources/img/community-landing.jpg';
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 import './style.css';
 
 class ScrollToTopOnMount extends Component {
@@ -62,14 +63,14 @@ class About extends Component {
 
         <meta property="og:title" content="User Experience Society"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:image" content="https://imgur.com/a/ECzttvB"/>
+        <meta property="og:image" content="https://i.imgur.com/DKAmvO4.jpg"/>
         <meta property="og:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
 
         <meta name="twitter:site" content="@uxsociety-website"/>
         <meta name="twitter:creator" content="@uxsocietyph"/>
         <meta name="twitter:title" content="User Experience Society"/>
         <meta name="twitter:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
-        <meta name="twitter:image" content="https://imgur.com/a/ECzttvB"/>
+        <meta name="twitter:image" content="https://i.imgur.com/DKAmvO4.jpg"/>
       </Helmet>
         <ScrollToTopOnMount/>
         <Navigation/>
@@ -78,7 +79,11 @@ class About extends Component {
           <SectionTitle>Unleashing the Designer in You</SectionTitle>
         </div>
         <div className="about-ux">
-          <img src={about} alt="About UX Society"/>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <div className="about-ux">
+              <img src={about} alt="About UX Society"/>
+            </div>
+          </ScrollAnimation>
           <div className="about-uxsociety">
             <h2>What is User Experience Society</h2>
             <p>UX Society is a student organization that advocates and practices human-centered design in solving problems in the community</p>

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 
 const LeftValues = props => {
 
@@ -61,7 +63,9 @@ const LeftValues = props => {
         <ValueTitle>{props.title}</ValueTitle>
         <ValueDetails>{props.details}</ValueDetails>
       </Values>
-      <img src={props.img} alt="Core Value"/>
+      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="1000">
+        <img src={props.img} alt="Core Value"/>
+      </ScrollAnimation>
     </ValueSection>
   );
 }
