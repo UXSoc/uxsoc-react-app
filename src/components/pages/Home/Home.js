@@ -31,6 +31,8 @@ class Home extends Component {
           <meta name="generator" content="Page Generator v1.0.0"/>
           <meta name="description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
 
+          <meta property="og:url" content="http://www.uxsociety.org/"/>
+
           <meta property="og:title" content="User Experience Society"/>
           <meta property="og:type" content="website"/>
           <meta property="og:image" content="https://i.imgur.com/DKAmvO4.jpg"/>
