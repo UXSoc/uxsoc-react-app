@@ -26,19 +26,20 @@ class Home extends Component {
     return(
       <div>
         <Helmet>
+          <title>User Experience Society</title>
           <meta name="generator" content="Page Generator v1.0.0"/>
           <meta name="description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
 
           <meta property="og:title" content="User Experience Society"/>
           <meta property="og:type" content="website"/>
-          <meta property="og:image" content={MetaImage}/>
+          <meta property="og:image" content="https://imgur.com/a/ECzttvB"/>
           <meta property="og:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
 
           <meta name="twitter:site" content="@uxsociety-website"/>
           <meta name="twitter:creator" content="@uxsocietyph"/>
           <meta name="twitter:title" content="User Experience Society"/>
           <meta name="twitter:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community."/>
-          <meta name="twitter:image" content={MetaImage}/>
+          <meta name="twitter:image" content="https://imgur.com/a/ECzttvB"/>
         </Helmet>
         <ScrollToTopOnMount/>
         <Navigation/>
