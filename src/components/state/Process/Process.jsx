@@ -70,7 +70,7 @@ class Process extends Component {
   render() {
     return (
       <div className="process">
-        <div className="headers">
+        <div style={{width: '100%'}}>
           <p className="section-label">Process</p>
           <h2 className="method-title">The method to our madness</h2>
           {

@@ -16,7 +16,21 @@ const RightValues = props => {
       text-align: center;
 
       img {
-        margin: 0 !important;
+        margin: 15px auto !important;
+      }
+    }
+
+    @media (max-width: 610px) {
+      img {
+        width: 320px !important;
+        height: 320px;
+      }
+    }
+
+    @media (max-width: 415px) {
+      img {
+        width: 240px !important;
+        height: 320px;
       }
     }
   `

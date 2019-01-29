@@ -8,3 +8,9 @@
 .services h2 {
   margin-bottom: 8rem;
 }
+
+@media screen and (max-width: 768px) {
+  .services h2 {
+    margin-bottom: 60px;
+  }
+}
