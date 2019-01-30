@@ -29,29 +29,29 @@ class ScrollToTopOnMount extends Component {
 class About extends Component {
   render() {
 
-    const PageTitle = styled.h4`
-      position: relative;
-      text-align: center;
-      margin-top: 150px;
-      font-family: Montserrat, sans-serif;
-    `
-    const SectionTitle = styled.h1`
-      text-align: center;
-      font-family: Rubik;
-      line-height: 60px;
-      font-size: 50.97px;
-      color: #20252B;
-
-      @media (max-width: 768px) {
-        width: 80%;
-        margin: auto;
-
-      }
-
-      @media (max-width: 475px) {
-        font-size: 40px;
-      }
-    `
+    // const PageTitle = styled.h4`
+    //   position: relative;
+    //   text-align: center;
+    //   margin-top: 150px;
+    //   font-family: Montserrat, sans-serif;
+    // `
+    // const SectionTitle = styled.h1`
+    //   text-align: center;
+    //   font-family: Rubik;
+    //   line-height: 60px;
+    //   font-size: 50.97px;
+    //   color: #20252B;
+    //
+    //   @media (max-width: 768px) {
+    //     width: 80%;
+    //     margin: auto;
+    //
+    //   }
+    //
+    //   @media (max-width: 475px) {
+    //     font-size: 40px;
+    //   }
+    // `
 
 
     return(
@@ -76,9 +76,13 @@ class About extends Component {
       </Helmet>
         <ScrollToTopOnMount/>
         <Navigation/>
-        <div>
+        {/* <div>
           <PageTitle>About User Experience Society</PageTitle>
           <SectionTitle>Unleashing the Designer in You</SectionTitle>
+        </div> */}
+        <div className="landing-container">
+          <p className="section-label">About User Experience Society</p>
+          <h2>Unleashing the Designer in You</h2>
         </div>
         <div className="about-ux">
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
