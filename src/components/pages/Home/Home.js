@@ -52,9 +52,7 @@ class Home extends Component {
             <a className='journey-button' style={{color: "white"}}href="#blue-home">Start Your Journey</a>
 
             <img className='home-landing-image' src={landingImage} alt='landing'/>
-            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-              <img className='mobile-landing-image' src={landingImage} alt='mobile landing'/>
-            </ScrollAnimation>
+            <img className='mobile-landing-image' src={landingImage} alt='mobile landing'/>
           </div>
           <div id="blue-home" className='home-blue-section'>
             <p className='home-blue-text'><strong>User Experience Society</strong> aims to guide the design
