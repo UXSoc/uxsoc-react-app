@@ -13,7 +13,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .arrowLeft {
@@ -35,8 +37,8 @@
 #008ED4 */
 
 .processImage {
-  width: 100%;
-  height: 540px;
+  width: 840px;
+  height: 400px;
 }
 
 .MethodBlock {
@@ -62,9 +64,10 @@
   font-family: "Proxima Nova", sans-serif;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 930px) {
   .processImage {
-    height: 480px;
+    width: 600px;
+    height: 320px
   }
 }
 @media screen and (max-width: 768px) {
@@ -100,12 +103,19 @@
 }
 
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 700px) {
+  .processImage {
+    width: 520px;
+    height: 320px
+  }
+}
+@media screen and (max-width: 580px) {
   .method-title {
     line-height: 36px;
   }
   .processImage {
-    height: 270px;
+    width: 370px;
+    height: 220px;
   }
 
   .method-subheader {
@@ -113,13 +123,14 @@
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 420px) {
   .method-title {
     margin-bottom: 0;
   }
 
   .processImage {
-    height: 220px;
+    height: 180px;
+    width: 270px;
     margin-bottom: 30px;
   }
 }

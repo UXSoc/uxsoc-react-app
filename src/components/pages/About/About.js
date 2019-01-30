@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import Navigation from '../../state/Navigation/Navigation';
 import AboutBox from './../../stateless/AboutBox/AboutBox';
 import LeftValues from './../../stateless/AboutValues/LeftValues';
@@ -7,12 +6,13 @@ import RightValues from './../../stateless/AboutValues/RightValues';
 import ContactForm from '../../state/ContactForm/ContactForm';
 import Footer from './../../state/Footer/Footer';
 import {Helmet} from 'react-helmet';
-import empathy from './../../../resources/img/about-img/empathy.svg'
-import collaboration from './../../../resources/img/about-img/collaboration.svg'
-import delivery from './../../../resources/img/about-img/delivery.svg';
-import purpose from './../../../resources/img/about-img/purpose.svg'
-import quality from './../../../resources/img/about-img/quality.svg';
-import about from './../../../resources/img/community-opportunities.svg';
+
+import empathy from './../../../resources/illustrations/about-empathy.png'
+import collaboration from './../../../resources/illustrations/about-collaboration.png'
+import delivery from './../../../resources/illustrations/about-delivery.png';
+import purpose from './../../../resources/illustrations/about-purpose.png';
+import quality from './../../../resources/illustrations/about-quality.png';
+import about from './../../../resources/illustrations/about-landing.png';
 import ScrollAnimation from "react-animate-on-scroll"
 import "animate.css/animate.min.css"
 import './style.css';

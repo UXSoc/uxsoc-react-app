@@ -31,6 +31,13 @@
   width: 80%;
 }
 
+
+@media screen and (max-width: 1200px) {
+  .work-image img {
+    margin-top: 15%;
+    width: 80%;
+  }
+}
 @media screen and (max-width: 768px) {
   .work-container p, .work-container h2 {
     text-align: left;

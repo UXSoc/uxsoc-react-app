@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import productivity1 from '../../../resources/img/work-imgs/productivity-discovery.svg';
-import productivity2 from '../../../resources/img/work-imgs/productivity-define.svg';
-import productivity3 from '../../../resources/img/work-imgs/productivity-ideate.svg';
-import productivity4 from '../../../resources/img/work-imgs/productivity-build.svg';
-import productivity5 from '../../../resources/img/work-imgs/productivity-measure.svg';
+import productivity1 from './../../../resources/illustrations/work-discovery.png';
+import productivity2 from './../../../resources/illustrations/work-define.png';
+import productivity3 from './../../../resources/illustrations/work-ideate.png';
+import productivity4 from './../../../resources/illustrations/work-build.png';
+import productivity5 from './../../../resources/illustrations/work-measure.png';
 import arrowRight from '../../../resources/img/work-imgs/arrowRight.svg';
 import arrowLeft from '../../../resources/img/work-imgs/arrowLeft.svg';
 

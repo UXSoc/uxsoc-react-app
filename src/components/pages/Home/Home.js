@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Navigation from '../../state/Navigation/Navigation';
-import landingImage from './../../../resources/img/home-landing.svg';
-import designLeaders from './../../../resources/img/design-leaders.svg';
+import landingImage from './../../../resources/illustrations/home-landing.png';
+import designLeaders from './../../../resources/illustrations/home-blue.png';
 import {Helmet} from 'react-helmet'
-import Image1 from './../../../resources/img/geared-for-growth.svg';
-import Image2 from './../../../resources/img/crafted-for-work.svg';
+import Image1 from './../../../resources/illustrations/home-community.png';
+import Image2 from './../../../resources/illustrations/home-consultancy.png';
 import HomeCard from '../../state/HomeCard/HomeCard';
 import ContactForm from '../../state/ContactForm/ContactForm';
 import Footer from './../../state/Footer/Footer';

@@ -2,9 +2,9 @@ import React from 'react';
 import Left from './../AboutValues/LeftValues';
 import Right from './../AboutValues/RightValues';
 
-import webDevelopment from './../../../resources/img/work-imgs/work-web.svg'
-import productReview from './../../../resources/img/work-imgs/work-product.svg';
-import designWorkshop from './../../../resources/img/work-imgs/work-design.svg'
+import webDevelopment from './../../../resources/illustrations/work-web.png'
+import productReview from './../../../resources/illustrations/work-product.png';
+import designWorkshop from './../../../resources/illustrations/work-workshop.png'
 import './style.css'
 
 const Services = () => {

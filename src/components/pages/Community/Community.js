@@ -10,7 +10,7 @@ import Resources from './../../stateless/Resources/Resources';
 import ContactForm from './../../state/ContactForm/ContactForm';
 import Footer from './../../state/Footer/Footer';
 
-import landingImage from './../../../resources/img/community-landing.svg';
+import landingImage from './../../../resources/illustrations/community-landing.png';
 import chevronDown from './../../../resources/img/chevron-down.svg';
 import ScrollAnimation from "react-animate-on-scroll"
 import "animate.css/animate.min.css"
