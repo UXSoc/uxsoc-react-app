@@ -32,7 +32,7 @@ const LeftValues = props => {
     @media (max-width: 415px) {
       img {
         width: 240px !important;
-        height: 320px;
+        height: 240px;
       }
     }
   `

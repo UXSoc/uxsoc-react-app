@@ -62,7 +62,7 @@
   height: 122px;
   font-family: "Proxima Nova", sans-serif;
   font-size: 34.6px;
-  line-height: 1.76;
+  line-height: 61px;
   color: #ffffff;
   text-align: center;
   margin-top: -1rem;
@@ -176,7 +176,8 @@
 
   .mobile-landing-image {
     z-index: -99;
-    width: 100%;
+    width: 60%;
+    margin-left: 30%;
     height: 305px;
     display: block;
     grid-column: 1/1;
@@ -223,6 +224,11 @@
 }
 
 
+@media screen and (max-width: 540px) {
+  .mobile-landing-image {
+    margin-left: 15%;
+  }
+}
 
 /* @media screen and (max-width: 425px) {
   .main-title-leader, .north-star-title, .journey-button {
