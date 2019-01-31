@@ -7,6 +7,7 @@
     "react": "^16.5.2",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.5.2",
+    "react-ga": "^2.5.7",
     "react-helmet": "^5.2.0",
     "react-meta-tags": "^0.7.3",
     "react-router": "^4.3.1",
