@@ -23,8 +23,8 @@
   padding: 60px;
   width: 480px;
   background: #FFFFFF;
-  -webkit-box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
-          box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
+  -webkit-box-shadow: 0 5px 10px rgba(48, 47, 47, 0.19), 0 3px 3px rgba(53, 52, 52, 0.23);
+          box-shadow: 0 5px 10px rgba(48, 47, 47, 0.19), 0 3px 3px rgba(53, 52, 52, 0.23);
   -ms-flex-item-align: center;
       align-self: center;
   margin-left: -15rem;

@@ -50,6 +50,10 @@
   text-decoration: none;
 }
 
+.dropdown-link:hover {
+  color: white;
+}
+
 .navbar-item {
   height: 64px;
   display: -webkit-box;

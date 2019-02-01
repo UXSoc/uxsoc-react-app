@@ -11,7 +11,7 @@ import Footer from './../../state/Footer/Footer';
 import Logos from '../../stateless/Logos/Logos';
 import mainImage from './../../../resources/illustrations/work-landing.png';
 import shield from '../../../resources/img/work-imgs/logo.svg';
-import tugon from '../../../resources/img/work-imgs/tugon-logo.svg';
+import tugon from '../../../resources/img/work-imgs/tugon-logo.png';
 import lions from '../../../resources/img/work-imgs/LIONS-Logo.svg';
 import uxph from '../../../resources/img/work-imgs/uxph.svg';
 import ScrollAnimation from "react-animate-on-scroll"
@@ -55,7 +55,7 @@ class Work extends Component {
         <div className="work-container">
           <p className="section-label">Work with UX Society</p>
           <h2>Crafting the best experiences to achieve your goals</h2>
-          <button className="journey-button">Contact Us</button>
+          <a href="#contact-us"><button className="journey-button">Contact Us</button></a>
           <div className="work-image">
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
               <img src={mainImage} alt="work with ux society"/>

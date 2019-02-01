@@ -63,7 +63,7 @@ const LeftValues = props => {
         <ValueTitle>{props.title}</ValueTitle>
         <ValueDetails>{props.details}</ValueDetails>
       </Values>
-      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="1000">
+      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="500">
         <img src={props.img} alt="Core Value"/>
       </ScrollAnimation>
     </ValueSection>

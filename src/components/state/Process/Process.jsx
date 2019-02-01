@@ -73,6 +73,15 @@ class Process extends Component {
         <div style={{width: '100%'}}>
           <p className="section-label">Process</p>
           <h2 className="method-title">The method to our madness</h2>
+          
+          <div hidden>
+            <img src={productivity1} className="processImage" alt="process=1"/>
+            <img src={productivity2} className="processImage" alt="process=2"/>
+            <img src={productivity3} className="processImage" alt="process=3"/>
+            <img src={productivity4} className="processImage" alt="process=4"/>
+            <img src={productivity5} className="processImage" alt="process=5"/>
+          </div>
+
           {
             this.state.discovery ?
             <div>

@@ -33,8 +33,8 @@
   height: 420px;
   position: absolute;
   background: #FFFFFF;
-  -webkit-box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
-          box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
+  -webkit-box-shadow: 0 5px 10px rgba(48, 47, 47, 0.19), 0 3px 3px rgba(53, 52, 52, 0.23);
+          box-shadow: 0 5px 10px rgba(48, 47, 47, 0.19), 0 3px 3px rgba(53, 52, 52, 0.23);
   padding: 30px;
   right: 6rem;
   margin-top: 12rem;
@@ -130,9 +130,9 @@
   }
 
   .ms-image {
-    width: 84vw;
+    width: 320px;
     height: 40vh;
-    margin-left: -0.5rem;
+    margin: auto;
   }
 
   .MemberStoriesLabel, .MemberStoriesTitle, .ms-card .AuthorPic  {
@@ -157,5 +157,21 @@
   .MemberStoriesImage {
     margin: auto;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .ms-image {
+    width: 100%;
+    height: 30vh;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .ms-image {
+    width: 100%;
+    height: 25vh;
+    margin: auto;
   }
 }
