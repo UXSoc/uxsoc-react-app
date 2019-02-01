@@ -13,22 +13,22 @@ class Footer extends Component {
       <footer>
         <div className="footer-container">
           <div className="footer-logo">
-            <Link to='/'>
+            <a href='/'>
               <img alt='uxsoc-logo' src={logo}/>
-            </Link>
+            </a>
           </div>
 
           <div className="footer-explore">
             <h4>Explore</h4>
 
             <div className="footer-explore-container">
-              <Link to="/about">
+              <a href="/about">
                 <p>About Us</p>
-              </Link>
+              </a>
               <div className="footer-community">
-                <Link to="/community">
+                <a href="/community">
                   <p>Community</p>
-                </Link>
+                </a>
 
                 <ul>
                   <Link to='/community#events'>
@@ -46,9 +46,9 @@ class Footer extends Component {
                 </ul>
               </div>
               <div className="footer-work">
-                <Link to='/work'>
+                <a href='/work'>
                   <p>Work</p>
-                </Link>
+                </a>
                 <ul>
                   <Link to='/work#process'>
                     <li>Process</li>

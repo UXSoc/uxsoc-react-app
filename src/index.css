@@ -5,9 +5,6 @@ html, body {
 }
 
 img {
-  -ms-interpolation-mode: nearest-neighbor;
-      image-rendering: -webkit-optimize-contrast;
-      image-rendering: -moz-crisp-edges;
-      image-rendering: -o-pixelated;
-      image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-resolution: 300dpi;
 }
