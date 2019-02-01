@@ -42,7 +42,7 @@ const RightValues = props => {
   `
 
   const ValueTitle = styled.h3`
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: normal;

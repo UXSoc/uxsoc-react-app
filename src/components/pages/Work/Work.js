@@ -9,7 +9,7 @@ import Services from '../../stateless/Services/Services';
 import Footer from './../../state/Footer/Footer';
 
 // import Logos from '../../stateless/Logos/Logos';
-// import mainImage from './../../../resources/illustrations/work-landing.png';
+import mainImage from './../../../resources/illustrations/work-landing.png';
 // import shield from '../../../resources/img/work-imgs/logo.svg';
 // import tugon from '../../../resources/img/work-imgs/tugon-logo.png';
 // import lions from '../../../resources/img/work-imgs/LIONS-Logo.svg';
