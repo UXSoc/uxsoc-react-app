@@ -8,12 +8,12 @@ import Services from '../../stateless/Services/Services';
 // import Workcomp from '../../state/Work/Work';
 import Footer from './../../state/Footer/Footer';
 
-import Logos from '../../stateless/Logos/Logos';
-import mainImage from './../../../resources/illustrations/work-landing.png';
-import shield from '../../../resources/img/work-imgs/logo.svg';
-import tugon from '../../../resources/img/work-imgs/tugon-logo.png';
-import lions from '../../../resources/img/work-imgs/LIONS-Logo.svg';
-import uxph from '../../../resources/img/work-imgs/uxph.svg';
+// import Logos from '../../stateless/Logos/Logos';
+// import mainImage from './../../../resources/illustrations/work-landing.png';
+// import shield from '../../../resources/img/work-imgs/logo.svg';
+// import tugon from '../../../resources/img/work-imgs/tugon-logo.png';
+// import lions from '../../../resources/img/work-imgs/LIONS-Logo.svg';
+// import uxph from '../../../resources/img/work-imgs/uxph.svg';
 import ScrollAnimation from "react-animate-on-scroll"
 import "animate.css/animate.min.css"
 import './style.css';
@@ -76,9 +76,9 @@ class Work extends Component {
           <Workcomp/>
         </div> */}
 
-        <div>
+        {/* <div>
           <Logos logo1={shield} logo2={tugon} logo3={lions} logo4={uxph}/>
-        </div>
+        </div> */}
 
         <div id="contact-us" className="contact-container">
           <ContactForm/>
