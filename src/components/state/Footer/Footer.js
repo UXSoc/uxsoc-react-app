@@ -61,8 +61,9 @@ class Footer extends Component {
                   </Link> */}
                 </ul>
               </div>
-
-              <p>Contact Us</p>
+              <a href="#contact-us">
+                <p>Contact Us</p>
+              </a>
             </div>
             </div>
 
