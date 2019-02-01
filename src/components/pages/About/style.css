@@ -2,7 +2,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -90px;
+  margin-top: -30px;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -122,6 +122,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .about-ux {
+    margin-top: 0;
   }
 
   .about-ux img {
