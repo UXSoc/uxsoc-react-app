@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 
 import logo from './../../../resources/logo/uxsoc-logo.svg';
 import './style.css';
@@ -18,9 +17,9 @@ class Navigation extends Component {
         <div className='navbar-container'>
           {/* UX Society Logo */}
           <div className='navbar-item navbar-logo'>
-            <Link to='/'>
+            <a href='/'>
               <img alt='uxsoc-logo' src={logo}/>
-            </Link>
+            </a>
           </div>
 
           <div className='navbar-item navbar-menu' onClick={() => {
@@ -38,17 +37,17 @@ class Navigation extends Component {
           <div className='navbar-mr'>
             {/* About Us */}
             <div className='navbar-item navbar-about'>
-              <Link className='navbar-link' to='/about'>About Us</Link>
+              <a className='navbar-link' href='/about'>About Us</a>
             </div>
 
             {/* Community */}
             <div className='navbar-item'>
-              <Link className='navbar-link' to='/community'>Community</Link>
+              <a className='navbar-link' href='/community'>Community</a>
             </div>
 
             {/* Work */}
             <div className='navbar-item'>
-              <Link className='navbar-link' to='/work'>Work</Link>
+              <a className='navbar-link' href='/work'>Work</a>
             </div>
 
             {/* Contact Us */}
@@ -68,15 +67,15 @@ class Navigation extends Component {
 class NavDropdown extends Component {
   render() {
     return (<div className="NavDropdown">
-      <Link className='dropdown-link' to='/about'>
+      <a className='dropdown-link' href='/about'>
         <li>About Us</li>
-      </Link>
-      <Link className='dropdown-link' to='/community'>
+      </a>
+      <a className='dropdown-link' href='/community'>
         <li>Community</li>
-      </Link>
-      <Link className='dropdown-link' to='/work'>
+      </a>
+      <a className='dropdown-link' href='/work'>
         <li>Work</li>
-      </Link>
+      </a>
       <a className='dropdown-link' href='#contact-us'>
         <li>Contact Us</li>
       </a>

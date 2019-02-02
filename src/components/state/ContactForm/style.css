@@ -65,6 +65,8 @@ input::placeholder, textarea::placeholder {
     font-size: 32px;
     line-height: 45px;
     margin-top: -1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   form {
@@ -87,7 +89,7 @@ input::placeholder, textarea::placeholder {
 
 @media screen and (max-width: 425px) {
   .Contact h2 {
-    width: 430px;
+    width: 320px !important;
     font-size: 28px;
     line-height: 45px;
     margin-top: -1rem;
@@ -111,31 +113,6 @@ input::placeholder, textarea::placeholder {
   }
 }
 
-@media screen and (max-width: 425px) {
-  .Contact h2 {
-    width: 430px;
-    font-size: 28px;
-    line-height: 45px;
-    margin-top: -1rem;
-  }
-
-  form {
-    width: 22rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr 4fr;
-    grid-row-gap: 2.5rem;
-    margin: 2.5rem auto;
-  }
-
-  input {
-    height: 50px;
-    padding-left: 25px;
-  }
-
-  textarea {
-    padding: 25px;
-  }
-}
 
 @media screen and (max-width: 375px) {
   .Contact h2 {

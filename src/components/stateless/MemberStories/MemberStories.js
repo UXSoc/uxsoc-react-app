@@ -11,7 +11,7 @@ class MemberStories extends Component {
       <div className="MemberStories">
         <div className="ms-container">
           <p className="section-label">Member Stories</p>
-          <h2>Read up on a fellow member's UX journey</h2>
+          <h2>Read up on a fellow member's journey</h2>
           <div className="ms-content-container">
             <MemberStoriesImage />
             <div className="ms-card">

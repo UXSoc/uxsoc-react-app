@@ -1,11 +1,10 @@
 .resources-container {
-  height: 1230px;
+  height: 100%;
   background: #EEF1F6;
-  padding-top: 0.5rem;
-  position: relative;
+  padding: 1rem 1rem 7.5rem 1rem;
 }
 
-.resource-content-container {
+ .resource-content-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,357 +12,87 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  justify-content: center;
-}
-
-.main-title {
-  width: 40rem;
-}
-
-#resource-button {
-  width: 80%;
-  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .resource-card {
   z-index: 1;
   position: relative;
-  width: 540px;
-  height: 400px;
+  padding: 60px;
+  width: 480px;
   background: #FFFFFF;
-  -webkit-box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
-          box-shadow: 0 10px 20px rgba(48, 47, 47, 0.19), 0 6px 6px rgba(53, 52, 52, 0.23);
-  align-self: center;
+  -webkit-box-shadow: 0 5px 10px rgba(48, 47, 47, 0.19), 0 3px 3px rgba(53, 52, 52, 0.23);
+          box-shadow: 0 5px 10px rgba(48, 47, 47, 0.19), 0 3px 3px rgba(53, 52, 52, 0.23);
+  -ms-flex-item-align: center;
+      align-self: center;
   margin-left: -15rem;
 }
-
 
 .ResourceLabel {
   color: #B3BCC4;
   font-size: 1rem;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 3rem;
-  margin-left: 2.5rem;
 }
 
 .ResourceTitle {
   font-size: 1.8rem;
   text-align: left;
-  margin-left: 2.5rem;
-  margin-top: 1rem;
 }
 
 .ResourceDesc {
   width: 26rem;
   color: #000000;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 1rem;
   line-height: 28px;
-  margin-left: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
-.resource-card .RedirectButton {
-  margin-top: 2.5rem;
+@media screen and (max-width: 1023px) {
+  .resource-card {
+    width: 360px;
+    margin-top: -15rem;
+    margin-left: 0;
+  }
+
+  .resource-content-container {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: reverse;
+         -ms-flex-direction: column-reverse;
+             flex-direction: column-reverse;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+
+ }
+
+ .ResourceDesc {
+   width: 100%;
+   margin-bottom: 60px;
+ }
+
+ .ResourceImage {
+   margin: auto;
+ }
 }
 
-.ResourceImage {
-  margin-left: 0;
-}
-
-.ResourceLink {
-  margin-top: -1.5rem;
-}
-
-.ResourceLink a {
-  font-family: "Proxima-Nova", sans-serif;
-  font-size: 1rem;
-  margin-left: 2.5rem;
-}
-
-.resource-card .AuthorPic {
-  margin-left: 2.5rem;
-}
-
-.resource-card .AuthorName {
-  margin-top: -3.7rem;
-  margin-left: 6rem;
-}
-
-.PastResources {
-  position: relative;
-  margin-top: 5rem;
-}
-
-.PastResources a {
-  color: #008ED4;
-  font-family: "Proxima-Nova", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.selected {
-  color: #20252b;
-  border-bottom: 1px solid #20252b;
-}
-
-@media screen and (max-width: 768px) {
-  .resources-container {
-    height: 1300px;
-    padding-top: 0.25rem;
+@media screen and (max-width: 565px) {
+  .resource-card {
+    width: 85%;
+    margin-top: -5rem;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
   }
 
   .ResourceImage img {
-    z-index: 0;
-    width: 80vw;
-    height: auto;
-    position: absolute;
-    top: 22rem;
-    left: 4rem;
-  }
-
-  .resource-card {
-    z-index: 1;
-    position: absolute;
-    top: 36rem;
-    right: 4rem;
-  }
-
-}
-
-@media screen and (max-width: 600px) {
-  .resources-container {
-    height: 1100px;
-    padding-top: 0.25rem;
-  }
-
-  .main-title {
-    width: 60vw;
-    font-size: 24px;
-    line-height: 34px;
-  }
-
-  .SectionToggleResources .section-toggle {
-    width: 125px;
-    font-size: 14px;
-    padding: 0.5rem;
-  }
-
-  .SectionToggleResources .section-toggle:first-of-type {
-    margin-left: 2.5rem;
-  }
-
-  .resource-content-container {
-    width: 86vw;
-    margin: auto;
-    margin-top: 15rem;
-  }
-
-  .ResourceImage img {
-    z-index: 0;
-    width: 80vw;
-    height: auto;
-    position: absolute;
-    top: 20rem;
-    left: 1rem;
-  }
-
-  .resource-card {
-    z-index: 1;
-    position: absolute;
-    top: 28rem;
-    right: 1rem;
-  }
-
-  .ResourceLabel {
-    font-size: 12px;
-    margin-top: 2.5rem;
-    margin-left: 1.5rem;
-  }
-
-  .ResourceTitle {
-    width: 26rem;
-    margin-left: 1.5rem;
-    margin-bottom: 2rem;
-    line-height: 34px;
-  }
-
-  .resource-card .AuthorPic {
-    margin-left: 1.5rem;
-  }
-
-  .resource-card .AuthorName {
-    margin-top: -3.75rem;
-    margin-left: 5rem;
-  }
-
-  .ResourceLink {
-    margin-left: -0.9rem;
-  }
-
-  .ResourceDesc {
-    width: 68vw;
-    font-size: 12px;
-    line-height: 20px;
-    margin-top: -0.5rem;
-    margin-left: 1.5rem;
-    margin-bottom: -1rem;
-  }
-
-  .resource-card .RedirectButton a {
-    margin-top: 2.5rem;
-    margin-right: -2rem;
-  }
-
-  .PastResources {
-    margin-left: 7rem;
-    margin-top: 2rem;
-  }
-
-  .PastResources a {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .resources-container {
-    height: 950px;
-  }
-
-  .main-title {
-    width: 268px;
-  }
-
-  .SectionToggleResources .section-toggle {
-    width: 125px;
-    font-size: 14px;
-    padding: 0.5rem;
-  }
-
-  .SectionToggleResources .section-toggle:first-of-type {
-    margin-left: 1.5rem;
-  }
-
-  .resource-content-container {
-    width: 86vw;
-  }
-
-  .ResourceImage img {
-    width: 80vw;
-    height: auto;
-  }
-
-  .resource-card {
-    z-index: 1;
-    width: 84vw;
-    height: 415px;
-    margin-top: -2rem;
-  }
-
-  .ResourceLabel {
-    font-size: 12px;
-    margin-top: 2.5rem;
-    margin-left: 1.5rem;
-  }
-
-  .ResourceTitle {
-    width: 18rem;
-  }
-
-  .ResourceDesc {
-    width: 68vw;
-  }
-
-  .resource-card .RedirectButton a {
-    margin-top: 2.5rem;
-    margin-right: 0;
-  }
-
-  .PastResources {
-    margin-left: 1.75rem;
-  }
-
-  .PastResources a {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .SectionToggleResources .section-toggle {
-    width: 125px;
-    font-size: 14px;
-    padding: 0.5rem;
-  }
-
-  .SectionToggleResources .section-toggle:first-of-type {
-    margin-left: 0rem;
-  }
-
-  .resource-content-container {
-    width: 86vw;
-    margin-left: 2.5rem;
-    margin-top: -2rem;
-  }
-
-  .resource-card {
-    z-index: 1;
-    width: 80vw;
-    height: 415px;
-    margin-top: -0.5rem;
-  }
-
-  .ResourceTitle {
-    width: 12rem;
-  }
-
-  .ResourceDesc {
-    width: 65vw;
-  }
-
-  .PastResources {
-    margin-left: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .main-title {
-    width: 268px;
-    line-height: 34px;
-  }
-
-  .SectionToggleResources .section-toggle {
-    width: 106px;
-    padding: 0.5rem;
-  }
-
-  .SectionToggleResources .section-toggle:first-of-type {
-    margin-left: 0rem;
-  }
-
-  .resource-content-container {
-    width: 86vw;
-    margin-left: 2.5rem;
-  }
-
-  .resource-card {
-    z-index: 1;
-    width: 245px;
-    height: 400px;
-    margin-top: 0.5rem;
-  }
-
-  .ResourceDesc {
-    width: 62vw;
-  }
-
-  .PastResources {
-    margin-left: -0.25rem;
+    width: 100%;
   }
 }

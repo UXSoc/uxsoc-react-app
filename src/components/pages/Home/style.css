@@ -9,7 +9,7 @@
 .north-star-title {
   width: 100%;
   height: 16px;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -34,7 +34,7 @@
 .home-landing-image {
   grid-column: 2/2;
   grid-row: 4/7;
-  margin-left: -4rem;
+  margin-left: 5rem;
 }
 
 .mobile-landing-image {
@@ -46,17 +46,23 @@
   height: 600px;
   width: 100%;
   background-color: #008ed4;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home-blue-text {
   width: 800px;
   height: 122px;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 34.6px;
-  line-height: 1.76;
+  line-height: 61px;
   color: #ffffff;
   text-align: center;
   margin-top: -1rem;
@@ -69,27 +75,20 @@
 }
 
 .HomeCard-container {
-  position: relative;
-  z-index: 1;
-  height: 960px;
+  height: 100%;
   width: 100%;
   background: #EEF1F6;
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-  align-items: center;
-  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
 }
 
 @media screen and (max-width: 1024px) {
-  .design-leaders-img {
-    position: absolute;
-    top: 1050px;
-    left: -2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .north-star-title {
     margin-left: -3.5rem;
   }
@@ -116,21 +115,9 @@
   .design-leaders-img {
     display: none;
   }
-
-  .HomeCard-container {
-    position: relative;
-    z-index: 1;
-    height: 800px;
-    background: #EEF1F6;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .main-title-leader {
     font-size: 45px;
     margin-top: 2.5rem;
@@ -150,32 +137,100 @@
     margin-left: -17.5rem;
   }
 
-  .home-blue-section {
-    height: 350px;
-  }
 
   .home-blue-text {
-    width: 450px;
+    width: 100%;
     font-size: 28px;
     margin-top: -6rem;
   }
 
   .HomeCard-container {
-    position: relative;
-    z-index: 1;
-    height: auto;
-    background: #EEF1F6;
-    display: inline-grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 675px 675px;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    justify-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+                    margin: auto;
+
+  }
+
+  .north-star-title {
+    margin-top: 1.5rem;
+    margin-left: -0.5rem;
+  }
+
+  .main-title-leader {
+    width: 258px;
+    height: 82px;
+    font-size: 34px;
+    line-height: normal;
+    margin-top: 1rem;
+    margin-left: -0.5rem;
+  }
+
+  .home-landing-image {
+    display: none;
+  }
+
+  .mobile-landing-image {
+    z-index: -99;
+    width: 60%;
+    margin-left: 30%;
+    height: 305px;
+    display: block;
+    grid-column: 1/1;
+    grid-row: 4/7;
+    margin-top: 7rem;
+  }
+
+  .home-landing-container .journey-button {
+    z-index: 5;
+    margin-top: 35rem;
+    margin-left: -0.2rem;
+  }
+
+  .journey-button {
+    display: none;
+  }
+
+  .home-blue-section {
+    margin-top: -11.5rem;
+    height: 280px;
+    width: 100%;
+    background-color: #008ed4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .home-blue-text {
+    width: 260px;
+    height: 206px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    line-height: 33px;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 3rem;
   }
 }
 
-@media screen and (max-width: 425px) {
+
+@media screen and (max-width: 540px) {
+  .mobile-landing-image {
+    margin-left: 15%;
+  }
+}
+
+/* @media screen and (max-width: 425px) {
   .main-title-leader, .north-star-title, .journey-button {
     margin-left: -2rem;
   }
@@ -195,13 +250,6 @@
     margin-top: -4rem;
   }
 
-  .HomeCard-container {
-    height: auto;
-    grid-template-columns: 100%;
-    grid-template-rows: 650px 650px;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
 }
 
 @media screen and (max-width: 375px) {
@@ -238,73 +286,5 @@
 }
 
 @media screen and (max-width: 320px) {
-  .north-star-title {
-    margin-top: 1.5rem;
-    margin-left: -0.5rem;
-  }
 
-  .main-title-leader {
-    width: 258px;
-    height: 82px;
-    font-size: 34px;
-    line-height: normal;
-    margin-top: 1rem;
-    margin-left: -0.5rem;
-  }
-
-  .home-landing-image {
-    display: none;
-  }
-
-  .mobile-landing-image {
-    z-index: -99;
-    width: 320px;
-    height: 305px;
-    display: block;
-    grid-column: 1/1;
-    grid-row: 4/7;
-    margin-top: 7rem;
-    margin-left: 2rem;
-  }
-
-  .home-landing-container .journey-button {
-    z-index: 5;
-    margin-top: 35rem;
-    margin-left: -0.2rem;
-  }
-
-  .home-blue-section {
-    margin-top: -11.5rem;
-    height: 280px;
-    width: 100%;
-    background-color: #008ed4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .home-blue-text {
-    width: 260px;
-    height: 206px;
-    font-family: "Proxima-Nova", sans-serif;
-    font-size: 18px;
-    line-height: 33px;
-    color: #ffffff;
-    text-align: left;
-    margin-top: 3rem;
-  }
-
-  .HomeCard-container {
-    position: relative;
-    z-index: 1;
-    height: 830px;
-    background: #EEF1F6;
-    display: inline-grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 435px 300px;
-    grid-row-gap: 3rem;
-    justify-items: center;
-    justify-content: center;
-    padding-top: 10rem;
-  }
-}
+} */

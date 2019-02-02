@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-
+// import ReactGA from 'react-ga';
 import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
 import Community from './components/pages/Community/Community';
@@ -13,6 +13,15 @@ import './App.css';
 
 class App extends Component {
   render() {
+
+  //   function initializeReactGA() {
+  //     ReactGA.initialize('UA-133553597-1');
+  //     ReactGA.pageview('/');
+  //     ReactGA.pageview('/about');
+  //     ReactGA.pageview('/community');
+  //     ReactGA.pageview('/work');
+  // }
+
     return (
       <div className="uxsoc-website">
         <BrowserRouter>

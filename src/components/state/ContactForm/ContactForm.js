@@ -7,10 +7,12 @@ class ContactForm extends Component {
       <div className="Contact">
         <p className="section-label">Contact Us</p>
         <h2>We'd love to hear from you. Drop us a line below!</h2>
+
         <form name="contact" method="POST" data-netifly="true">
-          <input type="text" name="name" placeholder="Name"></input>
-          <input type="email" name="email" placeholder="Email Address"></input>
-          <textarea name="message" placeholder="Your Message"></textarea>
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="text" name="name" placeholder="Name"/>
+          <input type="email" name="email" placeholder="Email Address"/>
+          <textarea name="message" placeholder="Your Message"/>
           <button className="blue-btn-big" type="submit">Send Message</button>
         </form>
       </div>

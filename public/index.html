@@ -5,12 +5,32 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+
+    <meta name="generator" content="Page Generator v1.0.0">
+    <meta name="description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community.">
+
+    <!-- Facebook Meta -->
+    <meta property="og:url" content="http://www.uxsociety.org/"/>
+    <meta property="og:title" content="User Experience Society"/>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.imgur.com/DKAmvO4.jpg">
+    <meta property="og:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community.">
+
+    <meta name="twitter:site" content="@uxsociety-website">
+    <meta name="twitter:creator" content="@uxsocietyph">
+    <meta name="twitter:title" content="User Experience Society">
+    <meta name="twitter:description" content="UX Society is a student organization that advocates and practices human-centered design in solving problems in the community.">
+    <meta name="twitter:image" content="https://i.imgur.com/DKAmvO4.jpg">
+
+
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/fonts/fonts.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900" rel="stylesheet">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -20,7 +40,19 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>UX Society</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133553597-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-133553597-1');
+    </script>
+
+
+    <title>User Experience Society</title>
   </head>
   <body>
     <noscript>
@@ -37,5 +69,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <div hidden>
+      <form name="contact" netlify netlify-honeypot="bot-field">
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+      </form>
+    </div>
+
+
   </body>
 </html>

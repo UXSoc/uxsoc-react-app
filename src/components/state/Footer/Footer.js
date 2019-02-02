@@ -13,22 +13,22 @@ class Footer extends Component {
       <footer>
         <div className="footer-container">
           <div className="footer-logo">
-            <Link to='/'>
+            <a href='/'>
               <img alt='uxsoc-logo' src={logo}/>
-            </Link>
+            </a>
           </div>
 
           <div className="footer-explore">
             <h4>Explore</h4>
 
             <div className="footer-explore-container">
-              <Link to="/about">
+              <a href="/about">
                 <p>About Us</p>
-              </Link>
+              </a>
               <div className="footer-community">
-                <Link to="/community">
+                <a href="/community">
                   <p>Community</p>
-                </Link>
+                </a>
 
                 <ul>
                   <Link to='/community#events'>
@@ -46,9 +46,9 @@ class Footer extends Component {
                 </ul>
               </div>
               <div className="footer-work">
-                <Link to='/work'>
+                <a href='/work'>
                   <p>Work</p>
-                </Link>
+                </a>
                 <ul>
                   <Link to='/work#process'>
                     <li>Process</li>
@@ -56,13 +56,14 @@ class Footer extends Component {
                   <Link to='/work#services'>
                     <li>Services</li>
                   </Link>
-                  <Link to='/work#work'>
+                  {/* <Link to='/work#work'>
                     <li>Work</li>
-                  </Link>
+                  </Link> */}
                 </ul>
               </div>
-
-              <p>Contact Us</p>
+              <a href="#contact-us">
+                <p>Contact Us</p>
+              </a>
             </div>
             </div>
 
@@ -71,16 +72,16 @@ class Footer extends Component {
             <h4>Follow Us</h4>
             <div className="footer-icons">
               <a href='https://www.facebook.com/UXSoc/' target="_blank" rel="noopener noreferrer">
-                <img alt='uxsoc-logo' src={facebook}/>
+                <img alt='facebook-logo' src={facebook}/>
               </a>
               <a href='https://twitter.com/uxsocietyph' target="_blank" rel="noopener noreferrer">
-                <img alt='uxsoc-logo' src={twitter}/>
+                <img alt='twitter-logo' src={twitter}/>
               </a>
               <a href='https://medium.com/user-experience-society' target="_blank" rel="noopener noreferrer">
-                <img alt='uxsoc-logo' src={medium}/>
+                <img alt='medium-logo' src={medium}/>
               </a>
               <a href='https://github.com/UXSoc' target="_blank" rel="noopener noreferrer">
-                <img alt='uxsoc-logo' src={github}/>
+                <img alt='github-logo' src={github}/>
               </a>
             </div>
 

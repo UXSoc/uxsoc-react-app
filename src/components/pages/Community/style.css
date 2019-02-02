@@ -34,8 +34,13 @@
 
 /* section toggles */
 .SectionToggleEvents {
-  width: 296px;
-  display: block;
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 1rem auto 4rem auto;
 }
 
@@ -46,9 +51,9 @@
 }
 
 .section-toggle {
-  width: 148px;
+  width: 33.3%;
   font-size: 1rem;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-weight: 600;
   background: transparent;
   border: none;
@@ -87,5 +92,25 @@
   .round-btn img {
     width: 16px;
     height: 9px;
+  }
+
+  .SectionToggleEvents {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .SectionToggleResources {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

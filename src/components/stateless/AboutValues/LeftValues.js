@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import ScrollAnimation from "react-animate-on-scroll"
+import "animate.css/animate.min.css"
 
 const LeftValues = props => {
 
@@ -16,7 +18,21 @@ const LeftValues = props => {
       text-align: center;
 
       img {
-        margin: 0;
+        margin: 15px auto !important;
+      }
+    }
+
+    @media (max-width: 610px) {
+      img {
+        width: 320px !important;
+        height: 420px;
+      }
+    }
+
+    @media (max-width: 415px) {
+      img {
+        width: 240px !important;
+        height: 240px;
       }
     }
   `
@@ -26,7 +42,7 @@ const LeftValues = props => {
   `
 
   const ValueTitle = styled.h3`
-    font-family: Rubik, sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -47,7 +63,9 @@ const LeftValues = props => {
         <ValueTitle>{props.title}</ValueTitle>
         <ValueDetails>{props.details}</ValueDetails>
       </Values>
-      <img src={props.img} alt="Core Value"/>
+      <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay="500">
+        <img src={props.img} alt="Core Value"/>
+      </ScrollAnimation>
     </ValueSection>
   );
 }

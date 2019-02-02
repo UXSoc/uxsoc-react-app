@@ -4,6 +4,7 @@
   margin: auto;
   padding-bottom: 7.5rem;
 }
+
 .arrowLeft, .arrowRight {
   width: 2.5%;
 }
@@ -12,7 +13,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .arrowLeft {
@@ -34,25 +37,23 @@
 #008ED4 */
 
 .processImage {
-  width: 95%;
-  height: 540px;
+  width: 840px;
+  height: 400px;
 }
 
 .MethodBlock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack:justify;
-      -ms-flex-pack:justify;
-          justify-content:space-between;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          margin-top: 60px;
 }
 
 .method-subheader {
   font-size: 36px;
-  width: 100%;
+  width: 60%;
   text-align: left;
   margin-bottom: 0;
 }
@@ -60,20 +61,36 @@
 .method-text {
   width: 100%;
   line-height: 1.5;
-  font-family: "Proxima-Nova", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 930px) {
   .processImage {
-    height: 480px;
+    width: 600px;
+    height: 320px
   }
 }
 @media screen and (max-width: 768px) {
+  #process, .headers {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .process {
+    padding: 0;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 7.5rem;
+  }
+
+
   .processImage {
     height: 320px;
+    margin-bottom: 0 !important;
   }
 
   .MethodBlock {
+    margin-top: 30px !important;
     text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -86,22 +103,35 @@
 }
 
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 700px) {
+  .processImage {
+    width: 520px;
+    height: 300px
+  }
+}
+@media screen and (max-width: 580px) {
   .method-title {
     line-height: 36px;
   }
+
   .processImage {
-    height: 270px;
+    width: 370px;
+    height: 220px;
+  }
+
+  .method-subheader {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 420px) {
   .method-title {
-    margin-bottom: 0;
+    margin-bottom: 30px !important;
   }
 
   .processImage {
-    height: 220px;
+    height: 150px;
+    width: 270px;
     margin-bottom: 30px;
   }
 }
