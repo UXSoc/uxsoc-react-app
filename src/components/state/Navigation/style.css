@@ -70,7 +70,7 @@
   display: none;
 }
 
-.menu-icon {
+.burger {
   fill: #ABABAB;
   cursor: pointer;
 }
@@ -170,6 +170,7 @@
   .NavDropdown {
     display: block;
   }
+
   .navbar-menu {
     display: block;
     margin-top: 8px;
@@ -177,16 +178,75 @@
     width: 3rem;
   }
 
-  .menu-icon {
+  /* .burger {
     cursor: pointer;
     width: 40px;
   }
 
-  .menu-icon div {
+  .burger div {
     background: #ABABAB;
     width: 100%;
-    margin: 5px;
-    height: 8px
+    margin: 10px;
+    height: 4px
+  } */
+
+  .burger {
+    position: relative;
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .burger .line {
+    position: absolute;
+    background: #ABABAB;
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    right: 0px;
+    margin-top: -5px;
+    opacity: 1;
+  }
+
+  .burger .line::before {
+    position: absolute;
+    background: #ABABAB;
+    width: 45px;
+    height: 5px;
+    top: 15px;
+    content: "";
+    display: block;
+  }
+
+  .burger .line::after {
+    position: absolute;
+    background: #ABABAB;
+    width: 45px;
+    height: 5px;
+    bottom: 15px;
+    content: "";
+    display: block;
+  }
+
+  .burger .line::after, .burger .line::before, .burger {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+  }
+
+  .burger.menu-on .burger::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    bottom: 0px;
+  }
+
+  .burger.menu-on .burger::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 0px;
+  }
+
+  .burger.menu-on .burger {
+    background: #ABABAB;
   }
 
   .navbar-link {
