@@ -7,9 +7,15 @@ class Navigation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showMenu: false
+      showMenu: false,
+      active: false
     }
   }
+
+  // toggleClass() {
+  //   const currentState = this.state.active;
+  //   this.setState({ active: !currentState });
+  // }
 
   render() {
     return (<div className="Navigation">
@@ -27,10 +33,15 @@ class Navigation extends Component {
                 showMenu: !this.state.showMenu
               })
             }}>
-            <div className="menu-icon">
-              <div></div>
-              <div></div>
-              <div></div>
+            {/* <div className="menu-icon" onClick={this.toggleClass}> */}
+            <div className={this.state.active ? "burger menu-on": "burger"} onClick={() => {
+              this.setState({
+                active: !this.state.active
+              })
+            }}>
+              <div className={this.state.active ? "line menu-on": null}></div>
+              <div className={this.state.active ? "line menu-on": null}></div>
+              <div className="line"></div>
             </div>
           </div>
 
