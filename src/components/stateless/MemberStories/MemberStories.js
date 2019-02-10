@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { AuthorPic, AuthorName } from '../../stateless/Author/Author';
 import RedirectButton from '../../state/RedirectButton/RedirectButton';
-import frances from './../../../resources/others/frances.png';
-import msImage from './../../../resources/others/frances-article.jpeg';
+import authorPic from './../../../resources/others/rafikoteh.jpeg';
+import msImage from './../../../resources/others/uxcrawl-groupie.jpeg';
 import './style.css';
 
 class MemberStories extends Component {
@@ -16,15 +16,15 @@ class MemberStories extends Component {
             <MemberStoriesImage />
             <div className="ms-card">
               <MemberStoriesLabel
-                memberStoriesLabel="Featured"/>
+                memberStoriesLabel="Featured Article"/>
               <MemberStoriesTitle
-                memberStoriesTitle="How to Start Your Passion Project and Make Time for It"/>
-              <AuthorPic authorPic={frances}/>
-              <AuthorName authorName="Frances To, Vice President for UX Design"/>
+                memberStoriesTitle="Stops and Stories — Visiting the Top UX Teams in Manila at UX Crawl 2019"/>
+              <AuthorPic authorPic={authorPic}/>
+              <AuthorName authorName="Rafi Ko Teh, Member Development Officer"/>
 
               <RedirectButton
-                buttonText="Read Frances's Story"
-                redirectLink="https://medium.com/@francesto927/how-to-start-your-passion-project-and-make-time-for-it-d27687c7e47e"/>
+                buttonText="Read Rafi's Insight on UXCrawl"
+                redirectLink="https://medium.com/user-experience-society/stops-and-stories-visiting-the-top-ux-teams-in-manila-at-ux-crawl-2019-35e4d8b768bb"/>
 
             </div>
           </div>
