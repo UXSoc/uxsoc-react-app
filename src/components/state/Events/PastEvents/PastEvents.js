@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage, EventImageMobile } from '../EventDetails/EventDetails';
 import RedirectButton from '../../../state/RedirectButton/RedirectButton';
-import UXChill from './../../../../resources/others/UX&Chill 3.png';
+import UXCrawl from './../../../../resources/others/uxcrawl-main.png';
 
 class PastEvents extends Component {
   constructor(props) {
@@ -34,26 +34,26 @@ class PastEvents extends Component {
       <div>
         <div className="event-card">
           <div className="event-info">
-          <EventImageMobile eventImage={UXChill}/>
+          <EventImageMobile eventImage={UXCrawl}/>
             <EventLabel
               eventLabel={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Category) ||
-                "Conference"
+                "Company Tour"
               }
             />
 
             <EventName
               eventName={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Name) ||
-                "UX & Chill"
+                "UXCrawl"
               }
             />
 
             <EventDetails
-              date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) ||"13, 21, and 29 November 2018 5:00 to 7:00 pm"}
+              date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) ||"4 February 2019, 8:00 am to 7:00 pm"}
               location={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Location) ||
-                "Ateneo de Manila University"
+                "Make Technology, On-Off Group, Globe Telecom & Mynt"
               }
               // speaker={
               //   (whatsHappening[lastEl] && whatsHappening[lastEl].Speaker) || "Avery Si"
@@ -61,15 +61,15 @@ class PastEvents extends Component {
             />
 
             <AboutHeader aboutHeader="About the event"/>
-            <AboutDesc aboutDesc="Learn more about innovation, design-thinking, and all about user experience (UX) in this three-day workshop which will unfold over the month of November. UX&Chill aims to promote UX and its uses to various demographics, and invite experts to share about their expertise and journey in the UX industry."/>
+            <AboutDesc aboutDesc="Hey UXSoc! Who’s in the mood for a little field trip? 🚌 Buckle up and we’ll hit the gas! This year, we’re excited to introduce a brand new initiative we call: UX Crawl! We’re bringing you to the offices of some of Manila’s top design studios and tech companies! Get to see what it’s like to work as a design professional, and learn about how these companies do their UX magic. ✨👨‍💻👩‍💻 It’s a really good opportunity to meet new people, learn more about the design industry here in the Philippines, and jumpstart your career! This event is open to both UXers and Non-UXers. Start your year right, and board the fun bus with us on UX Crawl 2019!"/>
             {/* <AboutHeader aboutHeader="About the speaker"/>
             <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/> */}
 
             <RedirectButton
-              buttonText="Learn More"
-              redirectLink="https://uxchill.uxsociety.org"/>
+              buttonText="Read Our Article"
+              redirectLink="https://medium.com/@harveyjaysison/ux-crawl-the-design-and-tech-pilgrimage-6589323dcc50"/>
           </div>
-          <EventImage eventImage={UXChill}/>
+          <EventImage eventImage={UXCrawl}/>
         </div>
       </div>
     )

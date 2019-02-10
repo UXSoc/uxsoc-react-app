@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage, EventImageMobile } from '../EventDetails/EventDetails';
 import RedirectButton from '../../../state/RedirectButton/RedirectButton';
-import Jffc from './../../../../resources/others/jffc.png';
+import UXUni from './../../../../resources/others/uxuniversity-main.jpg';
 
 class UpcomingEvents extends Component {
   constructor(props) {
@@ -34,26 +34,26 @@ class UpcomingEvents extends Component {
       <div>
         <div className="event-card">
           <div className="event-info">
-            <EventImageMobile eventImage={Jffc}/>
+            <EventImageMobile eventImage={UXUni}/>
             <EventLabel
               eventLabel={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Category) ||
-                "Conference"
+                "Competition"
               }
             />
 
             <EventName
               eventName={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Name) ||
-                "Junior Form, Function, and Class"
+                "UX University"
               }
             />
 
             <EventDetails
-              date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) ||"26-27 January 2019 7:30 am to 4:00 pm"}
+              date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) ||"16 February, 23 February, 9 March 2019"}
               location={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Location) ||
-                "De La Salle University - Manila"
+                "Ateneo de Manila University"
               }
               // speaker={
               //   (whatsHappening[lastEl] && whatsHappening[lastEl].Speaker) || "Avery Si"
@@ -61,16 +61,16 @@ class UpcomingEvents extends Component {
             />
 
             <AboutHeader aboutHeader="About the event"/>
-            <AboutDesc aboutDesc="Junior Form, Function, and Class (JFFC) is an annual 2-day event and is Asia’s premiere student web design conference providing opportunities and learning experiences which help students develop their design skills further. "/>
+            <AboutDesc aboutDesc="UX University is a 2-day course and a 3-week competition created to engage you in user experience design through a series of workshops to build your skills and provide you the tools to accommodate issues in the community with design. 🌟 We aim to shape you as a design disruptor and make you recognize that design can be an intervention to certain issues. 🏄🚴‍♀️🤽🎨"/>
             {/* <AboutHeader aboutHeader="About the speaker"/>
             <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/> */}
 
             <RedirectButton
-              buttonText="Learn More"
-              redirectLink="https://jffc.asia/"/>
+              buttonText="Sign Up Now"
+              redirectLink="http://bit.ly/UXUni2019"/>
 
           </div>
-          <EventImage eventImage={Jffc}/>
+          <EventImage eventImage={UXUni}/>
         </div>
       </div>
     )
