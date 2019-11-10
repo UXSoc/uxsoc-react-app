@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { EventDetails, EventLabel, EventName, AboutHeader, AboutDesc, EventImage, EventImageMobile } from '../EventDetails/EventDetails';
 import RedirectButton from '../../../state/RedirectButton/RedirectButton';
-import UXUni from './../../../../resources/others/uxuniversity-main.jpg';
+import UXChill from './../../../../resources/others/ux&chill2019.png';
 
 class UpcomingEvents extends Component {
   constructor(props) {
@@ -29,48 +29,48 @@ class UpcomingEvents extends Component {
 
   render() {
     const { whatsHappening } = this.state
-    const lastEl = whatsHappening.length  - 1
-    return(
+    const lastEl = whatsHappening.length - 1
+    return (
       <div>
         <div className="event-card">
           <div className="event-info">
-            <EventImageMobile eventImage={UXUni}/>
+            <EventImageMobile eventImage={UXChill} />
             <EventLabel
               eventLabel={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Category) ||
-                "Competition"
+                "Design Conference"
               }
             />
 
             <EventName
               eventName={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Name) ||
-                "UX University"
+                "UX & Chill 2019"
               }
             />
 
             <EventDetails
-              date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) ||"16 February, 23 February, 9 March 2019"}
+              date={(whatsHappening[lastEl] && whatsHappening[lastEl].DateTimeString) || "16 November 2019"}
               location={
                 (whatsHappening[lastEl] && whatsHappening[lastEl].Location) ||
                 "Ateneo de Manila University"
               }
-              // speaker={
-              //   (whatsHappening[lastEl] && whatsHappening[lastEl].Speaker) || "Avery Si"
-              // }
+            // speaker={
+            //   (whatsHappening[lastEl] && whatsHappening[lastEl].Speaker) || "Avery Si"
+            // }
             />
 
-            <AboutHeader aboutHeader="About the event"/>
-            <AboutDesc aboutDesc="UX University is a 2-day course and a 3-week competition created to engage you in user experience design through a series of workshops to build your skills and provide you the tools to accommodate issues in the community with design. 🌟 We aim to shape you as a design disruptor and make you recognize that design can be an intervention to certain issues. 🏄🚴‍♀️🤽🎨"/>
+            <AboutHeader aboutHeader="About the event" />
+            <AboutDesc aboutDesc="Immerse in a one-day experience of passion and creativity in this year’s third UX&Chill production, featuring various workshops and inspiring talks from some of the nation’s finest UX experts! Join us as we come together and fulfill our advocacy by doing what we love to do the most – innovation, design-thinking, and user experience. Spark your passion. Chill with UX." />
             {/* <AboutHeader aboutHeader="About the speaker"/>
             <AboutDesc aboutDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur."/> */}
 
             <RedirectButton
-              buttonText="Sign Up Now"
-              redirectLink="http://bit.ly/UXUni2019"/>
+              buttonText="Learn More"
+              redirectLink="https://uxchill.uxsociety.org" />
 
           </div>
-          <EventImage eventImage={UXUni}/>
+          <EventImage eventImage={UXChill} />
         </div>
       </div>
     )
