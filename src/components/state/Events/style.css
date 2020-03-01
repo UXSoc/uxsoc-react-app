@@ -64,6 +64,7 @@
 }
 
 .AboutHeader {
+  top: 30px;
   font-family: "Proxima Nova", sans-serif;
   color: black;
   letter-spacing: 0;
@@ -76,6 +77,7 @@
   font-weight: lighter;
   line-height: 21px;
   margin-bottom: 45px;
+  margin-top:-12px;
 }
 
 .EventImageMobile {

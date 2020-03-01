@@ -15,7 +15,7 @@ const RightValues = props => {
 
     @media (max-width: 1024px) {
       flex-direction: column-reverse;
-      text-align: center;
+      text-align: left;
 
       img {
         margin: 15px auto !important;

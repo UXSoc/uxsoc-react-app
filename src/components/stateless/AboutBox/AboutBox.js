@@ -22,7 +22,7 @@ const AboutBox = (props) => {
     font-family: Proxima Nova, sans-serif;
     line-height: normal;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.32em;
     color: #B3BCC4;
   `
@@ -34,7 +34,7 @@ const AboutBox = (props) => {
   color: #101010;
 
   @media (max-width: 768px) {
-    text-align: center;
+    text-align: left;
   }
   `
 

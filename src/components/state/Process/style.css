@@ -91,14 +91,14 @@
 
   .MethodBlock {
     margin-top: 30px !important;
-    text-align: center;
+    text-align: left;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .method-subheader {
-    text-align: center;
+    text-align: left;
   }
 }
 
